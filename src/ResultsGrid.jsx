@@ -9,77 +9,108 @@ export default function ResultsGrid({ rankings, movies }) {
     }
   });
 
+  // Responsive grid style
+  const gridStyle = {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(5, 1fr)',
+    gridTemplateRows: 'repeat(2, auto)',
+    gap: 18,
+    width: '100%',
+    maxWidth: 1000,
+    margin: '0 auto',
+    boxSizing: 'border-box',
+    justifyItems: 'center',
+    alignItems: 'center',
+  };
+
   return (
-    <div
-      style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(5, 1fr)',
-        gridTemplateRows: 'repeat(2, auto)',
-        gap: 18,
-        width: '100%',
-        maxWidth: 1000,
-        margin: '0 auto',
-        boxSizing: 'border-box',
-        justifyItems: 'center',
-        alignItems: 'center',
-      }}
-    >
-      {rankToMovie.map((movie, i) =>
-        movie ? (
-          <div key={movie.id} style={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            borderRadius: 14,
-            padding: 0,
-            minHeight: 220,
-            minWidth: 120,
-            width: 140,
-            margin: 8,
-            // No background, no box shadow
-          }}>
-            <img
-              src={movie.poster_path ? `https://image.tmdb.org/t/p/w300${movie.poster_path}` : ''}
-              alt={movie.title}
-              style={{
-                width: 120,
-                height: 180,
-                objectFit: 'cover',
-                borderRadius: 8,
-                marginBottom: 10,
-                background: '#eee',
-              }}
-            />
-            <div style={{
-              color: '#444',
-              fontSize: 24,
+    <>
+      <style>
+        {`
+          @media (max-width: 900px) {
+            .results-grid {
+              grid-template-columns: repeat(3, 1fr) !important;
+            }
+          }
+          @media (max-width: 600px) {
+            .results-grid {
+              grid-template-columns: repeat(2, 1fr) !important;
+            }
+            .results-grid .poster-img {
+              width: 100px !important;
+              height: 150px !important;
+            }
+          }
+          @media (max-width: 400px) {
+            .results-grid {
+              grid-template-columns: 1fr !important;
+            }
+            .results-grid .poster-img {
+              width: 80px !important;
+              height: 120px !important;
+            }
+          }
+        `}
+      </style>
+      <div className="results-grid" style={gridStyle}>
+        {rankToMovie.map((movie, i) =>
+          movie ? (
+            <div key={movie.id} style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              borderRadius: 14,
+              padding: 0,
+              minHeight: 220,
+              minWidth: 120,
+              width: 140,
+              margin: 8,
+            }}>
+              <img
+                className="poster-img"
+                src={movie.poster_path ? `https://image.tmdb.org/t/p/w300${movie.poster_path}` : ''}
+                alt={movie.title}
+                style={{
+                  width: 120,
+                  height: 180,
+                  objectFit: 'cover',
+                  borderRadius: 8,
+                  marginBottom: 10,
+                  background: '#eee',
+                  transition: 'width 0.2s, height 0.2s',
+                }}
+              />
+              <div style={{
+                color: '#444',
+                fontSize: 24,
+                fontWeight: 800,
+                textAlign: 'center',
+                letterSpacing: 1,
+              }}>
+                {i + 1}
+              </div>
+            </div>
+          ) : (
+            <div key={`placeholder-${i + 1}`} style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              minHeight: 220,
+              minWidth: 120,
+              width: 140,
+              margin: 8,
+              fontSize: 32,
               fontWeight: 800,
-              textAlign: 'center',
-              letterSpacing: 1,
+              color: '#bbb',
+              background: '#f5f5f5',
+              border: '2px dashed #bbb',
             }}>
               {i + 1}
             </div>
-          </div>
-        ) : (
-          <div key={`placeholder-${i + 1}`} style={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-            minHeight: 220,
-            minWidth: 120,
-            width: 140,
-            margin: 8,
-            fontSize: 32,
-            fontWeight: 800,
-            color: '#bbb',
-            background: '#f5f5f5',
-            border: '2px dashed #bbb',
-          }}>
-            {i + 1}
-          </div>
-        )
-      )}
-    </div>
+          )
+        )}
+      </div>
+    </>
   );
 } 
