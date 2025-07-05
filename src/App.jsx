@@ -83,7 +83,19 @@ function App() {
           />
           <div style={{ margin: '2px 0', textAlign: 'center' }}>
             <p style={{ fontSize: 16, fontWeight: 600, marginBottom: 6 }}>Assign a rank (1 = best, 10 = worst):</p>
-            <div style={{ display: 'flex', gap: 6, justifyContent: 'center' }}>
+            <style>
+              {`
+                @media (max-width: 600px) {
+                  .rank-btns-mobile {
+                    display: grid !important;
+                    grid-template-columns: repeat(5, 1fr) !important;
+                    gap: 6px !important;
+                    justify-content: center !important;
+                  }
+                }
+              `}
+            </style>
+            <div className={"rank-btns-mobile"} style={{ display: 'flex', gap: 6, justifyContent: 'center', flexWrap: 'wrap' }}>
               {[...Array(10)].map((_, i) => {
                 const rank = i + 1;
                 const used = getUsedRanks().includes(rank);

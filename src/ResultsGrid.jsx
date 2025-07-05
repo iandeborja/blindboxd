@@ -33,12 +33,17 @@ export default function ResultsGrid({ rankings, movies }) {
             }
           }
           @media (max-width: 600px) {
-            .results-grid {
+            .results-grid-mobile {
               grid-template-columns: repeat(2, 1fr) !important;
+              gap: 6px !important;
             }
-            .results-grid .poster-img {
-              width: 100px !important;
-              height: 150px !important;
+            .results-grid-mobile .poster-img {
+              width: 70px !important;
+              height: 105px !important;
+              margin-bottom: 4px !important;
+            }
+            .results-grid-mobile .rank-number {
+              font-size: 18px !important;
             }
           }
           @media (max-width: 400px) {
@@ -52,7 +57,7 @@ export default function ResultsGrid({ rankings, movies }) {
           }
         `}
       </style>
-      <div className="results-grid" style={gridStyle}>
+      <div className="results-grid-mobile" style={gridStyle}>
         {rankToMovie.map((movie, i) =>
           movie ? (
             <div key={movie.id} style={{
@@ -80,7 +85,7 @@ export default function ResultsGrid({ rankings, movies }) {
                   transition: 'width 0.2s, height 0.2s',
                 }}
               />
-              <div style={{
+              <div className="rank-number" style={{
                 color: '#444',
                 fontSize: 24,
                 fontWeight: 800,
