@@ -12,9 +12,9 @@ export default function ResultsGrid({ rankings, movies }) {
   // Responsive grid style
   const gridStyle = {
     display: 'grid',
-    gridTemplateColumns: 'repeat(5, 1fr)',
-    gridTemplateRows: 'repeat(2, auto)',
-    gap: 18,
+    gridTemplateColumns: 'repeat(2, 1fr)', // 2 columns for mobile by default
+    gridTemplateRows: 'repeat(5, auto)',
+    gap: 8,
     width: '100%',
     maxWidth: 1000,
     margin: '0 auto',
@@ -27,32 +27,42 @@ export default function ResultsGrid({ rankings, movies }) {
     <>
       <style>
         {`
-          @media (max-width: 900px) {
-            .results-grid {
-              grid-template-columns: repeat(3, 1fr) !important;
+          @media (min-width: 601px) {
+            .results-grid-mobile {
+              grid-template-columns: repeat(5, 1fr) !important;
+              grid-template-rows: repeat(2, auto) !important;
+              gap: 18px !important;
+            }
+            .results-grid-mobile .poster-img {
+              width: 120px !important;
+              height: 180px !important;
+              margin-bottom: 10px !important;
+            }
+            .results-grid-mobile .rank-number {
+              font-size: 24px !important;
             }
           }
           @media (max-width: 600px) {
             .results-grid-mobile {
               grid-template-columns: repeat(2, 1fr) !important;
-              gap: 6px !important;
+              grid-template-rows: repeat(5, auto) !important;
+              gap: 4px !important;
+              padding: 0 !important;
             }
             .results-grid-mobile .poster-img {
-              width: 70px !important;
-              height: 105px !important;
-              margin-bottom: 4px !important;
+              width: 60px !important;
+              height: 90px !important;
+              margin-bottom: 2px !important;
             }
             .results-grid-mobile .rank-number {
-              font-size: 18px !important;
+              font-size: 14px !important;
+              margin-top: 0 !important;
+              margin-bottom: 0 !important;
             }
-          }
-          @media (max-width: 400px) {
-            .results-grid {
-              grid-template-columns: 1fr !important;
-            }
-            .results-grid .poster-img {
-              width: 80px !important;
-              height: 120px !important;
+            .results-grid-mobile .result-cell {
+              min-height: 0 !important;
+              margin: 2px !important;
+              padding: 0 !important;
             }
           }
         `}
@@ -60,7 +70,7 @@ export default function ResultsGrid({ rankings, movies }) {
       <div className="results-grid-mobile" style={gridStyle}>
         {rankToMovie.map((movie, i) =>
           movie ? (
-            <div key={movie.id} style={{
+            <div className="result-cell" key={movie.id} style={{
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
@@ -96,7 +106,7 @@ export default function ResultsGrid({ rankings, movies }) {
               </div>
             </div>
           ) : (
-            <div key={`placeholder-${i + 1}`} style={{
+            <div className="result-cell" key={`placeholder-${i + 1}`} style={{
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
