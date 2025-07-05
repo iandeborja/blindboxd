@@ -14,14 +14,13 @@ export default function ResultsGrid({ rankings, movies }) {
     display: 'grid',
     gridTemplateColumns: 'repeat(5, 1fr)',
     gridTemplateRows: 'repeat(2, auto)',
-    gap: 12,
+    gap: 18,
     width: '100%',
     maxWidth: 1000,
     margin: '0 auto',
     boxSizing: 'border-box',
     justifyItems: 'center',
     alignItems: 'center',
-    minHeight: 0,
   };
 
   return (
@@ -31,27 +30,24 @@ export default function ResultsGrid({ rankings, movies }) {
           @media (max-width: 900px) {
             .results-grid {
               grid-template-columns: repeat(3, 1fr) !important;
-              gap: 8px !important;
             }
           }
           @media (max-width: 600px) {
             .results-grid {
               grid-template-columns: repeat(2, 1fr) !important;
-              gap: 6px !important;
             }
             .results-grid .poster-img {
-              width: 70px !important;
-              height: 105px !important;
+              width: 100px !important;
+              height: 150px !important;
             }
           }
           @media (max-width: 400px) {
             .results-grid {
               grid-template-columns: 1fr !important;
-              gap: 4px !important;
             }
             .results-grid .poster-img {
-              width: 60px !important;
-              height: 90px !important;
+              width: 80px !important;
+              height: 120px !important;
             }
           }
         `}
@@ -65,28 +61,28 @@ export default function ResultsGrid({ rankings, movies }) {
               alignItems: 'center',
               borderRadius: 14,
               padding: 0,
-              minHeight: 0,
-              minWidth: 60,
-              width: 80,
-              margin: 4,
+              minHeight: 220,
+              minWidth: 120,
+              width: 140,
+              margin: 8,
             }}>
               <img
                 className="poster-img"
                 src={movie.poster_path ? `https://image.tmdb.org/t/p/w300${movie.poster_path}` : ''}
                 alt={movie.title}
                 style={{
-                  width: 90,
-                  height: 135,
+                  width: 120,
+                  height: 180,
                   objectFit: 'cover',
                   borderRadius: 8,
-                  marginBottom: 6,
+                  marginBottom: 10,
                   background: '#eee',
                   transition: 'width 0.2s, height 0.2s',
                 }}
               />
               <div style={{
                 color: '#444',
-                fontSize: 18,
+                fontSize: 24,
                 fontWeight: 800,
                 textAlign: 'center',
                 letterSpacing: 1,
@@ -100,11 +96,11 @@ export default function ResultsGrid({ rankings, movies }) {
               flexDirection: 'column',
               alignItems: 'center',
               justifyContent: 'center',
-              minHeight: 0,
-              minWidth: 60,
-              width: 80,
-              margin: 4,
-              fontSize: 24,
+              minHeight: 220,
+              minWidth: 120,
+              width: 140,
+              margin: 8,
+              fontSize: 32,
               fontWeight: 800,
               color: '#bbb',
               background: '#f5f5f5',

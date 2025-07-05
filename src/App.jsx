@@ -76,13 +76,14 @@ function App() {
           <h3 style={{ fontSize: 22, fontWeight: 700, marginBottom: 10, textAlign: 'center' }}>
             {movies[currentIndex].title}
           </h3>
-          <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'center', gap: 32, marginBottom: 24 }}>
-            <img
-              src={movies[currentIndex].poster_path ? `https://image.tmdb.org/t/p/w300${movies[currentIndex].poster_path}` : ''}
-              alt={movies[currentIndex].title}
-              style={{ width: 120, height: 180, borderRadius: 12, background: '#eee', boxShadow: '0 2px 8px rgba(0,0,0,0.10)' }}
-            />
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+          <img
+            src={movies[currentIndex].poster_path ? `https://image.tmdb.org/t/p/w500${movies[currentIndex].poster_path}` : ''}
+            alt={movies[currentIndex].title}
+            style={{ maxWidth: 340, width: '100%', borderRadius: 16, marginBottom: 10, boxShadow: '0 4px 24px rgba(0,0,0,0.10)' }}
+          />
+          <div style={{ margin: '2px 0', textAlign: 'center' }}>
+            <p style={{ fontSize: 16, fontWeight: 600, marginBottom: 6 }}>Assign a rank (1 = best, 10 = worst):</p>
+            <div style={{ display: 'flex', gap: 6, justifyContent: 'center' }}>
               {[...Array(10)].map((_, i) => {
                 const rank = i + 1;
                 const used = getUsedRanks().includes(rank);
@@ -92,7 +93,7 @@ function App() {
                     onClick={() => handleRank(rank)}
                     disabled={used}
                     style={{
-                      width: 48,
+                      width: 38,
                       height: 38,
                       fontSize: 18,
                       fontWeight: 700,
