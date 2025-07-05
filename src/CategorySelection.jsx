@@ -38,7 +38,7 @@ export default function CategorySelection({ onCategorySelect }) {
           marginTop: 8,
           display: 'block',
         }}>
-          Choose a genre or decade to start
+          Create Top 10 Lists Without Knowing the Movies
         </span>
       </nav>
       <main style={{
