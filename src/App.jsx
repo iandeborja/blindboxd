@@ -232,7 +232,12 @@ function App() {
                   : ''
               } Blindboxd`}
             </h2>
-            <ResultsGrid rankings={rankings} movies={movies} selectedCategory={selectedCategory} />
+            <ResultsGrid
+              key={selectedCategory?.type + '-' + selectedCategory?.value + '-' + Object.values(rankings).join('-')}
+              rankings={rankings}
+              movies={movies}
+              selectedCategory={selectedCategory}
+            />
             <button
               style={{
                 marginTop: 8,

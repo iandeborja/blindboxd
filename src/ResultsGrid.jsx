@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import html2canvas from 'html2canvas';
 
 export default function ResultsGrid({ rankings, movies, selectedCategory }) {
@@ -9,59 +9,6 @@ export default function ResultsGrid({ rankings, movies, selectedCategory }) {
       rankToMovie[rank - 1] = movies[Number(movieIdx)];
     }
   });
-
-  const [copiedImageUrl, setCopiedImageUrl] = useState(null);
-  const [copyMessage, setCopyMessage] = useState('');
-
-  const copyImage = async () => {
-    const element = document.getElementById('results-grid-container');
-    if (!element) return;
-
-    try {
-      const canvas = await html2canvas(element, {
-        backgroundColor: '#ffffff',
-        scale: 2, // Higher quality
-        useCORS: true,
-        allowTaint: true,
-        width: element.offsetWidth,
-        height: element.offsetHeight,
-      });
-
-      const dataUrl = canvas.toDataURL();
-      setCopiedImageUrl(dataUrl);
-
-      if (navigator.clipboard && window.ClipboardItem) {
-        canvas.toBlob(async (blob) => {
-          try {
-            await navigator.clipboard.write([
-              new window.ClipboardItem({ 'image/png': blob })
-            ]);
-            // Detect mobile
-            const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-            if (isMobile) {
-              setCopyMessage('Long-press the image below to save or share.');
-            } else {
-              setCopyMessage('Image copied to clipboard!');
-            }
-          } catch (err) {
-            // fallback to download
-            const link = document.createElement('a');
-            link.download = `blindboxd-${selectedCategory?.type || 'ranking'}-${Date.now()}.png`;
-            link.href = canvas.toDataURL();
-            link.click();
-          }
-        }, 'image/png');
-      } else {
-        // fallback to download
-        const link = document.createElement('a');
-        link.download = `blindboxd-${selectedCategory?.type || 'ranking'}-${Date.now()}.png`;
-        link.href = canvas.toDataURL();
-        link.click();
-      }
-    } catch (error) {
-      console.error('Error copying image:', error);
-    }
-  };
 
   // Responsive grid style
   const gridStyle = {
@@ -218,46 +165,6 @@ export default function ResultsGrid({ rankings, movies, selectedCategory }) {
           )}
         </div>
       </div>
-      <button
-        onClick={copyImage}
-        style={{
-          padding: '8px 18px',
-          fontSize: '15px',
-          fontWeight: '600',
-          borderRadius: '7px',
-          border: '2px solid #111',
-          background: '#fff',
-          color: '#111',
-          cursor: 'pointer',
-          transition: 'all 0.2s',
-          marginTop: '8px',
-        }}
-        onMouseEnter={(e) => {
-          e.target.style.background = '#111';
-          e.target.style.color = '#fff';
-        }}
-        onMouseLeave={(e) => {
-          e.target.style.background = '#fff';
-          e.target.style.color = '#111';
-        }}
-      >
-        📋 Copy Image
-      </button>
-      {copiedImageUrl && (
-        <div style={{ marginTop: 18, textAlign: 'center' }}>
-          <div style={{ fontSize: 15, color: '#444', marginBottom: 8 }}>{copyMessage}</div>
-          <img
-            src={copiedImageUrl}
-            alt="Your BLINDBOXD ranking"
-            style={{
-              maxWidth: '100%',
-              borderRadius: 12,
-              boxShadow: '0 2px 10px rgba(0,0,0,0.10)',
-              border: '1.5px solid #eee',
-            }}
-          />
-        </div>
-      )}
     </>
   );
 } 
