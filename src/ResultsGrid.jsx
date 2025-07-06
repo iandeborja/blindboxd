@@ -10,7 +10,7 @@ export default function ResultsGrid({ rankings, movies, selectedCategory }) {
     }
   });
 
-  const saveAsImage = async () => {
+  const copyImage = async () => {
     const element = document.getElementById('results-grid-container');
     if (!element) return;
 
@@ -24,12 +24,30 @@ export default function ResultsGrid({ rankings, movies, selectedCategory }) {
         height: element.offsetHeight,
       });
 
-      const link = document.createElement('a');
-      link.download = `blindboxd-${selectedCategory?.type || 'ranking'}-${Date.now()}.png`;
-      link.href = canvas.toDataURL();
-      link.click();
+      if (navigator.clipboard && window.ClipboardItem) {
+        canvas.toBlob(async (blob) => {
+          try {
+            await navigator.clipboard.write([
+              new window.ClipboardItem({ 'image/png': blob })
+            ]);
+            alert('Image copied to clipboard!');
+          } catch (err) {
+            // fallback to download
+            const link = document.createElement('a');
+            link.download = `blindboxd-${selectedCategory?.type || 'ranking'}-${Date.now()}.png`;
+            link.href = canvas.toDataURL();
+            link.click();
+          }
+        }, 'image/png');
+      } else {
+        // fallback to download
+        const link = document.createElement('a');
+        link.download = `blindboxd-${selectedCategory?.type || 'ranking'}-${Date.now()}.png`;
+        link.href = canvas.toDataURL();
+        link.click();
+      }
     } catch (error) {
-      console.error('Error saving image:', error);
+      console.error('Error copying image:', error);
     }
   };
 
@@ -189,7 +207,7 @@ export default function ResultsGrid({ rankings, movies, selectedCategory }) {
         </div>
       </div>
       <button
-        onClick={saveAsImage}
+        onClick={copyImage}
         style={{
           padding: '8px 18px',
           fontSize: '15px',
@@ -211,7 +229,7 @@ export default function ResultsGrid({ rankings, movies, selectedCategory }) {
           e.target.style.color = '#111';
         }}
       >
-        📸 Save as Image
+        📋 Copy Image
       </button>
     </>
   );
