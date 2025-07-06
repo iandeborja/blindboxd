@@ -1,5 +1,19 @@
-import React from 'react';
-import html2canvas from 'html2canvas';
+import React, { useEffect, useRef, useState } from 'react';
+
+const TMDB_API_KEY = import.meta.env.VITE_TMDB_API_KEY;
+const TMDB_BASE_URL = 'https://api.themoviedb.org/3';
+
+async function fetchPosterPath(tmdb_id) {
+  if (!tmdb_id) return null;
+  try {
+    const res = await fetch(`${TMDB_BASE_URL}/movie/${tmdb_id}?api_key=${TMDB_API_KEY}&language=en-US`);
+    if (!res.ok) return null;
+    const data = await res.json();
+    return data.poster_path || null;
+  } catch {
+    return null;
+  }
+}
 
 export default function ResultsGrid({ rankings, movies, selectedCategory }) {
   // Build an array of 10 slots, one for each rank 1-10
@@ -10,161 +24,129 @@ export default function ResultsGrid({ rankings, movies, selectedCategory }) {
     }
   });
 
-  // Responsive grid style
-  const gridStyle = {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(5, 1fr)',
-    gridTemplateRows: 'repeat(2, auto)',
-    gap: 12,
-    width: '100%',
-    maxWidth: 1000,
-    margin: '0 auto',
-    boxSizing: 'border-box',
-    justifyItems: 'center',
-    alignItems: 'center',
-  };
+  const [pngUrl, setPngUrl] = useState(null);
+  const canvasRef = useRef(null);
+
+  useEffect(() => {
+    async function ensurePostersAndDraw() {
+      // Clone the array to avoid mutating props
+      const moviesWithPosters = await Promise.all(
+        rankToMovie.map(async (movie) => {
+          if (!movie) return null;
+          if (movie.poster_path) return movie;
+          // Try to fetch poster_path from TMDb
+          const poster_path = await fetchPosterPath(movie.tmdb_id || movie.id);
+          return { ...movie, poster_path };
+        })
+      );
+      // Now draw the PNG
+      const width = 700;
+      const height = 540;
+      const posterW = 120;
+      const posterH = 180;
+      const gap = 10;
+      const marginTop = 80;
+      const marginLeft = 30;
+      const rowGap = 45;
+      const numberFont = 'bold 20px Inter, Arial, sans-serif';
+      const brandFont = 'bold 36px Inter, Arial, sans-serif';
+      const descFont = '16px Inter, Arial, sans-serif';
+      const canvas = document.createElement('canvas');
+      canvas.width = width;
+      canvas.height = height;
+      const ctx = canvas.getContext('2d');
+      // White background
+      ctx.fillStyle = '#fff';
+      ctx.fillRect(0, 0, width, height);
+      // Branding
+      ctx.font = brandFont;
+      ctx.fillStyle = '#111';
+      ctx.textAlign = 'center';
+      ctx.fillText('BLINDBOXD', width / 2, 44);
+      ctx.font = descFont;
+      ctx.fillStyle = '#666';
+      ctx.fillText(
+        selectedCategory?.type === 'greatest'
+          ? 'The Greatest Films of All Time'
+          : selectedCategory?.type === 'genre'
+          ? selectedCategory.value
+          : selectedCategory?.type === 'decade'
+          ? selectedCategory.value
+          : selectedCategory?.type === 'oscar'
+          ? `Oscar Winners: ${selectedCategory.value}`
+          : 'Movie Ranking',
+        width / 2,
+        70
+      );
+      // Draw posters and numbers for all 10 slots
+      for (let i = 0; i < 10; i++) {
+        const movie = moviesWithPosters[i];
+        const col = i % 5;
+        const row = Math.floor(i / 5);
+        const x = marginLeft + col * (posterW + gap);
+        const y = marginTop + row * (posterH + rowGap);
+        // Always draw a placeholder first
+        ctx.fillStyle = '#eee';
+        ctx.fillRect(x, y, posterW, posterH);
+        // Poster (if available)
+        if (movie && movie.poster_path) {
+          // Ensure poster_path is a full URL via the Vercel proxy
+          let posterUrl = movie.poster_path;
+          if (!posterUrl.startsWith('http')) {
+            posterUrl = `/api/proxy?url=https://image.tmdb.org/t/p/w300${posterUrl}`;
+          } else if (posterUrl.startsWith('https://image.tmdb.org/')) {
+            posterUrl = `/api/proxy?url=${encodeURIComponent(posterUrl)}`;
+          }
+          console.log(`Drawing poster for slot ${i + 1}:`, posterUrl);
+          await new Promise((resolve) => {
+            const img = new window.Image();
+            img.crossOrigin = 'anonymous';
+            img.onload = () => {
+              ctx.drawImage(img, x, y, posterW, posterH);
+              resolve();
+            };
+            img.onerror = (e) => {
+              console.error(`Failed to load poster for slot ${i + 1}:`, posterUrl, e);
+              resolve();
+            };
+            img.src = posterUrl;
+          });
+        } else {
+          console.warn(`No poster_path for slot ${i + 1}`, movie);
+        }
+        // Number (always)
+        ctx.font = numberFont;
+        ctx.fillStyle = '#222';
+        ctx.textAlign = 'center';
+        ctx.fillText(i + 1, x + posterW / 2, y + posterH + 32);
+      }
+      setPngUrl(canvas.toDataURL('image/png'));
+    }
+    ensurePostersAndDraw();
+  }, [rankings, movies, selectedCategory]);
 
   return (
-    <>
-      <style>
-        {`
-          @media (min-width: 601px) {
-            .results-grid-mobile {
-              grid-template-columns: repeat(5, 1fr) !important;
-              grid-template-rows: repeat(2, auto) !important;
-              gap: 18px !important;
-            }
-            .results-grid-mobile .poster-img {
-              width: 120px !important;
-              height: 180px !important;
-              margin-bottom: 10px !important;
-            }
-            .results-grid-mobile .rank-number {
-              font-size: 24px !important;
-            }
-          }
-          @media (max-width: 600px) {
-            .results-grid-mobile {
-              grid-template-columns: repeat(5, 1fr) !important;
-              grid-template-rows: repeat(2, auto) !important;
-              gap: 4px !important;
-              padding: 0 !important;
-            }
-            .results-grid-mobile .poster-img {
-              width: 48px !important;
-              height: 72px !important;
-              margin-bottom: 2px !important;
-            }
-            .results-grid-mobile .rank-number {
-              font-size: 13px !important;
-              margin-top: 0 !important;
-              margin-bottom: 0 !important;
-            }
-            .results-grid-mobile .result-cell {
-              min-height: 0 !important;
-              margin: 2px !important;
-              padding: 0 !important;
-            }
-          }
-        `}
-      </style>
-      <div id="results-grid-container" style={{
-        background: '#fff',
-        padding: '18px 8px 16px 8px',
-        borderRadius: '16px',
-        boxShadow: '0 2px 10px rgba(0,0,0,0.08)',
-        marginBottom: '10px',
-      }}>
-        <div style={{
-          textAlign: 'center',
-          marginBottom: '12px',
-        }}>
-          <h1 style={{
-            fontSize: '22px',
-            fontWeight: '900',
-            color: '#111',
-            margin: '0 0 2px 0',
-            letterSpacing: '2px',
-          }}>
-            BLINDBOXD
-          </h1>
-          <p style={{
-            fontSize: '13px',
-            color: '#666',
-            margin: '0',
-            fontWeight: '500',
-          }}>
-            {selectedCategory?.type === 'greatest'
-              ? 'The Greatest Films of All Time'
-              : selectedCategory?.type === 'genre' 
-              ? selectedCategory.value 
-              : selectedCategory?.type === 'decade' 
-              ? selectedCategory.value 
-              : selectedCategory?.type === 'oscar' 
-              ? `Oscar Winners: ${selectedCategory.value}`
-              : 'Movie Ranking'}
-          </p>
-        </div>
-        <div className="results-grid-mobile" style={gridStyle}>
-          {rankToMovie.map((movie, i) =>
-            movie ? (
-              <div className="result-cell" key={movie.id} style={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                borderRadius: 14,
-                padding: 0,
-                minHeight: 220,
-                minWidth: 70,
-                width: 70,
-                margin: 8,
-              }}>
-                <img
-                  className="poster-img"
-                  src={movie.poster_path ? `https://image.tmdb.org/t/p/w300${movie.poster_path}` : ''}
-                  alt={movie.title}
-                  style={{
-                    width: 120,
-                    height: 180,
-                    objectFit: 'cover',
-                    borderRadius: 8,
-                    marginBottom: 10,
-                    background: '#eee',
-                    transition: 'width 0.2s, height 0.2s',
-                  }}
-                />
-                <div className="rank-number" style={{
-                  color: '#444',
-                  fontSize: 24,
-                  fontWeight: 800,
-                  textAlign: 'center',
-                  letterSpacing: 1,
-                }}>
-                  {i + 1}
-                </div>
-              </div>
-            ) : (
-              <div className="result-cell" key={`placeholder-${i + 1}`} style={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'center',
-                minHeight: 220,
-                minWidth: 120,
-                width: 140,
-                margin: 8,
-                fontSize: 32,
-                fontWeight: 800,
-                color: '#bbb',
-                background: '#f5f5f5',
-                border: '2px dashed #bbb',
-              }}>
-                {i + 1}
-              </div>
-            )
-          )}
-        </div>
-      </div>
-    </>
+    <div style={{ textAlign: 'center', marginTop: 10 }}>
+      {pngUrl ? (
+        <>
+          <img
+            src={pngUrl}
+            alt="Your BLINDBOXD ranking"
+            style={{
+              maxWidth: '100%',
+              borderRadius: 16,
+              boxShadow: '0 2px 10px rgba(0,0,0,0.10)',
+              border: '1.5px solid #eee',
+              marginBottom: 12,
+            }}
+          />
+          <div style={{ fontSize: 15, color: '#444', marginBottom: 8 }}>
+            Tap and hold to save or share
+          </div>
+        </>
+      ) : (
+        <div style={{ width: 732, height: 540, background: '#eee', borderRadius: 16, margin: '0 auto' }} />
+      )}
+    </div>
   );
 } 
