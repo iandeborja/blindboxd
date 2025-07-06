@@ -134,13 +134,16 @@ export default function ResultsGrid({ rankings, movies, selectedCategory }) {
             src={pngUrl}
             alt="Your BLINDBOXD ranking"
             style={{
-              width: 700,
-              height: 540,
-              maxWidth: '100%',
+              width: '100%',
+              height: 'auto',
+              maxWidth: 700,
               borderRadius: 16,
               boxShadow: '0 2px 10px rgba(0,0,0,0.10)',
               border: '1.5px solid #eee',
               marginBottom: 12,
+              display: 'block',
+              marginLeft: 'auto',
+              marginRight: 'auto',
             }}
           />
           <div style={{ fontSize: 15, color: '#444', marginBottom: 8 }}>
