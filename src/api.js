@@ -44,9 +44,11 @@ export async function fetchRandomMovies(category) {
   if (category.type === 'genre') {
     const genreId = GENRE_IDS[category.value];
     url += `&with_genres=${genreId}`;
+    var maxPages = 20; // 400 movies for genres
   } else if (category.type === 'decade') {
     const { start, end } = getYearRange(category.value);
     url += `&primary_release_date.gte=${start}-01-01&primary_release_date.lte=${end}-12-31`;
+    var maxPages = 25; // 500 movies for decades
   } else if (category.type === 'oscar') {
     // Load oscarWinners.json dynamically
     const oscarData = (await import('./oscarWinners.json')).default;
@@ -81,9 +83,11 @@ export async function fetchRandomMovies(category) {
     return details.filter(Boolean);
   }
 
-  // Fetch a random page (TMDb allows up to 500 pages)
-  const randomPage = Math.floor(Math.random() * 10) + 1; // limit to first 10 pages for demo
-  url += `&page=${randomPage}`;
+  if (category.type !== 'oscar') {
+    // Fetch a random page (TMDb allows up to 500 pages)
+    const randomPage = Math.floor(Math.random() * maxPages) + 1;
+    url += `&page=${randomPage}`;
+  }
 
   try {
     const res = await fetch(url);

@@ -208,6 +208,9 @@ function App() {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
+          justifyContent: 'flex-start',
+          paddingTop: 12,
+          paddingBottom: 12,
         }}>
           <div style={{
             maxWidth: 950,
@@ -217,10 +220,8 @@ function App() {
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'flex-start',
-            paddingTop: 48,
-            paddingBottom: 48,
           }}>
-            <h2 style={{ color: '#111', fontSize: 32, fontWeight: 800, textAlign: 'center', marginBottom: 28 }}>
+            <h2 style={{ color: '#111', fontSize: 22, fontWeight: 800, textAlign: 'center', marginBottom: 10 }}>
               {`Here's your ${
                 selectedCategory.type === 'genre'
                   ? selectedCategory.value
@@ -231,32 +232,32 @@ function App() {
                   : ''
               } Blindboxd`}
             </h2>
-            <ResultsGrid rankings={rankings} movies={movies} />
-            <div style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
-              <button
-                style={{
-                  marginTop: 48,
-                  padding: '16px 32px',
-                  fontSize: 20,
-                  fontWeight: 700,
-                  borderRadius: 10,
-                  border: 'none',
-                  background: '#111',
-                  color: '#fff',
-                  cursor: 'pointer',
-                  boxShadow: '0 2px 8px rgba(0,0,0,0.10)',
-                  transition: 'background 0.2s',
-                }}
-                onClick={() => {
-                  setSelectedCategory(null);
-                  setMovies([]);
-                  setRankings({});
-                  setCurrentIndex(0);
-                }}
-              >
-                Start new Blindboxd ranking
-              </button>
-            </div>
+            <ResultsGrid rankings={rankings} movies={movies} selectedCategory={selectedCategory} />
+            <button
+              style={{
+                marginTop: 8,
+                padding: '10px 20px',
+                fontSize: 15,
+                fontWeight: 700,
+                borderRadius: 8,
+                border: 'none',
+                background: '#111',
+                color: '#fff',
+                cursor: 'pointer',
+                boxShadow: '0 2px 8px rgba(0,0,0,0.10)',
+                transition: 'background 0.2s',
+                width: 'fit-content',
+                alignSelf: 'center',
+              }}
+              onClick={() => {
+                setSelectedCategory(null);
+                setMovies([]);
+                setRankings({});
+                setCurrentIndex(0);
+              }}
+            >
+              Start new BLINDBOXD ranking
+            </button>
           </div>
         </div>
       ) : (

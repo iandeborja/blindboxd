@@ -7,13 +7,13 @@ const oscarDecades = ['1980s', '1990s', '2000s', '2010s', '2020s'];
 export default function CategorySelection({ onCategorySelect }) {
   // Build a unified list of options with group labels
   const options = [
-    ...genres.map((g) => ({ label: g, type: 'genre', value: g, group: 'Genres' })),
     ...decades.map((d) => ({ label: d, type: 'decade', value: d, group: 'Decades' })),
     ...oscarDecades.map((d) => ({ label: d, type: 'oscar', value: d, group: 'Oscar Winners' })),
+    ...genres.map((g) => ({ label: g, type: 'genre', value: g, group: 'Genres' })),
   ];
 
   // For section labels in the grid
-  const groupOrder = ['Genres', 'Decades', 'Oscar Winners'];
+  const groupOrder = ['Decades', 'Oscar Winners', 'Genres'];
 
   return (
     <div style={{
@@ -56,7 +56,7 @@ export default function CategorySelection({ onCategorySelect }) {
         maxWidth: 900,
         margin: '0 auto',
         padding: '0 8px',
-        marginTop: 10,
+        marginTop: 24,
         textAlign: 'left',
       }}>
         <style>
