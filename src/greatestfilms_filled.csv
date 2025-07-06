@@ -1,0 +1,501 @@
+Movie Title,Year,Genre,tmdb_id
+Parasite,2019,Comedy;Thriller;Drama,496243
+Mulholland Drive,2001,Thriller;Drama;Mystery,1018
+There Will Be Blood,2007,Drama,7345
+In the Mood for Love,2000,Drama;Romance,843
+Moonlight,2016,Drama,376867
+No Country for Old Men,2007,Crime;Drama;Thriller,6977
+Eternal Sunshine of the Spotless Mind,2004,Science Fiction;Drama;Romance,38
+Get Out,2017,Mystery;Thriller;Horror,419430
+Spirited Away,2001,Animation;Family;Fantasy,129
+The Social Network,2010,Drama,37799
+Mad Max: Fury Road,2015,Action;Adventure;Science Fiction,76341
+The Zone of Interest,2023,Drama;History;War,467244
+Children of Men,2006,Drama;Action;Thriller;Science Fiction,9693
+Inglourious Basterds,2009,Drama;Thriller;War,16869
+City of God,2002,Drama;Crime,598
+"Crouching Tiger, Hidden Dragon",2000,Adventure;Drama;Action;Romance,146
+Brokeback Mountain,2005,Drama;Romance,142
+Y Tu Mamá También,2001,Drama;Romance,1391
+Zodiac,2007,Crime;Drama;Mystery;Thriller,1949
+The Wolf of Wall Street,2013,Crime;Drama;Comedy,106646
+The Royal Tenenbaums,2001,Comedy;Drama,9428
+The Grand Budapest Hotel,2014,Comedy;Drama,120467
+Boyhood,2014,Drama,85350
+Her,2013,Romance;Science Fiction;Drama,152601
+Phantom Thread,2017,Drama;Romance,400617
+Anatomy of a Fall,2023,Thriller;Mystery;Crime,915935
+Adaptation.,2002,Comedy;Crime;Drama,2757
+The Dark Knight,2008,Drama;Action;Crime;Thriller,155
+Arrival,2016,Drama;Science Fiction;Mystery,329865
+Lost in Translation,2003,Drama;Romance;Comedy,153
+The Departed,2006,Drama;Thriller;Crime,1422
+Bridesmaids,2011,Comedy;Romance,55721
+A Separation,2011,Drama,60243
+WALL·E,2008,Animation;Family;Science Fiction,10681
+A Prophet,2009,Crime;Drama,21575
+A Serious Man,2009,Comedy;Drama,12573
+Call Me by Your Name,2017,Romance;Drama,398818
+Portrait of a Lady on Fire,2019,Drama;Romance;History,531428
+Lady Bird,2017,Drama;Comedy,391713
+Yi Yi,2000,Drama,25538
+Amélie,2001,Comedy;Romance,194
+The Master,2012,Drama,68722
+Oldboy,2003,Drama;Thriller;Mystery;Action,670
+Once Upon a Time... in Hollywood,2019,Comedy;Drama;Thriller,466272
+Moneyball,2011,Drama,60308
+Roma,2018,Drama,426426
+Almost Famous,2000,Drama;Music,786
+The Lives of Others,2006,Drama;Thriller,582
+Before Sunset,2004,Drama;Romance,80
+Up,2009,Animation;Comedy;Family;Adventure,14160
+12 Years a Slave,2013,Drama;History,76203
+The Favourite,2018,History;Comedy;Drama,375262
+Borat: Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan,2006,Comedy,496
+Pan's Labyrinth,2006,Fantasy;Drama;War,1417
+Inception,2010,Action;Science Fiction;Adventure,27205
+Punch-Drunk Love,2002,Romance;Drama;Comedy,8051
+Best in Show,2000,Comedy,13785
+Uncut Gems,2019,Drama;Thriller;Crime,473033
+Toni Erdmann,2016,Comedy;Drama,374475
+Whiplash,2014,Drama;Music,244786
+Kill Bill: Vol. 1,2003,Action;Crime,24
+Memento,2000,Mystery;Thriller,77
+Little Miss Sunshine,2006,Comedy;Drama,773
+Gone Girl,2014,Mystery;Thriller;Drama,210577
+Oppenheimer,2023,Drama;History,872585
+Spotlight,2015,Drama;History,314365
+TÁR,2022,Music;Drama,817758
+The Hurt Locker,2008,Drama;Thriller;War,12162
+Under the Skin,2013,Thriller;Science Fiction;Drama,97370
+Let the Right One In,2008,Horror;Drama,13310
+Ocean's Eleven,2001,Thriller;Crime,161
+Carol,2015,Romance;Drama,258480
+Ratatouille,2007,Animation;Comedy;Family;Fantasy,2062
+The Florida Project,2017,Drama,394117
+Amour,2012,Drama;Romance,86837
+"O Brother, Where Art Thou?",2000,Adventure;Comedy;Crime,134
+Everything Everywhere All at Once,2022,Action;Adventure;Science Fiction,545611
+Aftersun,2022,Drama,965150
+The Tree of Life,2011,Drama;Fantasy,8967
+Volver,2006,Comedy;Drama;Romance,219
+Black Swan,2010,Drama;Thriller;Horror,44214
+The Act of Killing,2012,Documentary,123678
+Inside Llewyn Davis,2013,Drama;Music,86829
+Melancholia,2011,Drama;Science Fiction,62215
+Anchorman: The Legend of Ron Burgundy,2004,Comedy,8699
+Past Lives,2023,Drama;Romance,666277
+The Lord of the Rings: The Fellowship of the Ring,2001,Adventure;Fantasy;Action,120
+The Gleaners and I,2000,Documentary,44379
+Interstellar,2014,Adventure;Drama;Science Fiction,157336
+Frances Ha,2012,Comedy;Drama,121986
+Fish Tank,2009,Drama,24469
+Gladiator,2000,Action;Drama;Adventure,98
+Michael Clayton,2007,Drama;Thriller;Crime,4566
+Minority Report,2002,Science Fiction;Action;Thriller,180
+The Worst Person in the World,2021,Drama;Romance;Comedy,660120
+Black Panther,2018,Action;Adventure;Science Fiction,284054
+Gravity,2013,Science Fiction;Thriller;Drama,49047
+Grizzly Man,2005,Music;Documentary,288430
+Memories of Murder,2003,Crime;Drama;Thriller,11423
+Superbad,2007,Comedy,8363
+Zach Domes,,,
+The Lord of the Rings: The Return of the King,2003,Adventure;Fantasy;Action,122
+La La Land,2016,Comedy;Drama;Romance;Music,313369
+Dune: Part Two,2024,Science Fiction;Adventure,693134
+Spider-Man: Into the Spider-Verse,2018,Animation;Action;Adventure;Science Fiction,324857
+The Lord of the Rings: The Two Towers,2002,Adventure;Fantasy;Action,121
+Pride & Prejudice,2005,Drama;Romance,4348
+Sinners,,Horror;Action;Thriller,1233413
+Django Unchained,2012,Drama;Western,68718
+Little Women,2019,Drama;Romance;History,331482
+Hereditary,2018,Horror;Mystery;Thriller,493922
+Blade Runner 2049,2017,Science Fiction;Drama,335984
+Fantastic Mr. Fox,2009,Adventure;Animation;Comedy;Family,10315
+The Handmaiden,2016,Thriller;Drama;Romance,290098
+The Prestige,2006,Drama;Mystery;Science Fiction,1124
+Mean Girls,2004,Drama;Comedy,10625
+Perfect Days,2023,Drama,976893
+Barbie,2023,Comedy;Adventure,346698
+Dune,2021,Science Fiction;Adventure,438631
+Top Gun: Maverick,2022,Action;Drama,361743
+Drive My Car,2021,Drama,758866
+Knives Out,2019,Comedy;Crime;Mystery,546554
+The Incredibles,2004,Action;Adventure;Animation;Family,9806
+Killers of the Flower Moon,2023,Crime;History;Drama,466420
+Howl's Moving Castle,2004,Fantasy;Animation;Adventure,4935
+The Lighthouse,2019,Drama;Fantasy;Thriller,503919
+The Holdovers,2023,Comedy;Drama,840430
+Midsommar,2019,Horror;Drama;Mystery,530385
+The Shawshank Redemption,1994,Drama;Crime,278
+The Godfather,1972,Drama;Crime,238
+The Godfather: Part II,1974,Drama;Crime,240
+12 Angry Men,1957,Drama,389
+Schindler's List,1993,Drama;History;War,424
+Pulp Fiction,1994,Thriller;Crime;Comedy,680
+"Il buono, il brutto, il cattivo",1966,Western,429
+Fight Club,1999,Drama,550
+Forrest Gump,1994,Comedy;Drama;Romance,13
+Star Wars: Episode V - The Empire Strikes Back,1980,Adventure;Action;Science Fiction,1891
+One Flew Over the Cuckoo's Nest,1975,Drama,510
+Goodfellas,1990,Drama;Crime,769
+The Matrix,1999,Action;Science Fiction,603
+Shichinin no samurai,1954,Action;Drama,346
+Cidade de Deus,2002,Drama;Crime,598
+Se7en,1995,Crime;Mystery;Thriller,807
+Star Wars,1977,Adventure;Action;Science Fiction,11
+The Silence of the Lambs,1991,Crime;Drama;Thriller,274
+It's a Wonderful Life,1946,Drama;Family;Fantasy,1585
+La vita è bella,1997,Comedy;Drama,637
+The Usual Suspects,1995,Drama;Crime;Thriller,629
+Sen to Chihiro no kamikakushi,2001,Animation;Family;Fantasy,129
+Saving Private Ryan,1998,Drama;History;War,857
+Léon,1994,Crime;Drama;Action,101
+The Green Mile,1999,Fantasy;Drama;Crime,497
+Psycho,1960,Horror;Thriller;Mystery,539
+American History X,1998,Drama,73
+City Lights,1931,Comedy;Drama;Romance,901
+C'era una volta il West,1968,Drama;Western,335
+Casablanca,1942,Drama;Romance,289
+Modern Times,1936,Comedy;Drama;Romance,3082
+The Pianist,2002,Drama;War,423
+Intouchables,2011,Drama;Comedy,77338
+Terminator 2: Judgment Day,1991,Action;Thriller;Science Fiction,280
+Back to the Future,1985,Adventure;Comedy;Science Fiction,105
+Rear Window,1954,Thriller;Mystery,567
+Raiders of the Lost Ark,1981,Adventure;Action,85
+The Lion King,1994,Family;Animation;Drama,8587
+Apocalypse Now,1979,Drama;War,28
+Alien,1979,Horror;Science Fiction,348
+The Great Dictator,1940,Comedy;War,914
+Nuovo Cinema Paradiso,1988,Drama;Romance,11216
+Hotaru no haka,1988,Animation;Drama;War,12477
+Avengers: Infinity War,2018,Adventure;Action;Science Fiction,299536
+Sunset Blvd.,1950,Drama,599
+Das Leben der Anderen,2006,Drama;Thriller,582
+Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb,1964,Comedy;War,935
+Paths of Glory,1957,War;Drama;History,975
+The Shining,1980,Horror;Thriller,694
+Mononoke-hime,1997,Adventure;Fantasy;Animation,128
+Witness for the Prosecution,1957,Drama;Mystery;Crime,37257
+American Beauty,1999,Drama,14
+The Dark Knight Rises,2012,Action;Crime;Drama;Thriller,49026
+Oldeuboi,2003,Drama;Thriller;Mystery;Action,670
+Aliens,1986,Action;Thriller;Science Fiction,679
+Once Upon a Time in America,1984,Drama;Crime,311
+Coco,2017,Family;Animation;Music;Adventure,354912
+Das Boot,1981,Drama;History;War,387
+Citizen Kane,1941,Mystery;Drama,15
+Braveheart,1995,Action;Drama;History;War,197
+Vertigo,1958,Mystery;Romance;Thriller,426
+North by Northwest,1959,Thriller;Adventure,213
+Reservoir Dogs,1992,Crime;Thriller,500
+Star Wars: Episode VI - Return of the Jedi,1983,Adventure;Action;Science Fiction,1892
+M - Eine Stadt sucht einen Mörder,1931,Drama;Thriller;Crime,832
+Kimi no na wa.,2016,Animation;Romance;Drama,372058
+Amadeus,1984,History;Music;Drama,279
+Requiem for a Dream,2000,Crime;Drama,641
+Dangal,2016,Drama;Family;Comedy,360814
+Taare Zameen Par,2007,Drama,7508
+Lawrence of Arabia,1962,Adventure;History;War,947
+A Clockwork Orange,1971,Science Fiction;Crime,185
+3 Idiots,2009,Drama;Comedy,20453
+2001: A Space Odyssey,1968,Science Fiction;Mystery;Adventure,62
+Le fabuleux destin d'Amélie Poulain,2001,Comedy;Romance,194
+Toy Story,1995,Animation;Adventure;Family;Comedy,862
+Double Indemnity,1944,Crime;Thriller,996
+Taxi Driver,1976,Crime;Drama,103
+Singin' in the Rain,1952,Comedy;Romance,872
+Full Metal Jacket,1987,Drama;War,600
+To Kill a Mockingbird,1962,Drama,595
+Ladri di biciclette,1948,Drama,5156
+The Kid,1921,Comedy;Drama,10098
+The Sting,1973,Comedy;Crime;Drama,9277
+Good Will Hunting,1997,Drama,489
+Toy Story 3,2010,Animation;Family;Comedy,10193
+Jagten,2012,Drama,103663
+Snatch,2000,Crime;Comedy,107
+Scarface,1983,Action;Crime;Drama,111
+Monty Python and the Holy Grail,1975,Adventure;Comedy;Fantasy,762
+Per qualche dollaro in più,1965,Western,938
+L.A. Confidential,1997,Crime;Mystery;Thriller;Drama,2118
+The Apartment,1960,Comedy;Drama;Romance,284
+Metropolis,1927,Drama;Science Fiction,19
+Jodaeiye Nader az Simin,2011,Drama,60243
+Indiana Jones and the Last Crusade,1989,Adventure;Action,89
+Rashômon,1950,Crime;Drama;Mystery,548
+All About Eve,1950,Drama,705
+Batman Begins,2005,Action;Crime;Drama,272
+Yôjinbô,1961,,1393922
+Some Like It Hot,1959,Comedy;Romance;Crime,239
+Unforgiven,1992,Western,33
+Der Untergang,2004,Drama;History;War,613
+Die Hard,1988,Action;Thriller,562
+The Treasure of the Sierra Madre,1948,Adventure;Drama;Western,3090
+Heat,1995,Crime;Drama;Action,949
+Ikiru,1952,Drama,3782
+Incendies,2010,Drama;War;Mystery,46738
+Raging Bull,1980,Drama,1578
+The Great Escape,1963,Adventure;Drama;War,5925
+Bacheha-Ye aseman,1997,Drama;Family,21334
+El laberinto del fauno,2006,Fantasy;Drama;War,1417
+Babam ve Oglum,2005,Drama,13393
+Chinatown,1974,Crime;Drama;Mystery;Thriller,829
+The Third Man,1949,Thriller;Mystery,1092
+Bohemian Rhapsody,2018,Music;Drama,424694
+Tonari no Totoro,1988,Fantasy;Animation;Family,8392
+Hauru no ugoku shiro,2004,Fantasy;Animation;Adventure,4935
+Ran,1985,Action;Drama;History,11645
+Judgment at Nuremberg,1961,Drama;History,821
+El secreto de sus ojos,2009,Mystery;Thriller;Drama,25376
+The Gold Rush,1925,Adventure;Comedy;Drama,962
+The Bridge on the River Kwai,1957,Drama;History;War,826
+A Beautiful Mind,2001,Drama;Romance,453
+"Lock, Stock and Two Smoking Barrels",1998,Comedy;Crime,100
+Casino,1995,Crime;Drama,524
+"Three Billboards Outside Ebbing, Missouri",2017,Crime;Drama,359940
+On the Waterfront,1954,Crime;Drama;Romance,654
+Det sjunde inseglet,1957,Fantasy;Drama,490
+Inside Out,2015,Animation;Family;Adventure;Drama;Comedy,150540
+The Elephant Man,1980,Drama;History,1955
+Room,2015,Drama;Thriller,264644
+Mr. Smith Goes to Washington,1939,Comedy;Drama,3083
+V for Vendetta,2005,Action;Thriller;Science Fiction,752
+Warrior,2011,Drama;Action,59440
+Blade Runner,1982,Science Fiction;Drama;Thriller,78
+Dial M for Murder,1954,Thriller;Crime,521
+Smultronstället,1957,Drama,614
+The General,1926,Action;Adventure;Comedy;War,961
+Trainspotting,1996,Drama;Crime,627
+The Sixth Sense,1999,Mystery;Thriller;Drama,745
+Gone with the Wind,1939,Drama;War;Romance,770
+The Thing,1982,Horror;Mystery;Science Fiction,1091
+Fargo,1996,Crime;Drama;Thriller,275
+Gran Torino,2008,Drama,13223
+The Deer Hunter,1978,Drama;War,11778
+Finding Nemo,2003,Animation;Family,12
+Idi i smotri,1985,Drama;War,25237
+The Big Lebowski,1998,Comedy;Crime,115
+Shutter Island,2010,Drama;Thriller;Mystery,11324
+Sherlock Jr.,1924,Action;Comedy;Mystery,992
+Cool Hand Luke,1967,Drama;Crime,903
+Rebecca,1940,Mystery;Romance;Thriller,223
+Tôkyô monogatari,1953,Drama,18148
+Mary and Max,2009,Animation;Comedy;Drama,24238
+Hacksaw Ridge,2016,Drama;History;War,324786
+How to Train Your Dragon,2010,Fantasy;Adventure;Animation;Family,10191
+Sunrise: A Song of Two Humans,1927,Drama;Romance,631
+Relatos salvajes,2014,Drama;Thriller;Comedy,265195
+Jurassic Park,1993,Adventure;Science Fiction,329
+Into the Wild,2007,Adventure;Drama,5915
+Life of Brian,1979,Comedy,583
+In the Name of the Father,1993,Drama,7984
+The Truman Show,1998,Comedy;Drama,37165
+Platoon,1986,Drama;War;Action,792
+Stand by Me,1986,Crime;Drama,235
+It Happened One Night,1934,Comedy;Romance,3078
+Eskiya,1996,Crime;Drama;Thriller,26900
+Network,1976,Drama,10774
+Stalker,1979,Science Fiction;Drama,1398
+Persona,1966,Drama,797
+Salinui chueok,2003,Crime;Drama;Thriller,11423
+Ben-Hur,1959,History;Drama;Adventure;Action,665
+Hotel Rwanda,2004,Drama;History;War,205
+Million Dollar Baby,2004,Drama,70
+La passion de Jeanne d'Arc,1928,Drama;History,780
+Rush,2013,Drama;Action,96721
+Andrey Rublev,1966,Drama;History,895
+Le salaire de la peur,1953,Drama;Thriller;Adventure,204
+Before Sunrise,1995,Drama;Romance,76
+Les quatre cents coups,1959,Drama,147
+Prisoners,2013,Drama;Thriller;Crime,146233
+Hachi: A Dog's Tale,2009,Drama;Family,28178
+Logan,2017,Action;Drama;Science Fiction,263115
+Rang De Basanti,2006,Comedy;Drama;History;Romance,7913
+Amores perros,2000,Drama;Thriller,55
+The Princess Bride,1987,Adventure;Family;Fantasy;Comedy;Romance,2493
+Catch Me If You Can,2002,Drama;Crime,640
+Kaze no tani no Naushika,1984,Adventure;Animation;Fantasy,81
+Harry Potter and the Deathly Hallows: Part 2,2011,Fantasy;Adventure,12445
+Butch Cassidy and the Sundance Kid,1969,Western;Adventure;Crime;Drama;History,642
+Rocky,1976,Drama,1366
+Barry Lyndon,1975,Drama;Romance;War;History,3175
+"Monsters, Inc.",2001,Animation;Comedy;Family,585
+The Grapes of Wrath,1940,Drama,596
+The Maltese Falcon,1941,Mystery;Crime;Thriller,963
+Dead Poets Society,1989,Drama,207
+Donnie Darko,2001,Fantasy;Drama;Mystery,141
+The Terminator,1984,Action;Thriller;Science Fiction,218
+Gandhi,1982,Drama;History,783
+Les diaboliques,1955,Thriller;Mystery,827
+La haine,1995,Drama,406
+Groundhog Day,1993,Romance;Fantasy;Drama;Comedy,137
+The Wizard of Oz,1939,Adventure;Fantasy;Family,630
+Jaws,1975,Horror;Thriller;Adventure,578
+Le notti di Cabiria,1957,Drama,19426
+The Help,2011,Drama,50014
+Faa yeung nin wa,2000,,
+Mandariinid,2013,Drama;War,238628
+Paper Moon,1973,Comedy;Crime;Drama,11293
+Ah-ga-ssi,2016,Thriller;Drama;Romance,290098
+"Paris, Texas",1984,Drama,655
+The Best Years of Our Lives,1946,Drama;Romance;War,887
+Tenkû no shiro Rapyuta,1986,Adventure;Fantasy;Animation;Action;Family,10515
+Pirates of the Caribbean: The Curse of the Black Pearl,2003,Adventure;Fantasy;Action,22
+Guardians of the Galaxy,2014,Action;Science Fiction;Adventure,118340
+Fanny och Alexander,1982,Fantasy;Drama;Mystery,5961
+Tsubaki Sanjûrô,1962,Drama;Action;Comedy,11712
+Gangs of Wasseypur,2012,Crime;Thriller;Action,126400
+Drishyam,2015,Crime;Mystery;Thriller,352173
+Dave Vis,,,1113688
+Harakiri,1962,Action;Drama;History,14537
+Come and See,1985,Drama;War,25237
+Seven Samurai,1954,Action;Drama,346
+The Human Condition III: A Soldier's Prayer,1961,War;Drama;History,34530
+High and Low,1963,Drama;Crime;Mystery;Thriller,12493
+The Godfather Part II,1974,Drama;Crime,240
+The Human Condition I: No Greater Love,1959,War;Drama;History,31217
+A Brighter Summer Day,1991,Crime;Drama;Romance,15804
+"The Good, the Bad and the Ugly",1966,Western,429
+Le Trou,1960,Drama;Thriller;Crime,29259
+Cinema Paradiso,1988,Drama;Romance,11216
+Autumn Sonata,1978,Drama,12761
+Grave of the Fireflies,1988,Animation;Drama;War,12477
+Neon Genesis Evangelion: The End of Evangelion,1997,Animation;Science Fiction;Action;Drama,18491
+Woman in the Dunes,1964,Drama;Thriller,16672
+The Human Condition II: Road to Eternity,1959,War;Drama;History,34528
+Andrei Rublev,1966,Drama;History,895
+Tokyo Story,1953,Drama,18148
+Sunset Boulevard,1950,Drama,599
+The Cranes Are Flying,1957,Drama;Romance;War,38360
+The Passion of Joan of Arc,1928,Drama;History,780
+Mishima: A Life in Four Chapters,1985,Drama,27064
+Fanny and Alexander,1982,Fantasy;Drama;Mystery,5961
+The Battle of Algiers,1966,Drama;War;History,17295
+Close-Up,1990,Crime;Drama,30017
+Spider-Man: Across the Spider-Verse,2023,Animation;Action;Adventure;Science Fiction,569094
+The Ascent,1977,Drama;War,50183
+I Am Cuba,1964,Drama,32015
+Sansho the Bailiff,1954,Drama,20532
+The Empire Strikes Back,1980,Adventure;Action;Science Fiction,1891
+The Red Shoes,1948,Drama;Romance,19542
+Do the Right Thing,1989,Drama,925
+A Woman Under the Influence,1974,Drama;Romance,29845
+Nights of Cabiria,1957,Drama,19426
+Nobody Knows,2004,Drama,2517
+Once Upon a Time in the West,1968,Drama;Western,335
+Perfect Blue,1997,Animation;Thriller,10494
+Princess Mononoke,1997,Adventure;Fantasy;Animation,128
+Red Beard,1965,Drama,3780
+Love Exposure,2008,Action;Comedy;Drama;Romance,28422
+Eternity and a Day,1998,Drama,24858
+Life Is Beautiful,1997,Comedy;Drama,637
+Scenes from a Marriage,1973,,
+Satantango,1994,Drama,31414
+It's Such a Beautiful Day,2012,Animation;Comedy,489412
+Where Is the Friend's House?,1987,Drama;Family;Adventure,49964
+An Elephant Sitting Still,2018,Drama,499556
+Landscape in the Mist,1988,Drama,47795
+Army of Shadows,1969,War;History;Thriller,15383
+Apur Sansar,1959,Drama,896
+Farewell My Concubine,1993,Drama,10997
+Ordet,1955,Drama,48035
+A Man Escaped,1956,Drama;Thriller,15244
+The Wages of Fear,1953,Drama;Thriller;Adventure,204
+Three Colours: Red,1994,Drama;Mystery;Romance,110
+How to Make Millions Before Grandma Dies,2024,Drama,1103621
+Late Spring,1949,Drama,20530
+All That Jazz,1979,Drama,16858
+The Seventh Seal,1957,Fantasy;Drama,490
+Wild Strawberries,1957,Drama,614
+Z,1969,Thriller;Crime;Drama,2721
+Still Walking,2008,Drama;Family,25050
+Mirror,1975,Mystery;Drama;Horror,137103
+Central Station,1998,Drama,666
+I'm Still Here,2024,Drama;History,1000837
+Brief Encounter,1945,Drama;Romance,851
+Raise the Red Lantern,1991,Drama,10404
+To Be or Not to Be,1942,Comedy;War;Romance,198
+Monster,2003,Crime;Drama,504
+Funeral Parade of Roses,1969,Drama,1556
+The Young Girls of Rochefort,1967,Romance;Comedy;Drama,2433
+Taste of Cherry,1997,Drama,30020
+A Special Day,1977,Drama;Romance,42229
+Pather Panchali,1955,Drama,5801
+Mommy,2014,Drama,265177
+Tampopo,1985,Comedy,11830
+Dog Day Afternoon,1975,Crime;Drama;Thriller,968
+Swing Girls,2004,Comedy;Music,36592
+The 400 Blows,1959,Drama,147
+Rocco and His Brothers,1960,Drama;Romance,8422
+Wings of Desire,1987,Drama;Fantasy;Romance,144
+The Celebration,1998,Drama,309
+Werckmeister Harmonies,2000,Drama,23160
+M,1931,Drama;Science Fiction;Romance,3007
+Yojimbo,1961,Drama;Thriller,11878
+Shoplifters,2018,Drama;Crime;Thriller,505192
+Bicycle Thieves,1948,Drama,5156
+The Sacrifice,1986,Drama,24657
+Sing Sing,2023,Drama,1155828
+Underground,1995,Comedy;Drama;War,11902
+The Father,2020,Drama,600354
+8½,1963,Drama,422
+Opening Night,1977,Drama,33665
+Chungking Express,1994,Drama;Comedy;Romance,11104
+La Notte,1961,Drama;Romance,41050
+The Hunt,2012,Action;Horror;Thriller,152578
+Akira,1988,Animation;Science Fiction;Action,149
+Nostalgia,1983,Drama;Romance,1394
+The Cremator,1969,Comedy;Horror;Drama,18352
+Children of Paradise,1945,Drama;Romance,2457
+Evangelion: 3.0+1.0 Thrice Upon a Time,2021,Animation;Action;Science Fiction;Drama,283566
+Secrets & Lies,1996,Drama,11159
+The Man Who Shot Liberty Valance,1962,Western,11697
+Throne of Blood,1957,Drama;History,3777
+Twin Peaks: Fire Walk with Me,1992,Drama;Mystery;Horror,1923
+La Dolce Vita,1960,Comedy;Drama,439
+Samurai Rebellion,1967,Drama;History;Action,27031
+Dersu Uzala,1975,Adventure;Drama,9764
+"Life, and Nothing More…",1992,Drama;Adventure,83761
+Ace in the Hole,1951,Drama,25364
+"Jeanne Dielman, 23, quai du Commerce, 1080 Bruxelles",1975,Drama,44012
+The Night of the Hunter,1955,Crime;Drama;Thriller,3112
+The Iron Giant,1999,Animation;Family;Science Fiction;Adventure,10386
+Who's Afraid of Virginia Woolf?,1966,Drama,396
+Look Back,2024,Animation;Drama,1244492
+Cure,1997,Crime;Thriller;Horror;Mystery,36095
+Ugetsu,1953,Fantasy;Drama;Mystery,14696
+Rififi,1955,Crime;Thriller;Drama,934
+Malcolm X,1992,Drama;History,1883
+A Matter of Life and Death,1946,Romance;Fantasy;Drama;War;Comedy,28162
+Ritual,2000,Drama,378181
+The Tale of The Princess Kaguya,2013,Animation;Drama;Fantasy,149871
+Sorcerer,1977,Thriller;Adventure;Drama,38985
+Aparajito,1956,Drama,897
+Umberto D.,1952,Drama,833
+Winter Light,1963,Drama,29455
+Puella Magi Madoka Magica the Movie Part III: Rebellion,2013,Mystery;Animation;Fantasy,212162
+We All Loved Each Other So Much,1974,Drama;Comedy,42269
+The First Slam Dunk,2022,Animation;Comedy;Drama,783675
+Sweet Smell of Success,1957,Drama,976
+Marcel the Shell with Shoes On,2021,Animation;Comedy;Drama;Family,869626
+Song of the Sea,2014,Family;Animation;Fantasy,110416
+Interstella 5555: The 5tory of the 5ecret 5tar 5ystem,2003,Animation;Science Fiction;Music;Adventure,11049
+Il Sorpasso,1962,Drama;Comedy;Adventure,24188
+Anatomy of a Murder,1959,Crime;Drama;Mystery,93
+The Face of Another,1966,Drama;Science Fiction,29452
+The King of Comedy,1982,Drama;Comedy,262
+"4 Months, 3 Weeks and 2 Days",2007,Drama,2009
+Napoleon,2023,History;War;Romance,753342
+Azur & Asmar: The Princes' Quest,2006,Animation;Family,19026
+Kes,1969,Drama,13384
+Fail Safe,1964,Thriller;Drama;War,502
+Tokyo Godfathers,2003,Animation;Drama;Comedy,13398
+Solaris,1972,Drama;Science Fiction;Mystery,593
+Kwaidan,1964,Horror;Fantasy;Drama,30959
+Le Samouraï,1967,Crime;Thriller;Drama,5511
+The Disappearance of Haruhi Suzumiya,2010,Animation;Comedy;Science Fiction;Mystery;Drama,36865
+An Autumn Afternoon,1962,Drama,50759
+The Life and Death of Colonel Blimp,1943,War;Drama;Romance;Comedy,25037
+Millennium Actress,2001,Animation;Drama;Romance;Fantasy,33320
+Poetry,2010,Drama,47909

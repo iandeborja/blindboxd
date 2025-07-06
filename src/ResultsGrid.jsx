@@ -117,7 +117,9 @@ export default function ResultsGrid({ rankings, movies, selectedCategory }) {
             margin: '0',
             fontWeight: '500',
           }}>
-            {selectedCategory?.type === 'genre' 
+            {selectedCategory?.type === 'greatest'
+              ? 'The Greatest Films of All Time'
+              : selectedCategory?.type === 'genre' 
               ? selectedCategory.value 
               : selectedCategory?.type === 'decade' 
               ? selectedCategory.value 

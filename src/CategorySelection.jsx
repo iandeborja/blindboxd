@@ -7,13 +7,14 @@ const oscarDecades = ['1980s', '1990s', '2000s', '2010s', '2020s'];
 export default function CategorySelection({ onCategorySelect }) {
   // Build a unified list of options with group labels
   const options = [
+    { label: 'The GOATs', type: 'greatest', value: 'alltime', group: 'The Greatest Films of All Time' },
     ...decades.map((d) => ({ label: d, type: 'decade', value: d, group: 'Decades' })),
     ...oscarDecades.map((d) => ({ label: d, type: 'oscar', value: d, group: 'Oscar Winners' })),
     ...genres.map((g) => ({ label: g, type: 'genre', value: g, group: 'Genres' })),
   ];
 
   // For section labels in the grid
-  const groupOrder = ['Decades', 'Oscar Winners', 'Genres'];
+  const groupOrder = ['The Greatest Films of All Time', 'Decades', 'Oscar Winners', 'Genres'];
 
   return (
     <div style={{
@@ -51,6 +52,12 @@ export default function CategorySelection({ onCategorySelect }) {
         }}>
           Pick a category. Make a Top 10 List without knowing the movies.
         </span>
+        <div style={{
+        }}>
+          <div style={{
+          }}>
+          </div>
+        </div>
       </nav>
       <main style={{
         maxWidth: 900,
@@ -93,11 +100,29 @@ export default function CategorySelection({ onCategorySelect }) {
               background: #fff;
               padding: 0;
             }
+            .goat-desc {
+              font-size: 13px;
+              color: #666;
+              font-weight: 400;
+              margin-top: 2px;
+              margin-bottom: 10px;
+              line-height: 1.5;
+              letter-spacing: 0;
+              text-align: left;
+              background: #fff;
+            }
           `}
         </style>
+        {/* GOATs section label and description above the grid */}
+        <div>
+          <div className="category-label">The Greatest Films of All Time</div>
+          <div className="goat-desc">
+            (Movies on Letterboxd's Top 250 Narrative Films, IMDb's Top 250, and The New York Times' 100 Best Movies of the 21st Century lists)
+          </div>
+        </div>
         <div className="category-grid">
           {groupOrder.map((group) => [
-            <div className="category-label" key={group}>{group}</div>,
+            group !== 'The Greatest Films of All Time' && <div className="category-label" key={group}>{group}</div>,
             ...options.filter((opt) => opt.group === group).map((opt) => (
               <button
                 key={opt.type + '-' + opt.value}

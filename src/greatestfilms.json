@@ -1,0 +1,2984 @@
+[
+  {
+    "Movie Title": "Parasite",
+    "Year": "2019",
+    "Genre": "Comedy;Thriller;Drama",
+    "tmdb_id": "496243"
+  },
+  {
+    "Movie Title": "Mulholland Drive",
+    "Year": "2001",
+    "Genre": "Thriller;Drama;Mystery",
+    "tmdb_id": "1018"
+  },
+  {
+    "Movie Title": "There Will Be Blood",
+    "Year": "2007",
+    "Genre": "Drama",
+    "tmdb_id": "7345"
+  },
+  {
+    "Movie Title": "In the Mood for Love",
+    "Year": "2000",
+    "Genre": "Drama;Romance",
+    "tmdb_id": "843"
+  },
+  {
+    "Movie Title": "Moonlight",
+    "Year": "2016",
+    "Genre": "Drama",
+    "tmdb_id": "376867"
+  },
+  {
+    "Movie Title": "No Country for Old Men",
+    "Year": "2007",
+    "Genre": "Crime;Drama;Thriller",
+    "tmdb_id": "6977"
+  },
+  {
+    "Movie Title": "Eternal Sunshine of the Spotless Mind",
+    "Year": "2004",
+    "Genre": "Science Fiction;Drama;Romance",
+    "tmdb_id": "38"
+  },
+  {
+    "Movie Title": "Get Out",
+    "Year": "2017",
+    "Genre": "Mystery;Thriller;Horror",
+    "tmdb_id": "419430"
+  },
+  {
+    "Movie Title": "Spirited Away",
+    "Year": "2001",
+    "Genre": "Animation;Family;Fantasy",
+    "tmdb_id": "129"
+  },
+  {
+    "Movie Title": "The Social Network",
+    "Year": "2010",
+    "Genre": "Drama",
+    "tmdb_id": "37799"
+  },
+  {
+    "Movie Title": "Mad Max: Fury Road",
+    "Year": "2015",
+    "Genre": "Action;Adventure;Science Fiction",
+    "tmdb_id": "76341"
+  },
+  {
+    "Movie Title": "The Zone of Interest",
+    "Year": "2023",
+    "Genre": "Drama;History;War",
+    "tmdb_id": "467244"
+  },
+  {
+    "Movie Title": "Children of Men",
+    "Year": "2006",
+    "Genre": "Drama;Action;Thriller;Science Fiction",
+    "tmdb_id": "9693"
+  },
+  {
+    "Movie Title": "Inglourious Basterds",
+    "Year": "2009",
+    "Genre": "Drama;Thriller;War",
+    "tmdb_id": "16869"
+  },
+  {
+    "Movie Title": "City of God",
+    "Year": "2002",
+    "Genre": "Drama;Crime",
+    "tmdb_id": "598"
+  },
+  {
+    "Movie Title": "Crouching Tiger, Hidden Dragon",
+    "Year": "2000",
+    "Genre": "Adventure;Drama;Action;Romance",
+    "tmdb_id": "146"
+  },
+  {
+    "Movie Title": "Brokeback Mountain",
+    "Year": "2005",
+    "Genre": "Drama;Romance",
+    "tmdb_id": "142"
+  },
+  {
+    "Movie Title": "Y Tu Mamá También",
+    "Year": "2001",
+    "Genre": "Drama;Romance",
+    "tmdb_id": "1391"
+  },
+  {
+    "Movie Title": "Zodiac",
+    "Year": "2007",
+    "Genre": "Crime;Drama;Mystery;Thriller",
+    "tmdb_id": "1949"
+  },
+  {
+    "Movie Title": "The Wolf of Wall Street",
+    "Year": "2013",
+    "Genre": "Crime;Drama;Comedy",
+    "tmdb_id": "106646"
+  },
+  {
+    "Movie Title": "The Royal Tenenbaums",
+    "Year": "2001",
+    "Genre": "Comedy;Drama",
+    "tmdb_id": "9428"
+  },
+  {
+    "Movie Title": "The Grand Budapest Hotel",
+    "Year": "2014",
+    "Genre": "Comedy;Drama",
+    "tmdb_id": "120467"
+  },
+  {
+    "Movie Title": "Boyhood",
+    "Year": "2014",
+    "Genre": "Drama",
+    "tmdb_id": "85350"
+  },
+  {
+    "Movie Title": "Her",
+    "Year": "2013",
+    "Genre": "Romance;Science Fiction;Drama",
+    "tmdb_id": "152601"
+  },
+  {
+    "Movie Title": "Phantom Thread",
+    "Year": "2017",
+    "Genre": "Drama;Romance",
+    "tmdb_id": "400617"
+  },
+  {
+    "Movie Title": "Anatomy of a Fall",
+    "Year": "2023",
+    "Genre": "Thriller;Mystery;Crime",
+    "tmdb_id": "915935"
+  },
+  {
+    "Movie Title": "Adaptation.",
+    "Year": "2002",
+    "Genre": "Comedy;Crime;Drama",
+    "tmdb_id": "2757"
+  },
+  {
+    "Movie Title": "The Dark Knight",
+    "Year": "2008",
+    "Genre": "Drama;Action;Crime;Thriller",
+    "tmdb_id": "155"
+  },
+  {
+    "Movie Title": "Arrival",
+    "Year": "2016",
+    "Genre": "Drama;Science Fiction;Mystery",
+    "tmdb_id": "329865"
+  },
+  {
+    "Movie Title": "Lost in Translation",
+    "Year": "2003",
+    "Genre": "Drama;Romance;Comedy",
+    "tmdb_id": "153"
+  },
+  {
+    "Movie Title": "The Departed",
+    "Year": "2006",
+    "Genre": "Drama;Thriller;Crime",
+    "tmdb_id": "1422"
+  },
+  {
+    "Movie Title": "Bridesmaids",
+    "Year": "2011",
+    "Genre": "Comedy;Romance",
+    "tmdb_id": "55721"
+  },
+  {
+    "Movie Title": "A Separation",
+    "Year": "2011",
+    "Genre": "Drama",
+    "tmdb_id": "60243"
+  },
+  {
+    "Movie Title": "WALL·E",
+    "Year": "2008",
+    "Genre": "Animation;Family;Science Fiction",
+    "tmdb_id": "10681"
+  },
+  {
+    "Movie Title": "A Prophet",
+    "Year": "2009",
+    "Genre": "Crime;Drama",
+    "tmdb_id": "21575"
+  },
+  {
+    "Movie Title": "A Serious Man",
+    "Year": "2009",
+    "Genre": "Comedy;Drama",
+    "tmdb_id": "12573"
+  },
+  {
+    "Movie Title": "Call Me by Your Name",
+    "Year": "2017",
+    "Genre": "Romance;Drama",
+    "tmdb_id": "398818"
+  },
+  {
+    "Movie Title": "Portrait of a Lady on Fire",
+    "Year": "2019",
+    "Genre": "Drama;Romance;History",
+    "tmdb_id": "531428"
+  },
+  {
+    "Movie Title": "Lady Bird",
+    "Year": "2017",
+    "Genre": "Drama;Comedy",
+    "tmdb_id": "391713"
+  },
+  {
+    "Movie Title": "Yi Yi",
+    "Year": "2000",
+    "Genre": "Drama",
+    "tmdb_id": "25538"
+  },
+  {
+    "Movie Title": "Amélie",
+    "Year": "2001",
+    "Genre": "Comedy;Romance",
+    "tmdb_id": "194"
+  },
+  {
+    "Movie Title": "The Master",
+    "Year": "2012",
+    "Genre": "Drama",
+    "tmdb_id": "68722"
+  },
+  {
+    "Movie Title": "Oldboy",
+    "Year": "2003",
+    "Genre": "Drama;Thriller;Mystery;Action",
+    "tmdb_id": "670"
+  },
+  {
+    "Movie Title": "Once Upon a Time... in Hollywood",
+    "Year": "2019",
+    "Genre": "Comedy;Drama;Thriller",
+    "tmdb_id": "466272"
+  },
+  {
+    "Movie Title": "Moneyball",
+    "Year": "2011",
+    "Genre": "Drama",
+    "tmdb_id": "60308"
+  },
+  {
+    "Movie Title": "Roma",
+    "Year": "2018",
+    "Genre": "Drama",
+    "tmdb_id": "426426"
+  },
+  {
+    "Movie Title": "Almost Famous",
+    "Year": "2000",
+    "Genre": "Drama;Music",
+    "tmdb_id": "786"
+  },
+  {
+    "Movie Title": "The Lives of Others",
+    "Year": "2006",
+    "Genre": "Drama;Thriller",
+    "tmdb_id": "582"
+  },
+  {
+    "Movie Title": "Before Sunset",
+    "Year": "2004",
+    "Genre": "Drama;Romance",
+    "tmdb_id": "80"
+  },
+  {
+    "Movie Title": "Up",
+    "Year": "2009",
+    "Genre": "Animation;Comedy;Family;Adventure",
+    "tmdb_id": "14160"
+  },
+  {
+    "Movie Title": "12 Years a Slave",
+    "Year": "2013",
+    "Genre": "Drama;History",
+    "tmdb_id": "76203"
+  },
+  {
+    "Movie Title": "The Favourite",
+    "Year": "2018",
+    "Genre": "History;Comedy;Drama",
+    "tmdb_id": "375262"
+  },
+  {
+    "Movie Title": "Borat: Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan",
+    "Year": "2006",
+    "Genre": "Comedy",
+    "tmdb_id": "496"
+  },
+  {
+    "Movie Title": "Pan's Labyrinth",
+    "Year": "2006",
+    "Genre": "Fantasy;Drama;War",
+    "tmdb_id": "1417"
+  },
+  {
+    "Movie Title": "Inception",
+    "Year": "2010",
+    "Genre": "Action;Science Fiction;Adventure",
+    "tmdb_id": "27205"
+  },
+  {
+    "Movie Title": "Punch-Drunk Love",
+    "Year": "2002",
+    "Genre": "Romance;Drama;Comedy",
+    "tmdb_id": "8051"
+  },
+  {
+    "Movie Title": "Best in Show",
+    "Year": "2000",
+    "Genre": "Comedy",
+    "tmdb_id": "13785"
+  },
+  {
+    "Movie Title": "Uncut Gems",
+    "Year": "2019",
+    "Genre": "Drama;Thriller;Crime",
+    "tmdb_id": "473033"
+  },
+  {
+    "Movie Title": "Toni Erdmann",
+    "Year": "2016",
+    "Genre": "Comedy;Drama",
+    "tmdb_id": "374475"
+  },
+  {
+    "Movie Title": "Whiplash",
+    "Year": "2014",
+    "Genre": "Drama;Music",
+    "tmdb_id": "244786"
+  },
+  {
+    "Movie Title": "Kill Bill: Vol. 1",
+    "Year": "2003",
+    "Genre": "Action;Crime",
+    "tmdb_id": "24"
+  },
+  {
+    "Movie Title": "Memento",
+    "Year": "2000",
+    "Genre": "Mystery;Thriller",
+    "tmdb_id": "77"
+  },
+  {
+    "Movie Title": "Little Miss Sunshine",
+    "Year": "2006",
+    "Genre": "Comedy;Drama",
+    "tmdb_id": "773"
+  },
+  {
+    "Movie Title": "Gone Girl",
+    "Year": "2014",
+    "Genre": "Mystery;Thriller;Drama",
+    "tmdb_id": "210577"
+  },
+  {
+    "Movie Title": "Oppenheimer",
+    "Year": "2023",
+    "Genre": "Drama;History",
+    "tmdb_id": "872585"
+  },
+  {
+    "Movie Title": "Spotlight",
+    "Year": "2015",
+    "Genre": "Drama;History",
+    "tmdb_id": "314365"
+  },
+  {
+    "Movie Title": "TÁR",
+    "Year": "2022",
+    "Genre": "Music;Drama",
+    "tmdb_id": "817758"
+  },
+  {
+    "Movie Title": "The Hurt Locker",
+    "Year": "2008",
+    "Genre": "Drama;Thriller;War",
+    "tmdb_id": "12162"
+  },
+  {
+    "Movie Title": "Under the Skin",
+    "Year": "2013",
+    "Genre": "Thriller;Science Fiction;Drama",
+    "tmdb_id": "97370"
+  },
+  {
+    "Movie Title": "Let the Right One In",
+    "Year": "2008",
+    "Genre": "Horror;Drama",
+    "tmdb_id": "13310"
+  },
+  {
+    "Movie Title": "Ocean's Eleven",
+    "Year": "2001",
+    "Genre": "Thriller;Crime",
+    "tmdb_id": "161"
+  },
+  {
+    "Movie Title": "Carol",
+    "Year": "2015",
+    "Genre": "Romance;Drama",
+    "tmdb_id": "258480"
+  },
+  {
+    "Movie Title": "Ratatouille",
+    "Year": "2007",
+    "Genre": "Animation;Comedy;Family;Fantasy",
+    "tmdb_id": "2062"
+  },
+  {
+    "Movie Title": "The Florida Project",
+    "Year": "2017",
+    "Genre": "Drama",
+    "tmdb_id": "394117"
+  },
+  {
+    "Movie Title": "Amour",
+    "Year": "2012",
+    "Genre": "Drama;Romance",
+    "tmdb_id": "86837"
+  },
+  {
+    "Movie Title": "O Brother, Where Art Thou?",
+    "Year": "2000",
+    "Genre": "Adventure;Comedy;Crime",
+    "tmdb_id": "134"
+  },
+  {
+    "Movie Title": "Everything Everywhere All at Once",
+    "Year": "2022",
+    "Genre": "Action;Adventure;Science Fiction",
+    "tmdb_id": "545611"
+  },
+  {
+    "Movie Title": "Aftersun",
+    "Year": "2022",
+    "Genre": "Drama",
+    "tmdb_id": "965150"
+  },
+  {
+    "Movie Title": "The Tree of Life",
+    "Year": "2011",
+    "Genre": "Drama;Fantasy",
+    "tmdb_id": "8967"
+  },
+  {
+    "Movie Title": "Volver",
+    "Year": "2006",
+    "Genre": "Comedy;Drama;Romance",
+    "tmdb_id": "219"
+  },
+  {
+    "Movie Title": "Black Swan",
+    "Year": "2010",
+    "Genre": "Drama;Thriller;Horror",
+    "tmdb_id": "44214"
+  },
+  {
+    "Movie Title": "The Act of Killing",
+    "Year": "2012",
+    "Genre": "Documentary",
+    "tmdb_id": "123678"
+  },
+  {
+    "Movie Title": "Inside Llewyn Davis",
+    "Year": "2013",
+    "Genre": "Drama;Music",
+    "tmdb_id": "86829"
+  },
+  {
+    "Movie Title": "Melancholia",
+    "Year": "2011",
+    "Genre": "Drama;Science Fiction",
+    "tmdb_id": "62215"
+  },
+  {
+    "Movie Title": "Anchorman: The Legend of Ron Burgundy",
+    "Year": "2004",
+    "Genre": "Comedy",
+    "tmdb_id": "8699"
+  },
+  {
+    "Movie Title": "Past Lives",
+    "Year": "2023",
+    "Genre": "Drama;Romance",
+    "tmdb_id": "666277"
+  },
+  {
+    "Movie Title": "The Lord of the Rings: The Fellowship of the Ring",
+    "Year": "2001",
+    "Genre": "Adventure;Fantasy;Action",
+    "tmdb_id": "120"
+  },
+  {
+    "Movie Title": "The Gleaners and I",
+    "Year": "2000",
+    "Genre": "Documentary",
+    "tmdb_id": "44379"
+  },
+  {
+    "Movie Title": "Interstellar",
+    "Year": "2014",
+    "Genre": "Adventure;Drama;Science Fiction",
+    "tmdb_id": "157336"
+  },
+  {
+    "Movie Title": "Frances Ha",
+    "Year": "2012",
+    "Genre": "Comedy;Drama",
+    "tmdb_id": "121986"
+  },
+  {
+    "Movie Title": "Fish Tank",
+    "Year": "2009",
+    "Genre": "Drama",
+    "tmdb_id": "24469"
+  },
+  {
+    "Movie Title": "Gladiator",
+    "Year": "2000",
+    "Genre": "Action;Drama;Adventure",
+    "tmdb_id": "98"
+  },
+  {
+    "Movie Title": "Michael Clayton",
+    "Year": "2007",
+    "Genre": "Drama;Thriller;Crime",
+    "tmdb_id": "4566"
+  },
+  {
+    "Movie Title": "Minority Report",
+    "Year": "2002",
+    "Genre": "Science Fiction;Action;Thriller",
+    "tmdb_id": "180"
+  },
+  {
+    "Movie Title": "The Worst Person in the World",
+    "Year": "2021",
+    "Genre": "Drama;Romance;Comedy",
+    "tmdb_id": "660120"
+  },
+  {
+    "Movie Title": "Black Panther",
+    "Year": "2018",
+    "Genre": "Action;Adventure;Science Fiction",
+    "tmdb_id": "284054"
+  },
+  {
+    "Movie Title": "Gravity",
+    "Year": "2013",
+    "Genre": "Science Fiction;Thriller;Drama",
+    "tmdb_id": "49047"
+  },
+  {
+    "Movie Title": "Grizzly Man",
+    "Year": "2005",
+    "Genre": "Music;Documentary",
+    "tmdb_id": "288430"
+  },
+  {
+    "Movie Title": "Memories of Murder",
+    "Year": "2003",
+    "Genre": "Crime;Drama;Thriller",
+    "tmdb_id": "11423"
+  },
+  {
+    "Movie Title": "Superbad",
+    "Year": "2007",
+    "Genre": "Comedy",
+    "tmdb_id": "8363"
+  },
+  {
+    "Movie Title": "The Lord of the Rings: The Return of the King",
+    "Year": "2003",
+    "Genre": "Adventure;Fantasy;Action",
+    "tmdb_id": "122"
+  },
+  {
+    "Movie Title": "La La Land",
+    "Year": "2016",
+    "Genre": "Comedy;Drama;Romance;Music",
+    "tmdb_id": "313369"
+  },
+  {
+    "Movie Title": "Dune: Part Two",
+    "Year": "2024",
+    "Genre": "Science Fiction;Adventure",
+    "tmdb_id": "693134"
+  },
+  {
+    "Movie Title": "Spider-Man: Into the Spider-Verse",
+    "Year": "2018",
+    "Genre": "Animation;Action;Adventure;Science Fiction",
+    "tmdb_id": "324857"
+  },
+  {
+    "Movie Title": "The Lord of the Rings: The Two Towers",
+    "Year": "2002",
+    "Genre": "Adventure;Fantasy;Action",
+    "tmdb_id": "121"
+  },
+  {
+    "Movie Title": "Pride & Prejudice",
+    "Year": "2005",
+    "Genre": "Drama;Romance",
+    "tmdb_id": "4348"
+  },
+  {
+    "Movie Title": "Sinners",
+    "Year": "",
+    "Genre": "Horror;Action;Thriller",
+    "tmdb_id": "1233413"
+  },
+  {
+    "Movie Title": "Django Unchained",
+    "Year": "2012",
+    "Genre": "Drama;Western",
+    "tmdb_id": "68718"
+  },
+  {
+    "Movie Title": "Little Women",
+    "Year": "2019",
+    "Genre": "Drama;Romance;History",
+    "tmdb_id": "331482"
+  },
+  {
+    "Movie Title": "Hereditary",
+    "Year": "2018",
+    "Genre": "Horror;Mystery;Thriller",
+    "tmdb_id": "493922"
+  },
+  {
+    "Movie Title": "Blade Runner 2049",
+    "Year": "2017",
+    "Genre": "Science Fiction;Drama",
+    "tmdb_id": "335984"
+  },
+  {
+    "Movie Title": "Fantastic Mr. Fox",
+    "Year": "2009",
+    "Genre": "Adventure;Animation;Comedy;Family",
+    "tmdb_id": "10315"
+  },
+  {
+    "Movie Title": "The Handmaiden",
+    "Year": "2016",
+    "Genre": "Thriller;Drama;Romance",
+    "tmdb_id": "290098"
+  },
+  {
+    "Movie Title": "The Prestige",
+    "Year": "2006",
+    "Genre": "Drama;Mystery;Science Fiction",
+    "tmdb_id": "1124"
+  },
+  {
+    "Movie Title": "Mean Girls",
+    "Year": "2004",
+    "Genre": "Drama;Comedy",
+    "tmdb_id": "10625"
+  },
+  {
+    "Movie Title": "Perfect Days",
+    "Year": "2023",
+    "Genre": "Drama",
+    "tmdb_id": "976893"
+  },
+  {
+    "Movie Title": "Barbie",
+    "Year": "2023",
+    "Genre": "Comedy;Adventure",
+    "tmdb_id": "346698"
+  },
+  {
+    "Movie Title": "Dune",
+    "Year": "2021",
+    "Genre": "Science Fiction;Adventure",
+    "tmdb_id": "438631"
+  },
+  {
+    "Movie Title": "Top Gun: Maverick",
+    "Year": "2022",
+    "Genre": "Action;Drama",
+    "tmdb_id": "361743"
+  },
+  {
+    "Movie Title": "Drive My Car",
+    "Year": "2021",
+    "Genre": "Drama",
+    "tmdb_id": "758866"
+  },
+  {
+    "Movie Title": "Knives Out",
+    "Year": "2019",
+    "Genre": "Comedy;Crime;Mystery",
+    "tmdb_id": "546554"
+  },
+  {
+    "Movie Title": "The Incredibles",
+    "Year": "2004",
+    "Genre": "Action;Adventure;Animation;Family",
+    "tmdb_id": "9806"
+  },
+  {
+    "Movie Title": "Killers of the Flower Moon",
+    "Year": "2023",
+    "Genre": "Crime;History;Drama",
+    "tmdb_id": "466420"
+  },
+  {
+    "Movie Title": "Howl's Moving Castle",
+    "Year": "2004",
+    "Genre": "Fantasy;Animation;Adventure",
+    "tmdb_id": "4935"
+  },
+  {
+    "Movie Title": "The Lighthouse",
+    "Year": "2019",
+    "Genre": "Drama;Fantasy;Thriller",
+    "tmdb_id": "503919"
+  },
+  {
+    "Movie Title": "The Holdovers",
+    "Year": "2023",
+    "Genre": "Comedy;Drama",
+    "tmdb_id": "840430"
+  },
+  {
+    "Movie Title": "Midsommar",
+    "Year": "2019",
+    "Genre": "Horror;Drama;Mystery",
+    "tmdb_id": "530385"
+  },
+  {
+    "Movie Title": "The Shawshank Redemption",
+    "Year": "1994",
+    "Genre": "Drama;Crime",
+    "tmdb_id": "278"
+  },
+  {
+    "Movie Title": "The Godfather",
+    "Year": "1972",
+    "Genre": "Drama;Crime",
+    "tmdb_id": "238"
+  },
+  {
+    "Movie Title": "The Godfather: Part II",
+    "Year": "1974",
+    "Genre": "Drama;Crime",
+    "tmdb_id": "240"
+  },
+  {
+    "Movie Title": "12 Angry Men",
+    "Year": "1957",
+    "Genre": "Drama",
+    "tmdb_id": "389"
+  },
+  {
+    "Movie Title": "Schindler's List",
+    "Year": "1993",
+    "Genre": "Drama;History;War",
+    "tmdb_id": "424"
+  },
+  {
+    "Movie Title": "Pulp Fiction",
+    "Year": "1994",
+    "Genre": "Thriller;Crime;Comedy",
+    "tmdb_id": "680"
+  },
+  {
+    "Movie Title": "Il buono, il brutto, il cattivo",
+    "Year": "1966",
+    "Genre": "Western",
+    "tmdb_id": "429"
+  },
+  {
+    "Movie Title": "Fight Club",
+    "Year": "1999",
+    "Genre": "Drama",
+    "tmdb_id": "550"
+  },
+  {
+    "Movie Title": "Forrest Gump",
+    "Year": "1994",
+    "Genre": "Comedy;Drama;Romance",
+    "tmdb_id": "13"
+  },
+  {
+    "Movie Title": "Star Wars: Episode V - The Empire Strikes Back",
+    "Year": "1980",
+    "Genre": "Adventure;Action;Science Fiction",
+    "tmdb_id": "1891"
+  },
+  {
+    "Movie Title": "One Flew Over the Cuckoo's Nest",
+    "Year": "1975",
+    "Genre": "Drama",
+    "tmdb_id": "510"
+  },
+  {
+    "Movie Title": "Goodfellas",
+    "Year": "1990",
+    "Genre": "Drama;Crime",
+    "tmdb_id": "769"
+  },
+  {
+    "Movie Title": "The Matrix",
+    "Year": "1999",
+    "Genre": "Action;Science Fiction",
+    "tmdb_id": "603"
+  },
+  {
+    "Movie Title": "Shichinin no samurai",
+    "Year": "1954",
+    "Genre": "Action;Drama",
+    "tmdb_id": "346"
+  },
+  {
+    "Movie Title": "Cidade de Deus",
+    "Year": "2002",
+    "Genre": "Drama;Crime",
+    "tmdb_id": "598"
+  },
+  {
+    "Movie Title": "Se7en",
+    "Year": "1995",
+    "Genre": "Crime;Mystery;Thriller",
+    "tmdb_id": "807"
+  },
+  {
+    "Movie Title": "Star Wars",
+    "Year": "1977",
+    "Genre": "Adventure;Action;Science Fiction",
+    "tmdb_id": "11"
+  },
+  {
+    "Movie Title": "The Silence of the Lambs",
+    "Year": "1991",
+    "Genre": "Crime;Drama;Thriller",
+    "tmdb_id": "274"
+  },
+  {
+    "Movie Title": "It's a Wonderful Life",
+    "Year": "1946",
+    "Genre": "Drama;Family;Fantasy",
+    "tmdb_id": "1585"
+  },
+  {
+    "Movie Title": "La vita è bella",
+    "Year": "1997",
+    "Genre": "Comedy;Drama",
+    "tmdb_id": "637"
+  },
+  {
+    "Movie Title": "The Usual Suspects",
+    "Year": "1995",
+    "Genre": "Drama;Crime;Thriller",
+    "tmdb_id": "629"
+  },
+  {
+    "Movie Title": "Sen to Chihiro no kamikakushi",
+    "Year": "2001",
+    "Genre": "Animation;Family;Fantasy",
+    "tmdb_id": "129"
+  },
+  {
+    "Movie Title": "Saving Private Ryan",
+    "Year": "1998",
+    "Genre": "Drama;History;War",
+    "tmdb_id": "857"
+  },
+  {
+    "Movie Title": "Léon",
+    "Year": "1994",
+    "Genre": "Crime;Drama;Action",
+    "tmdb_id": "101"
+  },
+  {
+    "Movie Title": "The Green Mile",
+    "Year": "1999",
+    "Genre": "Fantasy;Drama;Crime",
+    "tmdb_id": "497"
+  },
+  {
+    "Movie Title": "Psycho",
+    "Year": "1960",
+    "Genre": "Horror;Thriller;Mystery",
+    "tmdb_id": "539"
+  },
+  {
+    "Movie Title": "American History X",
+    "Year": "1998",
+    "Genre": "Drama",
+    "tmdb_id": "73"
+  },
+  {
+    "Movie Title": "City Lights",
+    "Year": "1931",
+    "Genre": "Comedy;Drama;Romance",
+    "tmdb_id": "901"
+  },
+  {
+    "Movie Title": "C'era una volta il West",
+    "Year": "1968",
+    "Genre": "Drama;Western",
+    "tmdb_id": "335"
+  },
+  {
+    "Movie Title": "Casablanca",
+    "Year": "1942",
+    "Genre": "Drama;Romance",
+    "tmdb_id": "289"
+  },
+  {
+    "Movie Title": "Modern Times",
+    "Year": "1936",
+    "Genre": "Comedy;Drama;Romance",
+    "tmdb_id": "3082"
+  },
+  {
+    "Movie Title": "The Pianist",
+    "Year": "2002",
+    "Genre": "Drama;War",
+    "tmdb_id": "423"
+  },
+  {
+    "Movie Title": "Intouchables",
+    "Year": "2011",
+    "Genre": "Drama;Comedy",
+    "tmdb_id": "77338"
+  },
+  {
+    "Movie Title": "Terminator 2: Judgment Day",
+    "Year": "1991",
+    "Genre": "Action;Thriller;Science Fiction",
+    "tmdb_id": "280"
+  },
+  {
+    "Movie Title": "Back to the Future",
+    "Year": "1985",
+    "Genre": "Adventure;Comedy;Science Fiction",
+    "tmdb_id": "105"
+  },
+  {
+    "Movie Title": "Rear Window",
+    "Year": "1954",
+    "Genre": "Thriller;Mystery",
+    "tmdb_id": "567"
+  },
+  {
+    "Movie Title": "Raiders of the Lost Ark",
+    "Year": "1981",
+    "Genre": "Adventure;Action",
+    "tmdb_id": "85"
+  },
+  {
+    "Movie Title": "The Lion King",
+    "Year": "1994",
+    "Genre": "Family;Animation;Drama",
+    "tmdb_id": "8587"
+  },
+  {
+    "Movie Title": "Apocalypse Now",
+    "Year": "1979",
+    "Genre": "Drama;War",
+    "tmdb_id": "28"
+  },
+  {
+    "Movie Title": "Alien",
+    "Year": "1979",
+    "Genre": "Horror;Science Fiction",
+    "tmdb_id": "348"
+  },
+  {
+    "Movie Title": "The Great Dictator",
+    "Year": "1940",
+    "Genre": "Comedy;War",
+    "tmdb_id": "914"
+  },
+  {
+    "Movie Title": "Nuovo Cinema Paradiso",
+    "Year": "1988",
+    "Genre": "Drama;Romance",
+    "tmdb_id": "11216"
+  },
+  {
+    "Movie Title": "Hotaru no haka",
+    "Year": "1988",
+    "Genre": "Animation;Drama;War",
+    "tmdb_id": "12477"
+  },
+  {
+    "Movie Title": "Avengers: Infinity War",
+    "Year": "2018",
+    "Genre": "Adventure;Action;Science Fiction",
+    "tmdb_id": "299536"
+  },
+  {
+    "Movie Title": "Sunset Blvd.",
+    "Year": "1950",
+    "Genre": "Drama",
+    "tmdb_id": "599"
+  },
+  {
+    "Movie Title": "Das Leben der Anderen",
+    "Year": "2006",
+    "Genre": "Drama;Thriller",
+    "tmdb_id": "582"
+  },
+  {
+    "Movie Title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
+    "Year": "1964",
+    "Genre": "Comedy;War",
+    "tmdb_id": "935"
+  },
+  {
+    "Movie Title": "Paths of Glory",
+    "Year": "1957",
+    "Genre": "War;Drama;History",
+    "tmdb_id": "975"
+  },
+  {
+    "Movie Title": "The Shining",
+    "Year": "1980",
+    "Genre": "Horror;Thriller",
+    "tmdb_id": "694"
+  },
+  {
+    "Movie Title": "Mononoke-hime",
+    "Year": "1997",
+    "Genre": "Adventure;Fantasy;Animation",
+    "tmdb_id": "128"
+  },
+  {
+    "Movie Title": "Witness for the Prosecution",
+    "Year": "1957",
+    "Genre": "Drama;Mystery;Crime",
+    "tmdb_id": "37257"
+  },
+  {
+    "Movie Title": "American Beauty",
+    "Year": "1999",
+    "Genre": "Drama",
+    "tmdb_id": "14"
+  },
+  {
+    "Movie Title": "The Dark Knight Rises",
+    "Year": "2012",
+    "Genre": "Action;Crime;Drama;Thriller",
+    "tmdb_id": "49026"
+  },
+  {
+    "Movie Title": "Oldeuboi",
+    "Year": "2003",
+    "Genre": "Drama;Thriller;Mystery;Action",
+    "tmdb_id": "670"
+  },
+  {
+    "Movie Title": "Aliens",
+    "Year": "1986",
+    "Genre": "Action;Thriller;Science Fiction",
+    "tmdb_id": "679"
+  },
+  {
+    "Movie Title": "Once Upon a Time in America",
+    "Year": "1984",
+    "Genre": "Drama;Crime",
+    "tmdb_id": "311"
+  },
+  {
+    "Movie Title": "Coco",
+    "Year": "2017",
+    "Genre": "Family;Animation;Music;Adventure",
+    "tmdb_id": "354912"
+  },
+  {
+    "Movie Title": "Das Boot",
+    "Year": "1981",
+    "Genre": "Drama;History;War",
+    "tmdb_id": "387"
+  },
+  {
+    "Movie Title": "Citizen Kane",
+    "Year": "1941",
+    "Genre": "Mystery;Drama",
+    "tmdb_id": "15"
+  },
+  {
+    "Movie Title": "Braveheart",
+    "Year": "1995",
+    "Genre": "Action;Drama;History;War",
+    "tmdb_id": "197"
+  },
+  {
+    "Movie Title": "Vertigo",
+    "Year": "1958",
+    "Genre": "Mystery;Romance;Thriller",
+    "tmdb_id": "426"
+  },
+  {
+    "Movie Title": "North by Northwest",
+    "Year": "1959",
+    "Genre": "Thriller;Adventure",
+    "tmdb_id": "213"
+  },
+  {
+    "Movie Title": "Reservoir Dogs",
+    "Year": "1992",
+    "Genre": "Crime;Thriller",
+    "tmdb_id": "500"
+  },
+  {
+    "Movie Title": "Star Wars: Episode VI - Return of the Jedi",
+    "Year": "1983",
+    "Genre": "Adventure;Action;Science Fiction",
+    "tmdb_id": "1892"
+  },
+  {
+    "Movie Title": "M - Eine Stadt sucht einen Mörder",
+    "Year": "1931",
+    "Genre": "Drama;Thriller;Crime",
+    "tmdb_id": "832"
+  },
+  {
+    "Movie Title": "Kimi no na wa.",
+    "Year": "2016",
+    "Genre": "Animation;Romance;Drama",
+    "tmdb_id": "372058"
+  },
+  {
+    "Movie Title": "Amadeus",
+    "Year": "1984",
+    "Genre": "History;Music;Drama",
+    "tmdb_id": "279"
+  },
+  {
+    "Movie Title": "Requiem for a Dream",
+    "Year": "2000",
+    "Genre": "Crime;Drama",
+    "tmdb_id": "641"
+  },
+  {
+    "Movie Title": "Dangal",
+    "Year": "2016",
+    "Genre": "Drama;Family;Comedy",
+    "tmdb_id": "360814"
+  },
+  {
+    "Movie Title": "Taare Zameen Par",
+    "Year": "2007",
+    "Genre": "Drama",
+    "tmdb_id": "7508"
+  },
+  {
+    "Movie Title": "Lawrence of Arabia",
+    "Year": "1962",
+    "Genre": "Adventure;History;War",
+    "tmdb_id": "947"
+  },
+  {
+    "Movie Title": "A Clockwork Orange",
+    "Year": "1971",
+    "Genre": "Science Fiction;Crime",
+    "tmdb_id": "185"
+  },
+  {
+    "Movie Title": "3 Idiots",
+    "Year": "2009",
+    "Genre": "Drama;Comedy",
+    "tmdb_id": "20453"
+  },
+  {
+    "Movie Title": "2001: A Space Odyssey",
+    "Year": "1968",
+    "Genre": "Science Fiction;Mystery;Adventure",
+    "tmdb_id": "62"
+  },
+  {
+    "Movie Title": "Le fabuleux destin d'Amélie Poulain",
+    "Year": "2001",
+    "Genre": "Comedy;Romance",
+    "tmdb_id": "194"
+  },
+  {
+    "Movie Title": "Toy Story",
+    "Year": "1995",
+    "Genre": "Animation;Adventure;Family;Comedy",
+    "tmdb_id": "862"
+  },
+  {
+    "Movie Title": "Double Indemnity",
+    "Year": "1944",
+    "Genre": "Crime;Thriller",
+    "tmdb_id": "996"
+  },
+  {
+    "Movie Title": "Taxi Driver",
+    "Year": "1976",
+    "Genre": "Crime;Drama",
+    "tmdb_id": "103"
+  },
+  {
+    "Movie Title": "Singin' in the Rain",
+    "Year": "1952",
+    "Genre": "Comedy;Romance",
+    "tmdb_id": "872"
+  },
+  {
+    "Movie Title": "Full Metal Jacket",
+    "Year": "1987",
+    "Genre": "Drama;War",
+    "tmdb_id": "600"
+  },
+  {
+    "Movie Title": "To Kill a Mockingbird",
+    "Year": "1962",
+    "Genre": "Drama",
+    "tmdb_id": "595"
+  },
+  {
+    "Movie Title": "Ladri di biciclette",
+    "Year": "1948",
+    "Genre": "Drama",
+    "tmdb_id": "5156"
+  },
+  {
+    "Movie Title": "The Kid",
+    "Year": "1921",
+    "Genre": "Comedy;Drama",
+    "tmdb_id": "10098"
+  },
+  {
+    "Movie Title": "The Sting",
+    "Year": "1973",
+    "Genre": "Comedy;Crime;Drama",
+    "tmdb_id": "9277"
+  },
+  {
+    "Movie Title": "Good Will Hunting",
+    "Year": "1997",
+    "Genre": "Drama",
+    "tmdb_id": "489"
+  },
+  {
+    "Movie Title": "Toy Story 3",
+    "Year": "2010",
+    "Genre": "Animation;Family;Comedy",
+    "tmdb_id": "10193"
+  },
+  {
+    "Movie Title": "Jagten",
+    "Year": "2012",
+    "Genre": "Drama",
+    "tmdb_id": "103663"
+  },
+  {
+    "Movie Title": "Snatch",
+    "Year": "2000",
+    "Genre": "Crime;Comedy",
+    "tmdb_id": "107"
+  },
+  {
+    "Movie Title": "Scarface",
+    "Year": "1983",
+    "Genre": "Action;Crime;Drama",
+    "tmdb_id": "111"
+  },
+  {
+    "Movie Title": "Monty Python and the Holy Grail",
+    "Year": "1975",
+    "Genre": "Adventure;Comedy;Fantasy",
+    "tmdb_id": "762"
+  },
+  {
+    "Movie Title": "Per qualche dollaro in più",
+    "Year": "1965",
+    "Genre": "Western",
+    "tmdb_id": "938"
+  },
+  {
+    "Movie Title": "L.A. Confidential",
+    "Year": "1997",
+    "Genre": "Crime;Mystery;Thriller;Drama",
+    "tmdb_id": "2118"
+  },
+  {
+    "Movie Title": "The Apartment",
+    "Year": "1960",
+    "Genre": "Comedy;Drama;Romance",
+    "tmdb_id": "284"
+  },
+  {
+    "Movie Title": "Metropolis",
+    "Year": "1927",
+    "Genre": "Drama;Science Fiction",
+    "tmdb_id": "19"
+  },
+  {
+    "Movie Title": "Jodaeiye Nader az Simin",
+    "Year": "2011",
+    "Genre": "Drama",
+    "tmdb_id": "60243"
+  },
+  {
+    "Movie Title": "Indiana Jones and the Last Crusade",
+    "Year": "1989",
+    "Genre": "Adventure;Action",
+    "tmdb_id": "89"
+  },
+  {
+    "Movie Title": "Rashômon",
+    "Year": "1950",
+    "Genre": "Crime;Drama;Mystery",
+    "tmdb_id": "548"
+  },
+  {
+    "Movie Title": "All About Eve",
+    "Year": "1950",
+    "Genre": "Drama",
+    "tmdb_id": "705"
+  },
+  {
+    "Movie Title": "Batman Begins",
+    "Year": "2005",
+    "Genre": "Action;Crime;Drama",
+    "tmdb_id": "272"
+  },
+  {
+    "Movie Title": "Yôjinbô",
+    "Year": "1961",
+    "Genre": "",
+    "tmdb_id": "1393922"
+  },
+  {
+    "Movie Title": "Some Like It Hot",
+    "Year": "1959",
+    "Genre": "Comedy;Romance;Crime",
+    "tmdb_id": "239"
+  },
+  {
+    "Movie Title": "Unforgiven",
+    "Year": "1992",
+    "Genre": "Western",
+    "tmdb_id": "33"
+  },
+  {
+    "Movie Title": "Der Untergang",
+    "Year": "2004",
+    "Genre": "Drama;History;War",
+    "tmdb_id": "613"
+  },
+  {
+    "Movie Title": "Die Hard",
+    "Year": "1988",
+    "Genre": "Action;Thriller",
+    "tmdb_id": "562"
+  },
+  {
+    "Movie Title": "The Treasure of the Sierra Madre",
+    "Year": "1948",
+    "Genre": "Adventure;Drama;Western",
+    "tmdb_id": "3090"
+  },
+  {
+    "Movie Title": "Heat",
+    "Year": "1995",
+    "Genre": "Crime;Drama;Action",
+    "tmdb_id": "949"
+  },
+  {
+    "Movie Title": "Ikiru",
+    "Year": "1952",
+    "Genre": "Drama",
+    "tmdb_id": "3782"
+  },
+  {
+    "Movie Title": "Incendies",
+    "Year": "2010",
+    "Genre": "Drama;War;Mystery",
+    "tmdb_id": "46738"
+  },
+  {
+    "Movie Title": "Raging Bull",
+    "Year": "1980",
+    "Genre": "Drama",
+    "tmdb_id": "1578"
+  },
+  {
+    "Movie Title": "The Great Escape",
+    "Year": "1963",
+    "Genre": "Adventure;Drama;War",
+    "tmdb_id": "5925"
+  },
+  {
+    "Movie Title": "Bacheha-Ye aseman",
+    "Year": "1997",
+    "Genre": "Drama;Family",
+    "tmdb_id": "21334"
+  },
+  {
+    "Movie Title": "El laberinto del fauno",
+    "Year": "2006",
+    "Genre": "Fantasy;Drama;War",
+    "tmdb_id": "1417"
+  },
+  {
+    "Movie Title": "Babam ve Oglum",
+    "Year": "2005",
+    "Genre": "Drama",
+    "tmdb_id": "13393"
+  },
+  {
+    "Movie Title": "Chinatown",
+    "Year": "1974",
+    "Genre": "Crime;Drama;Mystery;Thriller",
+    "tmdb_id": "829"
+  },
+  {
+    "Movie Title": "The Third Man",
+    "Year": "1949",
+    "Genre": "Thriller;Mystery",
+    "tmdb_id": "1092"
+  },
+  {
+    "Movie Title": "Bohemian Rhapsody",
+    "Year": "2018",
+    "Genre": "Music;Drama",
+    "tmdb_id": "424694"
+  },
+  {
+    "Movie Title": "Tonari no Totoro",
+    "Year": "1988",
+    "Genre": "Fantasy;Animation;Family",
+    "tmdb_id": "8392"
+  },
+  {
+    "Movie Title": "Hauru no ugoku shiro",
+    "Year": "2004",
+    "Genre": "Fantasy;Animation;Adventure",
+    "tmdb_id": "4935"
+  },
+  {
+    "Movie Title": "Ran",
+    "Year": "1985",
+    "Genre": "Action;Drama;History",
+    "tmdb_id": "11645"
+  },
+  {
+    "Movie Title": "Judgment at Nuremberg",
+    "Year": "1961",
+    "Genre": "Drama;History",
+    "tmdb_id": "821"
+  },
+  {
+    "Movie Title": "El secreto de sus ojos",
+    "Year": "2009",
+    "Genre": "Mystery;Thriller;Drama",
+    "tmdb_id": "25376"
+  },
+  {
+    "Movie Title": "The Gold Rush",
+    "Year": "1925",
+    "Genre": "Adventure;Comedy;Drama",
+    "tmdb_id": "962"
+  },
+  {
+    "Movie Title": "The Bridge on the River Kwai",
+    "Year": "1957",
+    "Genre": "Drama;History;War",
+    "tmdb_id": "826"
+  },
+  {
+    "Movie Title": "A Beautiful Mind",
+    "Year": "2001",
+    "Genre": "Drama;Romance",
+    "tmdb_id": "453"
+  },
+  {
+    "Movie Title": "Lock, Stock and Two Smoking Barrels",
+    "Year": "1998",
+    "Genre": "Comedy;Crime",
+    "tmdb_id": "100"
+  },
+  {
+    "Movie Title": "Casino",
+    "Year": "1995",
+    "Genre": "Crime;Drama",
+    "tmdb_id": "524"
+  },
+  {
+    "Movie Title": "Three Billboards Outside Ebbing, Missouri",
+    "Year": "2017",
+    "Genre": "Crime;Drama",
+    "tmdb_id": "359940"
+  },
+  {
+    "Movie Title": "On the Waterfront",
+    "Year": "1954",
+    "Genre": "Crime;Drama;Romance",
+    "tmdb_id": "654"
+  },
+  {
+    "Movie Title": "Det sjunde inseglet",
+    "Year": "1957",
+    "Genre": "Fantasy;Drama",
+    "tmdb_id": "490"
+  },
+  {
+    "Movie Title": "Inside Out",
+    "Year": "2015",
+    "Genre": "Animation;Family;Adventure;Drama;Comedy",
+    "tmdb_id": "150540"
+  },
+  {
+    "Movie Title": "The Elephant Man",
+    "Year": "1980",
+    "Genre": "Drama;History",
+    "tmdb_id": "1955"
+  },
+  {
+    "Movie Title": "Room",
+    "Year": "2015",
+    "Genre": "Drama;Thriller",
+    "tmdb_id": "264644"
+  },
+  {
+    "Movie Title": "Mr. Smith Goes to Washington",
+    "Year": "1939",
+    "Genre": "Comedy;Drama",
+    "tmdb_id": "3083"
+  },
+  {
+    "Movie Title": "V for Vendetta",
+    "Year": "2005",
+    "Genre": "Action;Thriller;Science Fiction",
+    "tmdb_id": "752"
+  },
+  {
+    "Movie Title": "Warrior",
+    "Year": "2011",
+    "Genre": "Drama;Action",
+    "tmdb_id": "59440"
+  },
+  {
+    "Movie Title": "Blade Runner",
+    "Year": "1982",
+    "Genre": "Science Fiction;Drama;Thriller",
+    "tmdb_id": "78"
+  },
+  {
+    "Movie Title": "Dial M for Murder",
+    "Year": "1954",
+    "Genre": "Thriller;Crime",
+    "tmdb_id": "521"
+  },
+  {
+    "Movie Title": "Smultronstället",
+    "Year": "1957",
+    "Genre": "Drama",
+    "tmdb_id": "614"
+  },
+  {
+    "Movie Title": "The General",
+    "Year": "1926",
+    "Genre": "Action;Adventure;Comedy;War",
+    "tmdb_id": "961"
+  },
+  {
+    "Movie Title": "Trainspotting",
+    "Year": "1996",
+    "Genre": "Drama;Crime",
+    "tmdb_id": "627"
+  },
+  {
+    "Movie Title": "The Sixth Sense",
+    "Year": "1999",
+    "Genre": "Mystery;Thriller;Drama",
+    "tmdb_id": "745"
+  },
+  {
+    "Movie Title": "Gone with the Wind",
+    "Year": "1939",
+    "Genre": "Drama;War;Romance",
+    "tmdb_id": "770"
+  },
+  {
+    "Movie Title": "The Thing",
+    "Year": "1982",
+    "Genre": "Horror;Mystery;Science Fiction",
+    "tmdb_id": "1091"
+  },
+  {
+    "Movie Title": "Fargo",
+    "Year": "1996",
+    "Genre": "Crime;Drama;Thriller",
+    "tmdb_id": "275"
+  },
+  {
+    "Movie Title": "Gran Torino",
+    "Year": "2008",
+    "Genre": "Drama",
+    "tmdb_id": "13223"
+  },
+  {
+    "Movie Title": "The Deer Hunter",
+    "Year": "1978",
+    "Genre": "Drama;War",
+    "tmdb_id": "11778"
+  },
+  {
+    "Movie Title": "Finding Nemo",
+    "Year": "2003",
+    "Genre": "Animation;Family",
+    "tmdb_id": "12"
+  },
+  {
+    "Movie Title": "Idi i smotri",
+    "Year": "1985",
+    "Genre": "Drama;War",
+    "tmdb_id": "25237"
+  },
+  {
+    "Movie Title": "The Big Lebowski",
+    "Year": "1998",
+    "Genre": "Comedy;Crime",
+    "tmdb_id": "115"
+  },
+  {
+    "Movie Title": "Shutter Island",
+    "Year": "2010",
+    "Genre": "Drama;Thriller;Mystery",
+    "tmdb_id": "11324"
+  },
+  {
+    "Movie Title": "Sherlock Jr.",
+    "Year": "1924",
+    "Genre": "Action;Comedy;Mystery",
+    "tmdb_id": "992"
+  },
+  {
+    "Movie Title": "Cool Hand Luke",
+    "Year": "1967",
+    "Genre": "Drama;Crime",
+    "tmdb_id": "903"
+  },
+  {
+    "Movie Title": "Rebecca",
+    "Year": "1940",
+    "Genre": "Mystery;Romance;Thriller",
+    "tmdb_id": "223"
+  },
+  {
+    "Movie Title": "Tôkyô monogatari",
+    "Year": "1953",
+    "Genre": "Drama",
+    "tmdb_id": "18148"
+  },
+  {
+    "Movie Title": "Mary and Max",
+    "Year": "2009",
+    "Genre": "Animation;Comedy;Drama",
+    "tmdb_id": "24238"
+  },
+  {
+    "Movie Title": "Hacksaw Ridge",
+    "Year": "2016",
+    "Genre": "Drama;History;War",
+    "tmdb_id": "324786"
+  },
+  {
+    "Movie Title": "How to Train Your Dragon",
+    "Year": "2010",
+    "Genre": "Fantasy;Adventure;Animation;Family",
+    "tmdb_id": "10191"
+  },
+  {
+    "Movie Title": "Sunrise: A Song of Two Humans",
+    "Year": "1927",
+    "Genre": "Drama;Romance",
+    "tmdb_id": "631"
+  },
+  {
+    "Movie Title": "Relatos salvajes",
+    "Year": "2014",
+    "Genre": "Drama;Thriller;Comedy",
+    "tmdb_id": "265195"
+  },
+  {
+    "Movie Title": "Jurassic Park",
+    "Year": "1993",
+    "Genre": "Adventure;Science Fiction",
+    "tmdb_id": "329"
+  },
+  {
+    "Movie Title": "Into the Wild",
+    "Year": "2007",
+    "Genre": "Adventure;Drama",
+    "tmdb_id": "5915"
+  },
+  {
+    "Movie Title": "Life of Brian",
+    "Year": "1979",
+    "Genre": "Comedy",
+    "tmdb_id": "583"
+  },
+  {
+    "Movie Title": "In the Name of the Father",
+    "Year": "1993",
+    "Genre": "Drama",
+    "tmdb_id": "7984"
+  },
+  {
+    "Movie Title": "The Truman Show",
+    "Year": "1998",
+    "Genre": "Comedy;Drama",
+    "tmdb_id": "37165"
+  },
+  {
+    "Movie Title": "Platoon",
+    "Year": "1986",
+    "Genre": "Drama;War;Action",
+    "tmdb_id": "792"
+  },
+  {
+    "Movie Title": "Stand by Me",
+    "Year": "1986",
+    "Genre": "Crime;Drama",
+    "tmdb_id": "235"
+  },
+  {
+    "Movie Title": "It Happened One Night",
+    "Year": "1934",
+    "Genre": "Comedy;Romance",
+    "tmdb_id": "3078"
+  },
+  {
+    "Movie Title": "Eskiya",
+    "Year": "1996",
+    "Genre": "Crime;Drama;Thriller",
+    "tmdb_id": "26900"
+  },
+  {
+    "Movie Title": "Network",
+    "Year": "1976",
+    "Genre": "Drama",
+    "tmdb_id": "10774"
+  },
+  {
+    "Movie Title": "Stalker",
+    "Year": "1979",
+    "Genre": "Science Fiction;Drama",
+    "tmdb_id": "1398"
+  },
+  {
+    "Movie Title": "Persona",
+    "Year": "1966",
+    "Genre": "Drama",
+    "tmdb_id": "797"
+  },
+  {
+    "Movie Title": "Salinui chueok",
+    "Year": "2003",
+    "Genre": "Crime;Drama;Thriller",
+    "tmdb_id": "11423"
+  },
+  {
+    "Movie Title": "Ben-Hur",
+    "Year": "1959",
+    "Genre": "History;Drama;Adventure;Action",
+    "tmdb_id": "665"
+  },
+  {
+    "Movie Title": "Hotel Rwanda",
+    "Year": "2004",
+    "Genre": "Drama;History;War",
+    "tmdb_id": "205"
+  },
+  {
+    "Movie Title": "Million Dollar Baby",
+    "Year": "2004",
+    "Genre": "Drama",
+    "tmdb_id": "70"
+  },
+  {
+    "Movie Title": "La passion de Jeanne d'Arc",
+    "Year": "1928",
+    "Genre": "Drama;History",
+    "tmdb_id": "780"
+  },
+  {
+    "Movie Title": "Rush",
+    "Year": "2013",
+    "Genre": "Drama;Action",
+    "tmdb_id": "96721"
+  },
+  {
+    "Movie Title": "Andrey Rublev",
+    "Year": "1966",
+    "Genre": "Drama;History",
+    "tmdb_id": "895"
+  },
+  {
+    "Movie Title": "Le salaire de la peur",
+    "Year": "1953",
+    "Genre": "Drama;Thriller;Adventure",
+    "tmdb_id": "204"
+  },
+  {
+    "Movie Title": "Before Sunrise",
+    "Year": "1995",
+    "Genre": "Drama;Romance",
+    "tmdb_id": "76"
+  },
+  {
+    "Movie Title": "Les quatre cents coups",
+    "Year": "1959",
+    "Genre": "Drama",
+    "tmdb_id": "147"
+  },
+  {
+    "Movie Title": "Prisoners",
+    "Year": "2013",
+    "Genre": "Drama;Thriller;Crime",
+    "tmdb_id": "146233"
+  },
+  {
+    "Movie Title": "Hachi: A Dog's Tale",
+    "Year": "2009",
+    "Genre": "Drama;Family",
+    "tmdb_id": "28178"
+  },
+  {
+    "Movie Title": "Logan",
+    "Year": "2017",
+    "Genre": "Action;Drama;Science Fiction",
+    "tmdb_id": "263115"
+  },
+  {
+    "Movie Title": "Rang De Basanti",
+    "Year": "2006",
+    "Genre": "Comedy;Drama;History;Romance",
+    "tmdb_id": "7913"
+  },
+  {
+    "Movie Title": "Amores perros",
+    "Year": "2000",
+    "Genre": "Drama;Thriller",
+    "tmdb_id": "55"
+  },
+  {
+    "Movie Title": "The Princess Bride",
+    "Year": "1987",
+    "Genre": "Adventure;Family;Fantasy;Comedy;Romance",
+    "tmdb_id": "2493"
+  },
+  {
+    "Movie Title": "Catch Me If You Can",
+    "Year": "2002",
+    "Genre": "Drama;Crime",
+    "tmdb_id": "640"
+  },
+  {
+    "Movie Title": "Kaze no tani no Naushika",
+    "Year": "1984",
+    "Genre": "Adventure;Animation;Fantasy",
+    "tmdb_id": "81"
+  },
+  {
+    "Movie Title": "Harry Potter and the Deathly Hallows: Part 2",
+    "Year": "2011",
+    "Genre": "Fantasy;Adventure",
+    "tmdb_id": "12445"
+  },
+  {
+    "Movie Title": "Butch Cassidy and the Sundance Kid",
+    "Year": "1969",
+    "Genre": "Western;Adventure;Crime;Drama;History",
+    "tmdb_id": "642"
+  },
+  {
+    "Movie Title": "Rocky",
+    "Year": "1976",
+    "Genre": "Drama",
+    "tmdb_id": "1366"
+  },
+  {
+    "Movie Title": "Barry Lyndon",
+    "Year": "1975",
+    "Genre": "Drama;Romance;War;History",
+    "tmdb_id": "3175"
+  },
+  {
+    "Movie Title": "Monsters, Inc.",
+    "Year": "2001",
+    "Genre": "Animation;Comedy;Family",
+    "tmdb_id": "585"
+  },
+  {
+    "Movie Title": "The Grapes of Wrath",
+    "Year": "1940",
+    "Genre": "Drama",
+    "tmdb_id": "596"
+  },
+  {
+    "Movie Title": "The Maltese Falcon",
+    "Year": "1941",
+    "Genre": "Mystery;Crime;Thriller",
+    "tmdb_id": "963"
+  },
+  {
+    "Movie Title": "Dead Poets Society",
+    "Year": "1989",
+    "Genre": "Drama",
+    "tmdb_id": "207"
+  },
+  {
+    "Movie Title": "Donnie Darko",
+    "Year": "2001",
+    "Genre": "Fantasy;Drama;Mystery",
+    "tmdb_id": "141"
+  },
+  {
+    "Movie Title": "The Terminator",
+    "Year": "1984",
+    "Genre": "Action;Thriller;Science Fiction",
+    "tmdb_id": "218"
+  },
+  {
+    "Movie Title": "Gandhi",
+    "Year": "1982",
+    "Genre": "Drama;History",
+    "tmdb_id": "783"
+  },
+  {
+    "Movie Title": "Les diaboliques",
+    "Year": "1955",
+    "Genre": "Thriller;Mystery",
+    "tmdb_id": "827"
+  },
+  {
+    "Movie Title": "La haine",
+    "Year": "1995",
+    "Genre": "Drama",
+    "tmdb_id": "406"
+  },
+  {
+    "Movie Title": "Groundhog Day",
+    "Year": "1993",
+    "Genre": "Romance;Fantasy;Drama;Comedy",
+    "tmdb_id": "137"
+  },
+  {
+    "Movie Title": "The Wizard of Oz",
+    "Year": "1939",
+    "Genre": "Adventure;Fantasy;Family",
+    "tmdb_id": "630"
+  },
+  {
+    "Movie Title": "Jaws",
+    "Year": "1975",
+    "Genre": "Horror;Thriller;Adventure",
+    "tmdb_id": "578"
+  },
+  {
+    "Movie Title": "Le notti di Cabiria",
+    "Year": "1957",
+    "Genre": "Drama",
+    "tmdb_id": "19426"
+  },
+  {
+    "Movie Title": "The Help",
+    "Year": "2011",
+    "Genre": "Drama",
+    "tmdb_id": "50014"
+  },
+  {
+    "Movie Title": "Mandariinid",
+    "Year": "2013",
+    "Genre": "Drama;War",
+    "tmdb_id": "238628"
+  },
+  {
+    "Movie Title": "Paper Moon",
+    "Year": "1973",
+    "Genre": "Comedy;Crime;Drama",
+    "tmdb_id": "11293"
+  },
+  {
+    "Movie Title": "Ah-ga-ssi",
+    "Year": "2016",
+    "Genre": "Thriller;Drama;Romance",
+    "tmdb_id": "290098"
+  },
+  {
+    "Movie Title": "Paris, Texas",
+    "Year": "1984",
+    "Genre": "Drama",
+    "tmdb_id": "655"
+  },
+  {
+    "Movie Title": "The Best Years of Our Lives",
+    "Year": "1946",
+    "Genre": "Drama;Romance;War",
+    "tmdb_id": "887"
+  },
+  {
+    "Movie Title": "Tenkû no shiro Rapyuta",
+    "Year": "1986",
+    "Genre": "Adventure;Fantasy;Animation;Action;Family",
+    "tmdb_id": "10515"
+  },
+  {
+    "Movie Title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "Year": "2003",
+    "Genre": "Adventure;Fantasy;Action",
+    "tmdb_id": "22"
+  },
+  {
+    "Movie Title": "Guardians of the Galaxy",
+    "Year": "2014",
+    "Genre": "Action;Science Fiction;Adventure",
+    "tmdb_id": "118340"
+  },
+  {
+    "Movie Title": "Fanny och Alexander",
+    "Year": "1982",
+    "Genre": "Fantasy;Drama;Mystery",
+    "tmdb_id": "5961"
+  },
+  {
+    "Movie Title": "Tsubaki Sanjûrô",
+    "Year": "1962",
+    "Genre": "Drama;Action;Comedy",
+    "tmdb_id": "11712"
+  },
+  {
+    "Movie Title": "Gangs of Wasseypur",
+    "Year": "2012",
+    "Genre": "Crime;Thriller;Action",
+    "tmdb_id": "126400"
+  },
+  {
+    "Movie Title": "Drishyam",
+    "Year": "2015",
+    "Genre": "Crime;Mystery;Thriller",
+    "tmdb_id": "352173"
+  },
+  {
+    "Movie Title": "Dave Vis",
+    "Year": "",
+    "Genre": "",
+    "tmdb_id": "1113688"
+  },
+  {
+    "Movie Title": "Harakiri",
+    "Year": "1962",
+    "Genre": "Action;Drama;History",
+    "tmdb_id": "14537"
+  },
+  {
+    "Movie Title": "Come and See",
+    "Year": "1985",
+    "Genre": "Drama;War",
+    "tmdb_id": "25237"
+  },
+  {
+    "Movie Title": "Seven Samurai",
+    "Year": "1954",
+    "Genre": "Action;Drama",
+    "tmdb_id": "346"
+  },
+  {
+    "Movie Title": "The Human Condition III: A Soldier's Prayer",
+    "Year": "1961",
+    "Genre": "War;Drama;History",
+    "tmdb_id": "34530"
+  },
+  {
+    "Movie Title": "High and Low",
+    "Year": "1963",
+    "Genre": "Drama;Crime;Mystery;Thriller",
+    "tmdb_id": "12493"
+  },
+  {
+    "Movie Title": "The Godfather Part II",
+    "Year": "1974",
+    "Genre": "Drama;Crime",
+    "tmdb_id": "240"
+  },
+  {
+    "Movie Title": "The Human Condition I: No Greater Love",
+    "Year": "1959",
+    "Genre": "War;Drama;History",
+    "tmdb_id": "31217"
+  },
+  {
+    "Movie Title": "A Brighter Summer Day",
+    "Year": "1991",
+    "Genre": "Crime;Drama;Romance",
+    "tmdb_id": "15804"
+  },
+  {
+    "Movie Title": "The Good, the Bad and the Ugly",
+    "Year": "1966",
+    "Genre": "Western",
+    "tmdb_id": "429"
+  },
+  {
+    "Movie Title": "Le Trou",
+    "Year": "1960",
+    "Genre": "Drama;Thriller;Crime",
+    "tmdb_id": "29259"
+  },
+  {
+    "Movie Title": "Cinema Paradiso",
+    "Year": "1988",
+    "Genre": "Drama;Romance",
+    "tmdb_id": "11216"
+  },
+  {
+    "Movie Title": "Autumn Sonata",
+    "Year": "1978",
+    "Genre": "Drama",
+    "tmdb_id": "12761"
+  },
+  {
+    "Movie Title": "Grave of the Fireflies",
+    "Year": "1988",
+    "Genre": "Animation;Drama;War",
+    "tmdb_id": "12477"
+  },
+  {
+    "Movie Title": "Neon Genesis Evangelion: The End of Evangelion",
+    "Year": "1997",
+    "Genre": "Animation;Science Fiction;Action;Drama",
+    "tmdb_id": "18491"
+  },
+  {
+    "Movie Title": "Woman in the Dunes",
+    "Year": "1964",
+    "Genre": "Drama;Thriller",
+    "tmdb_id": "16672"
+  },
+  {
+    "Movie Title": "The Human Condition II: Road to Eternity",
+    "Year": "1959",
+    "Genre": "War;Drama;History",
+    "tmdb_id": "34528"
+  },
+  {
+    "Movie Title": "Andrei Rublev",
+    "Year": "1966",
+    "Genre": "Drama;History",
+    "tmdb_id": "895"
+  },
+  {
+    "Movie Title": "Tokyo Story",
+    "Year": "1953",
+    "Genre": "Drama",
+    "tmdb_id": "18148"
+  },
+  {
+    "Movie Title": "Sunset Boulevard",
+    "Year": "1950",
+    "Genre": "Drama",
+    "tmdb_id": "599"
+  },
+  {
+    "Movie Title": "The Cranes Are Flying",
+    "Year": "1957",
+    "Genre": "Drama;Romance;War",
+    "tmdb_id": "38360"
+  },
+  {
+    "Movie Title": "The Passion of Joan of Arc",
+    "Year": "1928",
+    "Genre": "Drama;History",
+    "tmdb_id": "780"
+  },
+  {
+    "Movie Title": "Mishima: A Life in Four Chapters",
+    "Year": "1985",
+    "Genre": "Drama",
+    "tmdb_id": "27064"
+  },
+  {
+    "Movie Title": "Fanny and Alexander",
+    "Year": "1982",
+    "Genre": "Fantasy;Drama;Mystery",
+    "tmdb_id": "5961"
+  },
+  {
+    "Movie Title": "The Battle of Algiers",
+    "Year": "1966",
+    "Genre": "Drama;War;History",
+    "tmdb_id": "17295"
+  },
+  {
+    "Movie Title": "Close-Up",
+    "Year": "1990",
+    "Genre": "Crime;Drama",
+    "tmdb_id": "30017"
+  },
+  {
+    "Movie Title": "Spider-Man: Across the Spider-Verse",
+    "Year": "2023",
+    "Genre": "Animation;Action;Adventure;Science Fiction",
+    "tmdb_id": "569094"
+  },
+  {
+    "Movie Title": "The Ascent",
+    "Year": "1977",
+    "Genre": "Drama;War",
+    "tmdb_id": "50183"
+  },
+  {
+    "Movie Title": "I Am Cuba",
+    "Year": "1964",
+    "Genre": "Drama",
+    "tmdb_id": "32015"
+  },
+  {
+    "Movie Title": "Sansho the Bailiff",
+    "Year": "1954",
+    "Genre": "Drama",
+    "tmdb_id": "20532"
+  },
+  {
+    "Movie Title": "The Empire Strikes Back",
+    "Year": "1980",
+    "Genre": "Adventure;Action;Science Fiction",
+    "tmdb_id": "1891"
+  },
+  {
+    "Movie Title": "The Red Shoes",
+    "Year": "1948",
+    "Genre": "Drama;Romance",
+    "tmdb_id": "19542"
+  },
+  {
+    "Movie Title": "Do the Right Thing",
+    "Year": "1989",
+    "Genre": "Drama",
+    "tmdb_id": "925"
+  },
+  {
+    "Movie Title": "A Woman Under the Influence",
+    "Year": "1974",
+    "Genre": "Drama;Romance",
+    "tmdb_id": "29845"
+  },
+  {
+    "Movie Title": "Nights of Cabiria",
+    "Year": "1957",
+    "Genre": "Drama",
+    "tmdb_id": "19426"
+  },
+  {
+    "Movie Title": "Nobody Knows",
+    "Year": "2004",
+    "Genre": "Drama",
+    "tmdb_id": "2517"
+  },
+  {
+    "Movie Title": "Once Upon a Time in the West",
+    "Year": "1968",
+    "Genre": "Drama;Western",
+    "tmdb_id": "335"
+  },
+  {
+    "Movie Title": "Perfect Blue",
+    "Year": "1997",
+    "Genre": "Animation;Thriller",
+    "tmdb_id": "10494"
+  },
+  {
+    "Movie Title": "Princess Mononoke",
+    "Year": "1997",
+    "Genre": "Adventure;Fantasy;Animation",
+    "tmdb_id": "128"
+  },
+  {
+    "Movie Title": "Red Beard",
+    "Year": "1965",
+    "Genre": "Drama",
+    "tmdb_id": "3780"
+  },
+  {
+    "Movie Title": "Love Exposure",
+    "Year": "2008",
+    "Genre": "Action;Comedy;Drama;Romance",
+    "tmdb_id": "28422"
+  },
+  {
+    "Movie Title": "Eternity and a Day",
+    "Year": "1998",
+    "Genre": "Drama",
+    "tmdb_id": "24858"
+  },
+  {
+    "Movie Title": "Life Is Beautiful",
+    "Year": "1997",
+    "Genre": "Comedy;Drama",
+    "tmdb_id": "637"
+  },
+  {
+    "Movie Title": "Satantango",
+    "Year": "1994",
+    "Genre": "Drama",
+    "tmdb_id": "31414"
+  },
+  {
+    "Movie Title": "It's Such a Beautiful Day",
+    "Year": "2012",
+    "Genre": "Animation;Comedy",
+    "tmdb_id": "489412"
+  },
+  {
+    "Movie Title": "Where Is the Friend's House?",
+    "Year": "1987",
+    "Genre": "Drama;Family;Adventure",
+    "tmdb_id": "49964"
+  },
+  {
+    "Movie Title": "An Elephant Sitting Still",
+    "Year": "2018",
+    "Genre": "Drama",
+    "tmdb_id": "499556"
+  },
+  {
+    "Movie Title": "Landscape in the Mist",
+    "Year": "1988",
+    "Genre": "Drama",
+    "tmdb_id": "47795"
+  },
+  {
+    "Movie Title": "Army of Shadows",
+    "Year": "1969",
+    "Genre": "War;History;Thriller",
+    "tmdb_id": "15383"
+  },
+  {
+    "Movie Title": "Apur Sansar",
+    "Year": "1959",
+    "Genre": "Drama",
+    "tmdb_id": "896"
+  },
+  {
+    "Movie Title": "Farewell My Concubine",
+    "Year": "1993",
+    "Genre": "Drama",
+    "tmdb_id": "10997"
+  },
+  {
+    "Movie Title": "Ordet",
+    "Year": "1955",
+    "Genre": "Drama",
+    "tmdb_id": "48035"
+  },
+  {
+    "Movie Title": "A Man Escaped",
+    "Year": "1956",
+    "Genre": "Drama;Thriller",
+    "tmdb_id": "15244"
+  },
+  {
+    "Movie Title": "The Wages of Fear",
+    "Year": "1953",
+    "Genre": "Drama;Thriller;Adventure",
+    "tmdb_id": "204"
+  },
+  {
+    "Movie Title": "Three Colours: Red",
+    "Year": "1994",
+    "Genre": "Drama;Mystery;Romance",
+    "tmdb_id": "110"
+  },
+  {
+    "Movie Title": "How to Make Millions Before Grandma Dies",
+    "Year": "2024",
+    "Genre": "Drama",
+    "tmdb_id": "1103621"
+  },
+  {
+    "Movie Title": "Late Spring",
+    "Year": "1949",
+    "Genre": "Drama",
+    "tmdb_id": "20530"
+  },
+  {
+    "Movie Title": "All That Jazz",
+    "Year": "1979",
+    "Genre": "Drama",
+    "tmdb_id": "16858"
+  },
+  {
+    "Movie Title": "The Seventh Seal",
+    "Year": "1957",
+    "Genre": "Fantasy;Drama",
+    "tmdb_id": "490"
+  },
+  {
+    "Movie Title": "Wild Strawberries",
+    "Year": "1957",
+    "Genre": "Drama",
+    "tmdb_id": "614"
+  },
+  {
+    "Movie Title": "Z",
+    "Year": "1969",
+    "Genre": "Thriller;Crime;Drama",
+    "tmdb_id": "2721"
+  },
+  {
+    "Movie Title": "Still Walking",
+    "Year": "2008",
+    "Genre": "Drama;Family",
+    "tmdb_id": "25050"
+  },
+  {
+    "Movie Title": "Mirror",
+    "Year": "1975",
+    "Genre": "Mystery;Drama;Horror",
+    "tmdb_id": "137103"
+  },
+  {
+    "Movie Title": "Central Station",
+    "Year": "1998",
+    "Genre": "Drama",
+    "tmdb_id": "666"
+  },
+  {
+    "Movie Title": "I'm Still Here",
+    "Year": "2024",
+    "Genre": "Drama;History",
+    "tmdb_id": "1000837"
+  },
+  {
+    "Movie Title": "Brief Encounter",
+    "Year": "1945",
+    "Genre": "Drama;Romance",
+    "tmdb_id": "851"
+  },
+  {
+    "Movie Title": "Raise the Red Lantern",
+    "Year": "1991",
+    "Genre": "Drama",
+    "tmdb_id": "10404"
+  },
+  {
+    "Movie Title": "To Be or Not to Be",
+    "Year": "1942",
+    "Genre": "Comedy;War;Romance",
+    "tmdb_id": "198"
+  },
+  {
+    "Movie Title": "Monster",
+    "Year": "2003",
+    "Genre": "Crime;Drama",
+    "tmdb_id": "504"
+  },
+  {
+    "Movie Title": "Funeral Parade of Roses",
+    "Year": "1969",
+    "Genre": "Drama",
+    "tmdb_id": "1556"
+  },
+  {
+    "Movie Title": "The Young Girls of Rochefort",
+    "Year": "1967",
+    "Genre": "Romance;Comedy;Drama",
+    "tmdb_id": "2433"
+  },
+  {
+    "Movie Title": "Taste of Cherry",
+    "Year": "1997",
+    "Genre": "Drama",
+    "tmdb_id": "30020"
+  },
+  {
+    "Movie Title": "A Special Day",
+    "Year": "1977",
+    "Genre": "Drama;Romance",
+    "tmdb_id": "42229"
+  },
+  {
+    "Movie Title": "Pather Panchali",
+    "Year": "1955",
+    "Genre": "Drama",
+    "tmdb_id": "5801"
+  },
+  {
+    "Movie Title": "Mommy",
+    "Year": "2014",
+    "Genre": "Drama",
+    "tmdb_id": "265177"
+  },
+  {
+    "Movie Title": "Tampopo",
+    "Year": "1985",
+    "Genre": "Comedy",
+    "tmdb_id": "11830"
+  },
+  {
+    "Movie Title": "Dog Day Afternoon",
+    "Year": "1975",
+    "Genre": "Crime;Drama;Thriller",
+    "tmdb_id": "968"
+  },
+  {
+    "Movie Title": "Swing Girls",
+    "Year": "2004",
+    "Genre": "Comedy;Music",
+    "tmdb_id": "36592"
+  },
+  {
+    "Movie Title": "The 400 Blows",
+    "Year": "1959",
+    "Genre": "Drama",
+    "tmdb_id": "147"
+  },
+  {
+    "Movie Title": "Rocco and His Brothers",
+    "Year": "1960",
+    "Genre": "Drama;Romance",
+    "tmdb_id": "8422"
+  },
+  {
+    "Movie Title": "Wings of Desire",
+    "Year": "1987",
+    "Genre": "Drama;Fantasy;Romance",
+    "tmdb_id": "144"
+  },
+  {
+    "Movie Title": "The Celebration",
+    "Year": "1998",
+    "Genre": "Drama",
+    "tmdb_id": "309"
+  },
+  {
+    "Movie Title": "Werckmeister Harmonies",
+    "Year": "2000",
+    "Genre": "Drama",
+    "tmdb_id": "23160"
+  },
+  {
+    "Movie Title": "M",
+    "Year": "1931",
+    "Genre": "Drama;Science Fiction;Romance",
+    "tmdb_id": "3007"
+  },
+  {
+    "Movie Title": "Yojimbo",
+    "Year": "1961",
+    "Genre": "Drama;Thriller",
+    "tmdb_id": "11878"
+  },
+  {
+    "Movie Title": "Shoplifters",
+    "Year": "2018",
+    "Genre": "Drama;Crime;Thriller",
+    "tmdb_id": "505192"
+  },
+  {
+    "Movie Title": "Bicycle Thieves",
+    "Year": "1948",
+    "Genre": "Drama",
+    "tmdb_id": "5156"
+  },
+  {
+    "Movie Title": "The Sacrifice",
+    "Year": "1986",
+    "Genre": "Drama",
+    "tmdb_id": "24657"
+  },
+  {
+    "Movie Title": "Sing Sing",
+    "Year": "2023",
+    "Genre": "Drama",
+    "tmdb_id": "1155828"
+  },
+  {
+    "Movie Title": "Underground",
+    "Year": "1995",
+    "Genre": "Comedy;Drama;War",
+    "tmdb_id": "11902"
+  },
+  {
+    "Movie Title": "The Father",
+    "Year": "2020",
+    "Genre": "Drama",
+    "tmdb_id": "600354"
+  },
+  {
+    "Movie Title": "8½",
+    "Year": "1963",
+    "Genre": "Drama",
+    "tmdb_id": "422"
+  },
+  {
+    "Movie Title": "Opening Night",
+    "Year": "1977",
+    "Genre": "Drama",
+    "tmdb_id": "33665"
+  },
+  {
+    "Movie Title": "Chungking Express",
+    "Year": "1994",
+    "Genre": "Drama;Comedy;Romance",
+    "tmdb_id": "11104"
+  },
+  {
+    "Movie Title": "La Notte",
+    "Year": "1961",
+    "Genre": "Drama;Romance",
+    "tmdb_id": "41050"
+  },
+  {
+    "Movie Title": "The Hunt",
+    "Year": "2012",
+    "Genre": "Action;Horror;Thriller",
+    "tmdb_id": "152578"
+  },
+  {
+    "Movie Title": "Akira",
+    "Year": "1988",
+    "Genre": "Animation;Science Fiction;Action",
+    "tmdb_id": "149"
+  },
+  {
+    "Movie Title": "Nostalgia",
+    "Year": "1983",
+    "Genre": "Drama;Romance",
+    "tmdb_id": "1394"
+  },
+  {
+    "Movie Title": "The Cremator",
+    "Year": "1969",
+    "Genre": "Comedy;Horror;Drama",
+    "tmdb_id": "18352"
+  },
+  {
+    "Movie Title": "Children of Paradise",
+    "Year": "1945",
+    "Genre": "Drama;Romance",
+    "tmdb_id": "2457"
+  },
+  {
+    "Movie Title": "Evangelion: 3.0+1.0 Thrice Upon a Time",
+    "Year": "2021",
+    "Genre": "Animation;Action;Science Fiction;Drama",
+    "tmdb_id": "283566"
+  },
+  {
+    "Movie Title": "Secrets & Lies",
+    "Year": "1996",
+    "Genre": "Drama",
+    "tmdb_id": "11159"
+  },
+  {
+    "Movie Title": "The Man Who Shot Liberty Valance",
+    "Year": "1962",
+    "Genre": "Western",
+    "tmdb_id": "11697"
+  },
+  {
+    "Movie Title": "Throne of Blood",
+    "Year": "1957",
+    "Genre": "Drama;History",
+    "tmdb_id": "3777"
+  },
+  {
+    "Movie Title": "Twin Peaks: Fire Walk with Me",
+    "Year": "1992",
+    "Genre": "Drama;Mystery;Horror",
+    "tmdb_id": "1923"
+  },
+  {
+    "Movie Title": "La Dolce Vita",
+    "Year": "1960",
+    "Genre": "Comedy;Drama",
+    "tmdb_id": "439"
+  },
+  {
+    "Movie Title": "Samurai Rebellion",
+    "Year": "1967",
+    "Genre": "Drama;History;Action",
+    "tmdb_id": "27031"
+  },
+  {
+    "Movie Title": "Dersu Uzala",
+    "Year": "1975",
+    "Genre": "Adventure;Drama",
+    "tmdb_id": "9764"
+  },
+  {
+    "Movie Title": "Life, and Nothing More…",
+    "Year": "1992",
+    "Genre": "Drama;Adventure",
+    "tmdb_id": "83761"
+  },
+  {
+    "Movie Title": "Ace in the Hole",
+    "Year": "1951",
+    "Genre": "Drama",
+    "tmdb_id": "25364"
+  },
+  {
+    "Movie Title": "Jeanne Dielman, 23, quai du Commerce, 1080 Bruxelles",
+    "Year": "1975",
+    "Genre": "Drama",
+    "tmdb_id": "44012"
+  },
+  {
+    "Movie Title": "The Night of the Hunter",
+    "Year": "1955",
+    "Genre": "Crime;Drama;Thriller",
+    "tmdb_id": "3112"
+  },
+  {
+    "Movie Title": "The Iron Giant",
+    "Year": "1999",
+    "Genre": "Animation;Family;Science Fiction;Adventure",
+    "tmdb_id": "10386"
+  },
+  {
+    "Movie Title": "Who's Afraid of Virginia Woolf?",
+    "Year": "1966",
+    "Genre": "Drama",
+    "tmdb_id": "396"
+  },
+  {
+    "Movie Title": "Look Back",
+    "Year": "2024",
+    "Genre": "Animation;Drama",
+    "tmdb_id": "1244492"
+  },
+  {
+    "Movie Title": "Cure",
+    "Year": "1997",
+    "Genre": "Crime;Thriller;Horror;Mystery",
+    "tmdb_id": "36095"
+  },
+  {
+    "Movie Title": "Ugetsu",
+    "Year": "1953",
+    "Genre": "Fantasy;Drama;Mystery",
+    "tmdb_id": "14696"
+  },
+  {
+    "Movie Title": "Rififi",
+    "Year": "1955",
+    "Genre": "Crime;Thriller;Drama",
+    "tmdb_id": "934"
+  },
+  {
+    "Movie Title": "Malcolm X",
+    "Year": "1992",
+    "Genre": "Drama;History",
+    "tmdb_id": "1883"
+  },
+  {
+    "Movie Title": "A Matter of Life and Death",
+    "Year": "1946",
+    "Genre": "Romance;Fantasy;Drama;War;Comedy",
+    "tmdb_id": "28162"
+  },
+  {
+    "Movie Title": "Ritual",
+    "Year": "2000",
+    "Genre": "Drama",
+    "tmdb_id": "378181"
+  },
+  {
+    "Movie Title": "The Tale of The Princess Kaguya",
+    "Year": "2013",
+    "Genre": "Animation;Drama;Fantasy",
+    "tmdb_id": "149871"
+  },
+  {
+    "Movie Title": "Sorcerer",
+    "Year": "1977",
+    "Genre": "Thriller;Adventure;Drama",
+    "tmdb_id": "38985"
+  },
+  {
+    "Movie Title": "Aparajito",
+    "Year": "1956",
+    "Genre": "Drama",
+    "tmdb_id": "897"
+  },
+  {
+    "Movie Title": "Umberto D.",
+    "Year": "1952",
+    "Genre": "Drama",
+    "tmdb_id": "833"
+  },
+  {
+    "Movie Title": "Winter Light",
+    "Year": "1963",
+    "Genre": "Drama",
+    "tmdb_id": "29455"
+  },
+  {
+    "Movie Title": "Puella Magi Madoka Magica the Movie Part III: Rebellion",
+    "Year": "2013",
+    "Genre": "Mystery;Animation;Fantasy",
+    "tmdb_id": "212162"
+  },
+  {
+    "Movie Title": "We All Loved Each Other So Much",
+    "Year": "1974",
+    "Genre": "Drama;Comedy",
+    "tmdb_id": "42269"
+  },
+  {
+    "Movie Title": "The First Slam Dunk",
+    "Year": "2022",
+    "Genre": "Animation;Comedy;Drama",
+    "tmdb_id": "783675"
+  },
+  {
+    "Movie Title": "Sweet Smell of Success",
+    "Year": "1957",
+    "Genre": "Drama",
+    "tmdb_id": "976"
+  },
+  {
+    "Movie Title": "Marcel the Shell with Shoes On",
+    "Year": "2021",
+    "Genre": "Animation;Comedy;Drama;Family",
+    "tmdb_id": "869626"
+  },
+  {
+    "Movie Title": "Song of the Sea",
+    "Year": "2014",
+    "Genre": "Family;Animation;Fantasy",
+    "tmdb_id": "110416"
+  },
+  {
+    "Movie Title": "Interstella 5555: The 5tory of the 5ecret 5tar 5ystem",
+    "Year": "2003",
+    "Genre": "Animation;Science Fiction;Music;Adventure",
+    "tmdb_id": "11049"
+  },
+  {
+    "Movie Title": "Il Sorpasso",
+    "Year": "1962",
+    "Genre": "Drama;Comedy;Adventure",
+    "tmdb_id": "24188"
+  },
+  {
+    "Movie Title": "Anatomy of a Murder",
+    "Year": "1959",
+    "Genre": "Crime;Drama;Mystery",
+    "tmdb_id": "93"
+  },
+  {
+    "Movie Title": "The Face of Another",
+    "Year": "1966",
+    "Genre": "Drama;Science Fiction",
+    "tmdb_id": "29452"
+  },
+  {
+    "Movie Title": "The King of Comedy",
+    "Year": "1982",
+    "Genre": "Drama;Comedy",
+    "tmdb_id": "262"
+  },
+  {
+    "Movie Title": "4 Months, 3 Weeks and 2 Days",
+    "Year": "2007",
+    "Genre": "Drama",
+    "tmdb_id": "2009"
+  },
+  {
+    "Movie Title": "Napoleon",
+    "Year": "2023",
+    "Genre": "History;War;Romance",
+    "tmdb_id": "753342"
+  },
+  {
+    "Movie Title": "Azur & Asmar: The Princes' Quest",
+    "Year": "2006",
+    "Genre": "Animation;Family",
+    "tmdb_id": "19026"
+  },
+  {
+    "Movie Title": "Kes",
+    "Year": "1969",
+    "Genre": "Drama",
+    "tmdb_id": "13384"
+  },
+  {
+    "Movie Title": "Fail Safe",
+    "Year": "1964",
+    "Genre": "Thriller;Drama;War",
+    "tmdb_id": "502"
+  },
+  {
+    "Movie Title": "Tokyo Godfathers",
+    "Year": "2003",
+    "Genre": "Animation;Drama;Comedy",
+    "tmdb_id": "13398"
+  },
+  {
+    "Movie Title": "Solaris",
+    "Year": "1972",
+    "Genre": "Drama;Science Fiction;Mystery",
+    "tmdb_id": "593"
+  },
+  {
+    "Movie Title": "Kwaidan",
+    "Year": "1964",
+    "Genre": "Horror;Fantasy;Drama",
+    "tmdb_id": "30959"
+  },
+  {
+    "Movie Title": "Le Samouraï",
+    "Year": "1967",
+    "Genre": "Crime;Thriller;Drama",
+    "tmdb_id": "5511"
+  },
+  {
+    "Movie Title": "The Disappearance of Haruhi Suzumiya",
+    "Year": "2010",
+    "Genre": "Animation;Comedy;Science Fiction;Mystery;Drama",
+    "tmdb_id": "36865"
+  },
+  {
+    "Movie Title": "An Autumn Afternoon",
+    "Year": "1962",
+    "Genre": "Drama",
+    "tmdb_id": "50759"
+  },
+  {
+    "Movie Title": "The Life and Death of Colonel Blimp",
+    "Year": "1943",
+    "Genre": "War;Drama;Romance;Comedy",
+    "tmdb_id": "25037"
+  },
+  {
+    "Movie Title": "Millennium Actress",
+    "Year": "2001",
+    "Genre": "Animation;Drama;Romance;Fantasy",
+    "tmdb_id": "33320"
+  },
+  {
+    "Movie Title": "Poetry",
+    "Year": "2010",
+    "Genre": "Drama",
+    "tmdb_id": "47909"
+  }
+]

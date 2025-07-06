@@ -41,14 +41,15 @@ export async function fetchRandomMovies(category) {
     `&vote_average.gte=6` +
     `&with_original_language=en`;
 
+  let maxPages;
   if (category.type === 'genre') {
     const genreId = GENRE_IDS[category.value];
     url += `&with_genres=${genreId}`;
-    var maxPages = 20; // 400 movies for genres
+    maxPages = 20; // 400 movies for genres
   } else if (category.type === 'decade') {
     const { start, end } = getYearRange(category.value);
     url += `&primary_release_date.gte=${start}-01-01&primary_release_date.lte=${end}-12-31`;
-    var maxPages = 25; // 500 movies for decades
+    maxPages = 25; // 500 movies for decades
   } else if (category.type === 'oscar') {
     // Load oscarWinners.json dynamically
     const oscarData = (await import('./oscarWinners.json')).default;
@@ -81,26 +82,97 @@ export async function fetchRandomMovies(category) {
     );
     // Return only valid results
     return details.filter(Boolean);
+  } else if (category.type === 'greatest') {
+    // Only use greatestfilms.json, pick 10 random movies
+    const greatestFilms = (await import('./greatestfilms.json')).default;
+    // Filter for those with tmdb_id
+    let pool = greatestFilms.filter(f => f.tmdb_id);
+    // Shuffle and pick 10
+    pool = pool.sort(() => 0.5 - Math.random()).slice(0, 10);
+    // Fetch poster_path if missing
+    for (const movie of pool) {
+      if (!movie.poster_path && movie.tmdb_id) {
+        try {
+          const details = await fetchMovieDetailsById(movie.tmdb_id);
+          if (details && details.poster_path) {
+            movie.poster_path = details.poster_path;
+          }
+        } catch {}
+      }
+      movie.id = Number(movie.tmdb_id);
+      movie.title = movie['Movie Title'];
+    }
+    return pool;
   }
 
+  let apiResults = [];
   if (category.type !== 'oscar') {
     // Fetch a random page (TMDb allows up to 500 pages)
     const randomPage = Math.floor(Math.random() * maxPages) + 1;
     url += `&page=${randomPage}`;
+    try {
+      const res = await fetch(url);
+      const data = await res.json();
+      if (data.results && Array.isArray(data.results) && data.results.length > 0) {
+        apiResults = data.results;
+      }
+    } catch (err) {
+      console.error('Failed to fetch from TMDb:', err);
+    }
   }
 
-  try {
-    const res = await fetch(url);
-    const data = await res.json();
-    if (!data.results || !Array.isArray(data.results) || data.results.length === 0) {
-      console.error('TMDb API returned no results:', data);
-      return [];
-    }
-    // Shuffle and pick 10 unique movies
-    const shuffled = data.results.sort(() => 0.5 - Math.random());
-    return shuffled.slice(0, 10);
-  } catch (err) {
-    console.error('Failed to fetch from TMDb:', err);
-    return [];
+  // Load greatestfilms.json and filter for matches
+  const greatestFilms = (await import('./greatestfilms.json')).default;
+  let extraFilms = [];
+  if (category.type === 'genre') {
+    // Match if genre is included in the Genre field (case-insensitive, partial match)
+    extraFilms = greatestFilms.filter(f =>
+      f.Genre && f.Genre.toLowerCase().includes(category.value.toLowerCase()) && f.tmdb_id
+    ).map(f => ({
+      ...f,
+      id: Number(f.tmdb_id),
+      title: f['Movie Title'],
+      poster_path: null // will fill in below if possible
+    }));
+  } else if (category.type === 'decade') {
+    const { start, end } = getYearRange(category.value);
+    extraFilms = greatestFilms.filter(f => {
+      const y = Number(f.Year);
+      return y >= start && y <= end && f.tmdb_id;
+    }).map(f => ({
+      ...f,
+      id: Number(f.tmdb_id),
+      title: f['Movie Title'],
+      poster_path: null // will fill in below if possible
+    }));
   }
+
+  // Merge and deduplicate by tmdb_id
+  const all = [...apiResults, ...extraFilms];
+  const seen = new Set();
+  const deduped = [];
+  for (const movie of all) {
+    const id = String(movie.id || movie.tmdb_id);
+    if (!seen.has(id)) {
+      seen.add(id);
+      deduped.push(movie);
+    }
+  }
+
+  // Optionally, fetch poster_path for extraFilms if missing
+  for (const movie of deduped) {
+    if (!movie.poster_path && movie.id) {
+      // Try to fetch details for poster
+      try {
+        const details = await fetchMovieDetailsById(movie.id);
+        if (details && details.poster_path) {
+          movie.poster_path = details.poster_path;
+        }
+      } catch {}
+    }
+  }
+
+  // Shuffle and pick 10 unique movies
+  const shuffled = deduped.sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, 10);
 } 
