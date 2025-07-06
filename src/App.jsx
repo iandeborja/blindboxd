@@ -10,6 +10,7 @@ function App() {
   const [error, setError] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [rankings, setRankings] = useState({});
+  const [hoveredSlot, setHoveredSlot] = useState(null);
 
   // Fetch movies when category is selected
   React.useEffect(() => {
@@ -52,75 +53,148 @@ function App() {
       ) : error ? (
         <p style={{ color: 'red' }}>{error}</p>
       ) : movies.length > 0 && currentIndex < movies.length ? (
-        <div style={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
-          minHeight: '60vh',
-        }}>
-          <div style={{ fontSize: 16, fontWeight: 600, color: '#444', marginBottom: 8, textAlign: 'center', letterSpacing: 1 }}>
-            {selectedCategory.type === 'genre' && (
-              <>Genre: {selectedCategory.value}</>
-            )}
-            {selectedCategory.type === 'decade' && (
-              <>Decade: {selectedCategory.value}</>
-            )}
-            {selectedCategory.type === 'oscar' && (
-              <>Oscar Winners: {selectedCategory.value}</>
-            )}
-          </div>
-          <h2 style={{ fontSize: 28, fontWeight: 800, marginBottom: 6, textAlign: 'center' }}>
-            Movie {currentIndex + 1} of {movies.length}
-          </h2>
-          <h3 style={{ fontSize: 22, fontWeight: 700, marginBottom: 10, textAlign: 'center' }}>
-            {movies[currentIndex].title}
-          </h3>
-          <img
-            src={movies[currentIndex].poster_path ? `https://image.tmdb.org/t/p/w500${movies[currentIndex].poster_path}` : ''}
-            alt={movies[currentIndex].title}
-            style={{ maxWidth: 340, width: '100%', borderRadius: 16, marginBottom: 10, boxShadow: '0 4px 24px rgba(0,0,0,0.10)' }}
-          />
-          <div style={{ margin: '2px 0', textAlign: 'center' }}>
-            <p style={{ fontSize: 16, fontWeight: 600, marginBottom: 6 }}>Assign a rank (1 = best, 10 = worst):</p>
-            <style>
-              {`
-                @media (max-width: 600px) {
-                  .rank-btns-mobile {
-                    display: grid !important;
-                    grid-template-columns: repeat(5, 1fr) !important;
-                    gap: 6px !important;
-                    justify-content: center !important;
-                  }
+        <div>
+          <style>
+            {`
+              .vote-flex {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 32px;
+                width: 100%;
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 0 8px;
+              }
+              .vote-poster-col {
+                flex: 1 1 320px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+              }
+              .vote-poster-img {
+                width: 320px;
+                max-width: 80vw;
+                height: auto;
+                border-radius: 18px;
+                box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+                margin-bottom: 0;
+              }
+              .vote-rank-col {
+                flex: 1 1 320px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                min-width: 220px;
+              }
+              .vote-instructions {
+                font-size: 20px;
+                font-weight: 700;
+                color: #111;
+                margin-bottom: 18px;
+                text-align: center;
+                line-height: 1.3;
+              }
+              .vote-rank-slots {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                align-items: stretch;
+              }
+              .vote-rank-slot {
+                border: 2px solid #111;
+                border-radius: 1px;
+                background: #fff;
+                font-size: 18px;
+                font-weight: 700;
+                color: #111;
+                padding: 6px 0;
+                text-align: center;
+                cursor: pointer;
+                transition: background 0.2s, color 0.2s;
+                outline: none;
+                margin: 0;
+                min-width: 0;
+                min-height: 0;
+                user-select: none;
+              }
+              .vote-rank-slot.filled {
+                background: #111;
+                color: #fff;
+                cursor: default;
+              }
+              .vote-rank-slot:disabled {
+                background: #eee;
+                color: #aaa;
+                cursor: not-allowed;
+              }
+              .vote-rank-slot.preview {
+                background: #f5f5f5;
+                color: #111;
+                font-style: italic;
+              }
+              @media (max-width: 900px) {
+                .vote-flex {
+                  flex-direction: column;
+                  align-items: center;
+                  gap: 18px;
                 }
-              `}
-            </style>
-            <div className={"rank-btns-mobile"} style={{ display: 'flex', gap: 6, justifyContent: 'center', flexWrap: 'wrap' }}>
-              {[...Array(10)].map((_, i) => {
-                const rank = i + 1;
-                const used = getUsedRanks().includes(rank);
-                return (
-                  <button
-                    key={rank}
-                    onClick={() => handleRank(rank)}
-                    disabled={used}
-                    style={{
-                      width: 38,
-                      height: 38,
-                      fontSize: 18,
-                      fontWeight: 700,
-                      border: '2px solid #111',
-                      background: used ? '#eee' : '#fff',
-                      color: '#111',
-                      borderRadius: 8,
-                      cursor: used ? 'not-allowed' : 'pointer',
-                      transition: 'background 0.2s',
-                    }}
-                  >
-                    {rank}
-                  </button>
-                );
-              })}
+                .vote-poster-img {
+                  width: 220px;
+                  max-width: 90vw;
+                }
+                .vote-rank-col {
+                  min-width: 0;
+                  width: 100%;
+                }
+              }
+            `}
+          </style>
+          <div className="vote-instructions">
+            Make your BLINDBOXD {selectedCategory.type === 'genre' ? selectedCategory.value : selectedCategory.type === 'decade' ? selectedCategory.value : selectedCategory.type === 'oscar' ? `Oscar Winners: ${selectedCategory.value}` : ''} Top 10.<br/>
+            <span style={{ fontWeight: 400, fontSize: 18 }}>&quot;You must choose... but choose wisely.&quot;</span>
+          </div>
+          <div className="vote-flex">
+            <div className="vote-poster-col">
+              <img
+                className="vote-poster-img"
+                src={movies[currentIndex].poster_path ? `https://image.tmdb.org/t/p/w500${movies[currentIndex].poster_path}` : ''}
+                alt={movies[currentIndex].title}
+              />
+            </div>
+            <div className="vote-rank-col">
+              <div className="vote-rank-slots">
+                {[...Array(10)].map((_, i) => {
+                  const slotRank = i + 1;
+                  // Find which movie (if any) is assigned to this slot
+                  const assignedIdx = Object.entries(rankings).find(([idx, rank]) => rank === slotRank);
+                  const isFilled = assignedIdx !== undefined && assignedIdx !== null;
+                  const isCurrent = !isFilled && currentIndex < movies.length;
+                  const isPreview = hoveredSlot === slotRank && !isFilled && isCurrent;
+                  return (
+                    <button
+                      key={slotRank}
+                      className={`vote-rank-slot${isFilled ? ' filled' : ''}${isPreview ? ' preview' : ''}`}
+                      disabled={isFilled || !isCurrent}
+                      onClick={() => {
+                        if (!isFilled && isCurrent) handleRank(slotRank);
+                      }}
+                      onMouseEnter={() => setHoveredSlot(slotRank)}
+                      onMouseLeave={() => setHoveredSlot(null)}
+                    >
+                      {isFilled
+                        ? movies[Number(assignedIdx[0])].title.toUpperCase()
+                        : isPreview
+                          ? movies[currentIndex].title.toUpperCase()
+                          : `#${slotRank}`}
+                    </button>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>
