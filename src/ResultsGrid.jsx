@@ -29,6 +29,7 @@ export default function ResultsGrid({ rankings, movies, selectedCategory }) {
 
   useEffect(() => {
     async function ensurePostersAndDraw() {
+      const SCALE = 2;
       // Clone the array to avoid mutating props
       const moviesWithPosters = await Promise.all(
         rankToMovie.map(async (movie) => {
@@ -40,17 +41,17 @@ export default function ResultsGrid({ rankings, movies, selectedCategory }) {
         })
       );
       // Now draw the PNG
-      const width = 700;
-      const height = 540;
-      const posterW = 120;
-      const posterH = 180;
-      const gap = 10;
-      const marginTop = 80;
-      const marginLeft = 30;
-      const rowGap = 45;
-      const numberFont = 'bold 20px Inter, Arial, sans-serif';
-      const brandFont = 'bold 36px Inter, Arial, sans-serif';
-      const descFont = '16px Inter, Arial, sans-serif';
+      const width = 700 * SCALE;
+      const height = 540 * SCALE;
+      const posterW = 120 * SCALE;
+      const posterH = 180 * SCALE;
+      const gap = 10 * SCALE;
+      const marginTop = 80 * SCALE;
+      const marginLeft = 30 * SCALE;
+      const rowGap = 45 * SCALE;
+      const numberFont = `bold ${20 * SCALE}px Inter, Arial, sans-serif`;
+      const brandFont = `bold ${36 * SCALE}px Inter, Arial, sans-serif`;
+      const descFont = `${16 * SCALE}px Inter, Arial, sans-serif`;
       const canvas = document.createElement('canvas');
       canvas.width = width;
       canvas.height = height;
@@ -62,7 +63,7 @@ export default function ResultsGrid({ rankings, movies, selectedCategory }) {
       ctx.font = brandFont;
       ctx.fillStyle = '#111';
       ctx.textAlign = 'center';
-      ctx.fillText('BLINDBOXD', width / 2, 44);
+      ctx.fillText('BLINDBOXD', width / 2, 44 * SCALE);
       ctx.font = descFont;
       ctx.fillStyle = '#666';
       ctx.fillText(
@@ -76,7 +77,7 @@ export default function ResultsGrid({ rankings, movies, selectedCategory }) {
           ? `Oscar Winners: ${selectedCategory.value}`
           : 'Movie Ranking',
         width / 2,
-        70
+        70 * SCALE
       );
       // Draw posters and numbers for all 10 slots
       for (let i = 0; i < 10; i++) {
@@ -118,7 +119,7 @@ export default function ResultsGrid({ rankings, movies, selectedCategory }) {
         ctx.font = numberFont;
         ctx.fillStyle = '#222';
         ctx.textAlign = 'center';
-        ctx.fillText(i + 1, x + posterW / 2, y + posterH + 32);
+        ctx.fillText(i + 1, x + posterW / 2, y + posterH + 32 * SCALE);
       }
       setPngUrl(canvas.toDataURL('image/png'));
     }
@@ -133,6 +134,8 @@ export default function ResultsGrid({ rankings, movies, selectedCategory }) {
             src={pngUrl}
             alt="Your BLINDBOXD ranking"
             style={{
+              width: 700,
+              height: 540,
               maxWidth: '100%',
               borderRadius: 16,
               boxShadow: '0 2px 10px rgba(0,0,0,0.10)',
