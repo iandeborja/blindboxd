@@ -12,9 +12,9 @@ export default function ResultsGrid({ rankings, movies }) {
   // Responsive grid style
   const gridStyle = {
     display: 'grid',
-    gridTemplateColumns: 'repeat(2, 1fr)', // 2 columns for mobile by default
-    gridTemplateRows: 'repeat(5, auto)',
-    gap: 8,
+    gridTemplateColumns: 'repeat(5, 1fr)',
+    gridTemplateRows: 'repeat(2, auto)',
+    gap: 12,
     width: '100%',
     maxWidth: 1000,
     margin: '0 auto',
@@ -44,18 +44,18 @@ export default function ResultsGrid({ rankings, movies }) {
           }
           @media (max-width: 600px) {
             .results-grid-mobile {
-              grid-template-columns: repeat(2, 1fr) !important;
-              grid-template-rows: repeat(5, auto) !important;
+              grid-template-columns: repeat(5, 1fr) !important;
+              grid-template-rows: repeat(2, auto) !important;
               gap: 4px !important;
               padding: 0 !important;
             }
             .results-grid-mobile .poster-img {
-              width: 60px !important;
-              height: 90px !important;
+              width: 48px !important;
+              height: 72px !important;
               margin-bottom: 2px !important;
             }
             .results-grid-mobile .rank-number {
-              font-size: 14px !important;
+              font-size: 13px !important;
               margin-top: 0 !important;
               margin-bottom: 0 !important;
             }
@@ -77,8 +77,8 @@ export default function ResultsGrid({ rankings, movies }) {
               borderRadius: 14,
               padding: 0,
               minHeight: 220,
-              minWidth: 120,
-              width: 140,
+              minWidth: 70,
+              width: 70,
               margin: 8,
             }}>
               <img
