@@ -103,6 +103,16 @@ export async function fetchRandomMovies(category) {
       movie.title = movie['Movie Title'];
     }
     return pool;
+  } else if (category.type === 'podcast' && category.value === 'rewatchables') {
+    // Load rewatchables.json and pick 10 random movies with valid tmdb_id and poster_path
+    const rewatchables = (await import('./rewatchables.json')).default;
+    const pool = rewatchables.filter(m => m.tmdb_id && m.poster_path);
+    const shuffled = pool.sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, 10).map(m => ({
+      ...m,
+      id: Number(m.tmdb_id),
+      title: m.title,
+    }));
   }
 
   let apiResults = [];

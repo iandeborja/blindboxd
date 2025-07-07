@@ -3,6 +3,9 @@ import React from 'react';
 const genres = ['Action', 'Comedy', 'Drama', 'Horror', 'Sci-Fi'];
 const decades = ['1980s', '1990s', '2000s', '2010s', '2020s'];
 const oscarDecades = ['1980s', '1990s', '2000s', '2010s', '2020s'];
+const podcasts = [
+  { label: 'The Rewatchables', type: 'podcast', value: 'rewatchables', group: 'Podcasts' },
+];
 
 export default function CategorySelection({ onCategorySelect }) {
   // Build a unified list of options with group labels
@@ -10,11 +13,12 @@ export default function CategorySelection({ onCategorySelect }) {
     { label: 'The GOATs', type: 'greatest', value: 'alltime', group: 'The Greatest Films of All Time' },
     ...decades.map((d) => ({ label: d, type: 'decade', value: d, group: 'Decades' })),
     ...oscarDecades.map((d) => ({ label: d, type: 'oscar', value: d, group: 'Oscar Winners' })),
+    ...podcasts,
     ...genres.map((g) => ({ label: g, type: 'genre', value: g, group: 'Genres' })),
   ];
 
   // For section labels in the grid
-  const groupOrder = ['The Greatest Films of All Time', 'Decades', 'Oscar Winners', 'Genres'];
+  const groupOrder = ['The Greatest Films of All Time', 'Decades', 'Oscar Winners', 'Podcasts', 'Genres'];
 
   return (
     <div style={{
