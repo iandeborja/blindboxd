@@ -15,7 +15,7 @@ async function fetchPosterPath(tmdb_id) {
   }
 }
 
-export default function ResultsGrid({ rankings, movies, selectedCategory }) {
+export default function ResultsGrid({ rankings, movies, selectedCategory, preloadedPosters = {} }) {
   // Build an array of 10 slots, one for each rank 1-10
   const rankToMovie = Array(10).fill(null);
   Object.entries(rankings).forEach(([movieIdx, rank]) => {
@@ -98,20 +98,25 @@ export default function ResultsGrid({ rankings, movies, selectedCategory }) {
           } else if (posterUrl.startsWith('https://image.tmdb.org/')) {
             posterUrl = `/api/proxy?url=${encodeURIComponent(posterUrl)}`;
           }
-          console.log(`Drawing poster for slot ${i + 1}:`, posterUrl);
-          await new Promise((resolve) => {
-            const img = new window.Image();
-            img.crossOrigin = 'anonymous';
-            img.onload = () => {
-              ctx.drawImage(img, x, y, posterW, posterH);
-              resolve();
-            };
-            img.onerror = (e) => {
-              console.error(`Failed to load poster for slot ${i + 1}:`, posterUrl, e);
-              resolve();
-            };
-            img.src = posterUrl;
-          });
+          const preloadedImg = preloadedPosters[movie.id || movie.tmdb_id];
+          if (preloadedImg && preloadedImg.complete && preloadedImg.naturalWidth > 0) {
+            ctx.drawImage(preloadedImg, x, y, posterW, posterH);
+          } else {
+            console.log(`Drawing poster for slot ${i + 1}:`, posterUrl);
+            await new Promise((resolve) => {
+              const img = new window.Image();
+              img.crossOrigin = 'anonymous';
+              img.onload = () => {
+                ctx.drawImage(img, x, y, posterW, posterH);
+                resolve();
+              };
+              img.onerror = (e) => {
+                console.error(`Failed to load poster for slot ${i + 1}:`, posterUrl, e);
+                resolve();
+              };
+              img.src = posterUrl;
+            });
+          }
         } else {
           console.warn(`No poster_path for slot ${i + 1}`, movie);
         }
@@ -124,7 +129,7 @@ export default function ResultsGrid({ rankings, movies, selectedCategory }) {
       setPngUrl(canvas.toDataURL('image/png'));
     }
     ensurePostersAndDraw();
-  }, [rankings, movies, selectedCategory]);
+  }, [rankings, movies, selectedCategory, preloadedPosters]);
 
   return (
     <div style={{ textAlign: 'center', marginTop: 10 }}>

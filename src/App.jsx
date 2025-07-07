@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import CategorySelection from './CategorySelection';
 import { fetchRandomMovies } from './api';
 import ResultsGrid from './ResultsGrid';
@@ -12,6 +12,8 @@ function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [rankings, setRankings] = useState({});
   const [hoveredSlot, setHoveredSlot] = useState(null);
+  // Store preloaded poster images for the current movie set
+  const preloadedPostersRef = useRef({});
 
   // Fetch movies when category is selected
   React.useEffect(() => {
@@ -22,6 +24,22 @@ function App() {
       .then((results) => {
         setMovies(results);
         setCurrentIndex(0);
+        // Preload all poster images for the fetched movies
+        preloadedPostersRef.current = {};
+        results.forEach((movie) => {
+          if (movie.poster_path) {
+            let posterUrl = movie.poster_path;
+            if (!posterUrl.startsWith('http')) {
+              posterUrl = `/api/proxy?url=https://image.tmdb.org/t/p/w300${posterUrl}`;
+            } else if (posterUrl.startsWith('https://image.tmdb.org/')) {
+              posterUrl = `/api/proxy?url=${encodeURIComponent(posterUrl)}`;
+            }
+            const img = new window.Image();
+            img.crossOrigin = 'anonymous';
+            img.src = posterUrl;
+            preloadedPostersRef.current[movie.id || movie.tmdb_id] = img;
+          }
+        });
       })
       .catch((err) => setError('Failed to fetch movies.'))
       .finally(() => setLoading(false));
@@ -289,6 +307,7 @@ function App() {
                   rankings={rankings}
                   movies={movies}
                   selectedCategory={selectedCategory}
+                  preloadedPosters={preloadedPostersRef.current}
                 />
                 <button
                   style={{
