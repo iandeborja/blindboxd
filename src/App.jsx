@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import CategorySelection from './CategorySelection';
 import { fetchRandomMovies } from './api';
 import ResultsGrid from './ResultsGrid';
+import { AnimatePresence, motion } from 'framer-motion';
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -46,228 +47,292 @@ function App() {
 
   return (
     <div style={{ fontFamily: 'sans-serif', maxWidth: 1000, margin: '0 auto' }}>
-      {!selectedCategory ? (
-        <CategorySelection onCategorySelect={setSelectedCategory} />
-      ) : loading ? (
-        <p>Loading movies...</p>
-      ) : error ? (
-        <p style={{ color: 'red' }}>{error}</p>
-      ) : movies.length > 0 && currentIndex < movies.length ? (
-        <div>
-          <style>
-            {`
-              .vote-flex {
-                display: flex;
-                flex-direction: row;
-                align-items: flex-start;
-                justify-content: center;
-                gap: 32px;
-                width: 100%;
-                max-width: 900px;
-                margin: 0 auto;
-                padding: 0 8px;
-              }
-              .vote-poster-col {
-                flex: 1 1 320px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: flex-start;
-              }
-              .vote-poster-img {
-                width: 320px;
-                max-width: 80vw;
-                height: auto;
-                border-radius: 18px;
-                box-shadow: 0 4px 24px rgba(0,0,0,0.10);
-                margin-bottom: 0;
-              }
-              .vote-rank-col {
-                flex: 1 1 320px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: flex-start;
-                min-width: 220px;
-              }
-              .vote-instructions {
-                font-size: 20px;
-                font-weight: 700;
-                color: #111;
-                margin-bottom: 18px;
-                text-align: center;
-                line-height: 1.3;
-              }
-              .vote-rank-slots {
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                gap: 12px;
-                align-items: stretch;
-              }
-              .vote-rank-slot {
-                border: 2px solid #111;
-                border-radius: 1px;
-                background: #fff;
-                font-size: 18px;
-                font-weight: 700;
-                color: #111;
-                padding: 6px 0;
-                text-align: center;
-                cursor: pointer;
-                transition: background 0.2s, color 0.2s;
-                outline: none;
-                margin: 0;
-                min-width: 0;
-                min-height: 0;
-                user-select: none;
-              }
-              .vote-rank-slot.filled {
-                background: #111;
-                color: #fff;
-                cursor: default;
-              }
-              .vote-rank-slot:disabled {
-                background: #eee;
-                color: #aaa;
-                cursor: not-allowed;
-              }
-              .vote-rank-slot.preview {
-                background: #f5f5f5;
-                color: #111;
-                font-style: italic;
-              }
-              @media (max-width: 900px) {
+      <AnimatePresence mode="wait">
+        {!selectedCategory && (
+          <motion.div
+            key="category"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -40 }}
+            transition={{ duration: 0.4 }}
+          >
+            <CategorySelection onCategorySelect={setSelectedCategory} />
+          </motion.div>
+        )}
+        {selectedCategory && loading && (
+          <motion.p
+            key="loading"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            style={{ textAlign: 'center' }}
+          >
+            Loading movies...
+          </motion.p>
+        )}
+        {selectedCategory && error && (
+          <motion.p
+            key="error"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            style={{ color: 'red', textAlign: 'center' }}
+          >
+            {error}
+          </motion.p>
+        )}
+        {selectedCategory && movies.length > 0 && currentIndex < movies.length && !loading && !error && (
+          <motion.div
+            key="ranking"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -40 }}
+            transition={{ duration: 0.4 }}
+          >
+            <style>
+              {`
                 .vote-flex {
+                  display: flex;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: center;
+                  gap: 32px;
+                  width: 100%;
+                  max-width: 900px;
+                  margin: 0 auto;
+                  padding: 0 8px;
+                }
+                .vote-poster-col {
+                  flex: 1 1 320px;
+                  display: flex;
                   flex-direction: column;
                   align-items: center;
-                  gap: 18px;
+                  justify-content: flex-start;
                 }
                 .vote-poster-img {
-                  width: 220px;
-                  max-width: 90vw;
+                  width: 320px;
+                  max-width: 80vw;
+                  height: auto;
+                  border-radius: 18px;
+                  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+                  margin-bottom: 0;
                 }
                 .vote-rank-col {
-                  min-width: 0;
-                  width: 100%;
+                  flex: 1 1 320px;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: flex-start;
+                  min-width: 220px;
                 }
-              }
-            `}
-          </style>
-          <div className="vote-instructions">
-            Make your BLINDBOXD {selectedCategory.type === 'genre' ? selectedCategory.value : selectedCategory.type === 'decade' ? selectedCategory.value : selectedCategory.type === 'oscar' ? `Oscar Winners: ${selectedCategory.value}` : ''} Top 10.<br/>
-            <span style={{ fontWeight: 400, fontSize: 18 }}>&quot;You must choose... but choose wisely.&quot;</span>
-          </div>
-          <div className="vote-flex">
-            <div className="vote-poster-col">
-              <img
-                className="vote-poster-img"
-                src={movies[currentIndex].poster_path ? `https://image.tmdb.org/t/p/w500${movies[currentIndex].poster_path}` : ''}
-                alt={movies[currentIndex].title}
-              />
+                .vote-instructions {
+                  font-size: 20px;
+                  font-weight: 700;
+                  color: #111;
+                  margin-bottom: 18px;
+                  text-align: center;
+                  line-height: 1.3;
+                }
+                .vote-rank-slots {
+                  width: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 12px;
+                  align-items: stretch;
+                }
+                .vote-rank-slot {
+                  border: 2px solid #111;
+                  border-radius: 1px;
+                  background: #fff;
+                  font-size: 18px;
+                  font-weight: 700;
+                  color: #111;
+                  padding: 6px 0;
+                  text-align: center;
+                  cursor: pointer;
+                  transition: background 0.2s, color 0.2s;
+                  outline: none;
+                  margin: 0;
+                  min-width: 0;
+                  min-height: 0;
+                  user-select: none;
+                }
+                .vote-rank-slot.filled {
+                  background: #111;
+                  color: #fff;
+                  cursor: default;
+                }
+                .vote-rank-slot:disabled {
+                  background: #eee;
+                  color: #aaa;
+                  cursor: not-allowed;
+                }
+                .vote-rank-slot.preview {
+                  background: #f5f5f5;
+                  color: #111;
+                  font-style: italic;
+                }
+                @media (max-width: 900px) {
+                  .vote-flex {
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 18px;
+                  }
+                  .vote-poster-img {
+                    width: 220px;
+                    max-width: 90vw;
+                  }
+                  .vote-rank-col {
+                    min-width: 0;
+                    width: 100%;
+                  }
+                }
+              `}
+            </style>
+            <div className="vote-instructions">
+              Make your BLINDBOXD {selectedCategory.type === 'genre' ? selectedCategory.value : selectedCategory.type === 'decade' ? selectedCategory.value : selectedCategory.type === 'oscar' ? `Oscar Winners: ${selectedCategory.value}` : ''} Top 10.<br/>
+              <span style={{ fontWeight: 400, fontSize: 18 }}>&quot;You must choose... but choose wisely.&quot;</span>
             </div>
-            <div className="vote-rank-col">
-              <div className="vote-rank-slots">
-                {[...Array(10)].map((_, i) => {
-                  const slotRank = i + 1;
-                  // Find which movie (if any) is assigned to this slot
-                  const assignedIdx = Object.entries(rankings).find(([idx, rank]) => rank === slotRank);
-                  const isFilled = assignedIdx !== undefined && assignedIdx !== null;
-                  const isCurrent = !isFilled && currentIndex < movies.length;
-                  const isPreview = hoveredSlot === slotRank && !isFilled && isCurrent;
-                  return (
-                    <button
-                      key={slotRank}
-                      className={`vote-rank-slot${isFilled ? ' filled' : ''}${isPreview ? ' preview' : ''}`}
-                      disabled={isFilled || !isCurrent}
-                      onClick={() => {
-                        if (!isFilled && isCurrent) handleRank(slotRank);
-                      }}
-                      onMouseEnter={() => setHoveredSlot(slotRank)}
-                      onMouseLeave={() => setHoveredSlot(null)}
-                    >
-                      {isFilled
-                        ? movies[Number(assignedIdx[0])].title.toUpperCase()
-                        : isPreview
-                          ? movies[currentIndex].title.toUpperCase()
-                          : `#${slotRank}`}
-                    </button>
-                  );
-                })}
+            <div className="vote-flex">
+              <div className="vote-poster-col">
+                <AnimatePresence mode="wait">
+                  <motion.img
+                    key={movies[currentIndex].id || movies[currentIndex].title}
+                    className="vote-poster-img"
+                    src={movies[currentIndex].poster_path ? `https://image.tmdb.org/t/p/w500${movies[currentIndex].poster_path}` : ''}
+                    alt={movies[currentIndex].title}
+                    initial={{ rotateY: 0, opacity: 1 }}
+                    animate={{ rotateY: 0, opacity: 1 }}
+                    exit={{ rotateY: 90, opacity: 0 }}
+                    transition={{ duration: 0.5 }}
+                    style={{ perspective: 1000 }}
+                  />
+                </AnimatePresence>
+              </div>
+              <div className="vote-rank-col">
+                <div className="vote-rank-slots">
+                  {[...Array(10)].map((_, i) => {
+                    const slotRank = i + 1;
+                    const assignedIdx = Object.entries(rankings).find(([idx, rank]) => rank === slotRank);
+                    const isFilled = assignedIdx !== undefined && assignedIdx !== null;
+                    const isCurrent = !isFilled && currentIndex < movies.length;
+                    const isPreview = hoveredSlot === slotRank && !isFilled && isCurrent;
+                    return (
+                      <button
+                        key={slotRank}
+                        className={`vote-rank-slot${isFilled ? ' filled' : ''}${isPreview ? ' preview' : ''}`}
+                        disabled={isFilled || !isCurrent}
+                        onClick={() => {
+                          if (!isFilled && isCurrent) handleRank(slotRank);
+                        }}
+                        onMouseEnter={() => setHoveredSlot(slotRank)}
+                        onMouseLeave={() => setHoveredSlot(null)}
+                      >
+                        {isFilled
+                          ? movies[Number(assignedIdx[0])].title.toUpperCase()
+                          : isPreview
+                            ? movies[currentIndex].title.toUpperCase()
+                            : `#${slotRank}`}
+                      </button>
+                    );
+                  })}
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      ) : movies.length > 0 && Object.keys(rankings).length === movies.length ? (
-        <div style={{
-          background: '#fff',
-          minHeight: '100vh',
-          padding: 0,
-          overflowX: 'hidden',
-          boxSizing: 'border-box',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'flex-start',
-          paddingTop: 12,
-          paddingBottom: 12,
-        }}>
-          <div style={{
-            maxWidth: 950,
-            width: '100%',
-            margin: '0 auto',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'flex-start',
-          }}>
-            <h2 style={{ color: '#111', fontSize: 22, fontWeight: 800, textAlign: 'center', marginBottom: 10 }}>
-              {`Here's your ${
-                selectedCategory.type === 'genre'
-                  ? selectedCategory.value
-                  : selectedCategory.type === 'decade'
-                  ? selectedCategory.value
-                  : selectedCategory.type === 'oscar'
-                  ? `Oscar Winners: ${selectedCategory.value}`
-                  : ''
-              } Blindboxd`}
-            </h2>
-            <ResultsGrid
-              key={selectedCategory?.type + '-' + selectedCategory?.value + '-' + Object.values(rankings).join('-')}
-              rankings={rankings}
-              movies={movies}
-              selectedCategory={selectedCategory}
-            />
-            <button
-              style={{
-                marginTop: 8,
-                padding: '10px 20px',
-                fontSize: 15,
-                fontWeight: 700,
-                borderRadius: 8,
-                border: 'none',
-                background: '#111',
-                color: '#fff',
-                cursor: 'pointer',
-                boxShadow: '0 2px 8px rgba(0,0,0,0.10)',
-                transition: 'background 0.2s',
-                width: 'fit-content',
-                alignSelf: 'center',
-              }}
-              onClick={() => {
-                setSelectedCategory(null);
-                setMovies([]);
-                setRankings({});
-                setCurrentIndex(0);
-              }}
-            >
-              Start new BLINDBOXD ranking
-            </button>
-          </div>
-        </div>
-      ) : (
-        <p>No movies found.</p>
-      )}
+          </motion.div>
+        )}
+        {selectedCategory && movies.length > 0 && Object.keys(rankings).length === movies.length && !loading && !error && (
+          <motion.div
+            key="results"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -40 }}
+            transition={{ duration: 0.4 }}
+          >
+            <div style={{
+              background: '#fff',
+              minHeight: '100vh',
+              padding: 0,
+              overflowX: 'hidden',
+              boxSizing: 'border-box',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'flex-start',
+              paddingTop: 12,
+              paddingBottom: 12,
+            }}>
+              <div style={{
+                maxWidth: 950,
+                width: '100%',
+                margin: '0 auto',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'flex-start',
+              }}>
+                <h2 style={{ color: '#111', fontSize: 22, fontWeight: 800, textAlign: 'center', marginBottom: 10 }}>
+                  {`Here's your ${
+                    selectedCategory.type === 'genre'
+                      ? selectedCategory.value
+                      : selectedCategory.type === 'decade'
+                      ? selectedCategory.value
+                      : selectedCategory.type === 'oscar'
+                      ? `Oscar Winners: ${selectedCategory.value}`
+                      : ''
+                  } Blindboxd`}
+                </h2>
+                <ResultsGrid
+                  key={selectedCategory?.type + '-' + selectedCategory?.value + '-' + Object.values(rankings).join('-')}
+                  rankings={rankings}
+                  movies={movies}
+                  selectedCategory={selectedCategory}
+                />
+                <button
+                  style={{
+                    marginTop: 8,
+                    padding: '10px 20px',
+                    fontSize: 15,
+                    fontWeight: 700,
+                    borderRadius: 8,
+                    border: 'none',
+                    background: '#111',
+                    color: '#fff',
+                    cursor: 'pointer',
+                    boxShadow: '0 2px 8px rgba(0,0,0,0.10)',
+                    transition: 'background 0.2s',
+                    width: 'fit-content',
+                    alignSelf: 'center',
+                  }}
+                  onClick={() => {
+                    setSelectedCategory(null);
+                    setMovies([]);
+                    setRankings({});
+                    setCurrentIndex(0);
+                  }}
+                >
+                  Start new BLINDBOXD ranking
+                </button>
+              </div>
+            </div>
+          </motion.div>
+        )}
+        {/* fallback */}
+        {selectedCategory && movies.length === 0 && !loading && !error && (
+          <motion.p
+            key="no-movies"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            style={{ textAlign: 'center' }}
+          >
+            No movies found.
+          </motion.p>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
