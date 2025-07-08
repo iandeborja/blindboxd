@@ -63,6 +63,16 @@ function App() {
       .sort((a, b) => a.rank - b.rank);
   }
 
+  // Custom handler to track Plausible event when a category is selected
+  const handleCategorySelect = (category) => {
+    setSelectedCategory(category);
+    if (window.plausible) {
+      window.plausible('Category Played', {
+        props: { category: category.type, value: category.value }
+      });
+    }
+  };
+
   return (
     <div style={{ fontFamily: 'sans-serif', maxWidth: 1000, margin: '0 auto' }}>
       <AnimatePresence mode="wait">
@@ -74,7 +84,7 @@ function App() {
             exit={{ opacity: 0, y: -40 }}
             transition={{ duration: 0.4 }}
           >
-            <CategorySelection onCategorySelect={setSelectedCategory} />
+            <CategorySelection onCategorySelect={handleCategorySelect} />
           </motion.div>
         )}
         {selectedCategory && loading && (
