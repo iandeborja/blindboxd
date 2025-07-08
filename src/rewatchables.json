@@ -1,9 +1,5 @@
 [
-  {
-    "title": "With Bill Simmons, Chris Ryan, and Bill",
-    "tmdb_id": null,
-    "poster_path": null
-  },
+
   {
     "title": "10 Things I Hate About You",
     "tmdb_id": 4951,
@@ -29,11 +25,7 @@
     "tmdb_id": 1607,
     "poster_path": "/sDbO6LmLYtyqAoFTPpRcMgPSCEO.jpg"
   },
-  {
-    "title": "A Few Good (Re)Men",
-    "tmdb_id": null,
-    "poster_path": null
-  },
+
   {
     "title": "A Few Good Men",
     "tmdb_id": 881,
@@ -73,11 +65,6 @@
     "title": "Alive",
     "tmdb_id": 7305,
     "poster_path": "/uQACcCZqd7WCTRin9xRIW5gr1bd.jpg"
-  },
-  {
-    "title": "All the President",
-    "tmdb_id": 502044,
-    "poster_path": "/spkUt2Z2uGnpDjYFEwQAFMJFPQ8.jpg"
   },
   {
     "title": "Along Came Polly",
@@ -225,11 +212,6 @@
     "poster_path": "/6fzz3HkAGJxhGcwRZwpbEZxgZMu.jpg"
   },
   {
-    "title": "Boomerang",
-    "tmdb_id": 352187,
-    "poster_path": "/nmca3IeMIe3DLD8WOyvnmvGanIo.jpg"
-  },
-  {
     "title": "Boyz n the Hood",
     "tmdb_id": 650,
     "poster_path": "/v4ox4aSCNT5vyLXl4Q71JiWwCXW.jpg"
@@ -258,11 +240,6 @@
     "title": "Caddyshack",
     "tmdb_id": 11977,
     "poster_path": "/lXnNz7zOXCsftMDVoU3VSo0Eioi.jpg"
-  },
-  {
-    "title": "Can",
-    "tmdb_id": 1181039,
-    "poster_path": "/7Hk1qxAvZi9H9cfBb4iHkoGjapH.jpg"
   },
   {
     "title": "Cape Fear",
@@ -310,11 +287,6 @@
     "poster_path": "/yaPx3cK9zGFX3SbcKwxWM1QIbUh.jpg"
   },
   {
-    "title": "Cobra",
-    "tmdb_id": 9874,
-    "poster_path": "/jCxfbTh8JvJil5edhNywxaTHoWv.jpg"
-  },
-  {
     "title": "Cocktail",
     "tmdb_id": 7520,
     "poster_path": "/jFRhEPhtsln9tDwzMdZN3OlhUob.jpg"
@@ -338,16 +310,6 @@
     "title": "Contagion",
     "tmdb_id": 49830,
     "poster_path": "/nqpMKUmSYoAuAr5gBrFX4hklbJd.jpg"
-  },
-  {
-    "title": "Cop Land",
-    "tmdb_id": 2142,
-    "poster_path": "/bUXaWZPj7qzXjKc2s3Pwdkhxh2o.jpg"
-  },
-  {
-    "title": "Country Strong",
-    "tmdb_id": 45272,
-    "poster_path": "/6C95tD92E9xm5poyyzs37bYemM0.jpg"
   },
   {
     "title": "Crash",
@@ -428,11 +390,6 @@
     "title": "Dirty Work",
     "tmdb_id": 48672,
     "poster_path": "/8yWHfsja2vX9LrWYelujynK8tBG.jpg"
-  },
-  {
-    "title": "Disclosure",
-    "tmdb_id": 653610,
-    "poster_path": "/2MB2FPNxdSlykbH7ghBltoBYnTH.jpg"
   },
   {
     "title": "Do The Right Thing",
@@ -535,11 +492,6 @@
     "poster_path": "/1AjXgBM2lkpG3FLQO0f6AK3Bi1e.jpg"
   },
   {
-    "title": "Focus",
-    "tmdb_id": 256591,
-    "poster_path": "/lOzGWjceYTd0kd5HyX7Ch46O9kh.jpg"
-  },
-  {
     "title": "For Love of the Game",
     "tmdb_id": 10390,
     "poster_path": "/vkeKxoSXE1qMArcFNTNBBH8TjKZ.jpg"
@@ -628,11 +580,6 @@
     "title": "Hardball",
     "tmdb_id": 20857,
     "poster_path": "/9RMcwwnK8a9WCt8dVlwmtNsFCg3.jpg"
-  },
-  {
-    "title": "Hardcore",
-    "tmdb_id": 42172,
-    "poster_path": "/g6m9xBTAzxXVhdJ624s9BLK9o6.jpg"
   },
   {
     "title": "He Got Game",
@@ -870,7 +817,7 @@
     "poster_path": "/4yIQq1e6iOcaZ5rLDG3lZBP3j7a.jpg"
   },
   {
-    "title": "Mr. Holland",
+    "title": "Mr. Holland's Opus",
     "tmdb_id": 2054,
     "poster_path": "/jYEKdpVvRV3KdyHMUVYyg0KTVSY.jpg"
   },
@@ -1493,16 +1440,6 @@
     "title": "The Purge",
     "tmdb_id": 158015,
     "poster_path": "/46X1ei9uf13nkkr0OhWldGyr5Uh.jpg"
-  },
-  {
-    "title": "The Re-Departed",
-    "tmdb_id": 1267232,
-    "poster_path": "/3vigb7cSPqIH00bknPGAm4kepdm.jpg"
-  },
-  {
-    "title": "The Re-Heat",
-    "tmdb_id": null,
-    "poster_path": null
   },
   {
     "title": "The Replacements",
