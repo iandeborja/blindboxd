@@ -159,7 +159,7 @@ function App() {
       // No more movies to show
       setCurrentIndex((idx) => idx + 1);
     }
-    if (difficulty === 'film_buff') setSkipsLeft((s) => Math.max(0, s - 1));
+    if (difficulty === 'film_buff' || difficulty === 'film_lover') setSkipsLeft((s) => Math.max(0, s - 1));
   }
 
   function getUsedRanks() {
@@ -531,15 +531,28 @@ function App() {
                       justifyContent: 'flex-start',
                     }}>
                       <h2 style={{ color: '#111', fontSize: 22, fontWeight: 800, textAlign: 'center', marginBottom: 10 }}>
-                        {`Here's your ${
-                          selectedCategory?.type === 'genre'
-                            ? selectedCategory.value
-                            : selectedCategory?.type === 'decade'
-                            ? selectedCategory.value
-                            : selectedCategory?.type === 'oscar'
-                            ? `Oscar Winners: ${selectedCategory.value}`
-                            : ''
-                        } Blindboxd`}
+                        {(() => {
+                          // Map of value/type to label for all subcategories
+                          const genreList = ['Action', 'Comedy', 'Drama', 'Horror', 'Sci-Fi'];
+                          const decadeList = ['2020s', '2010s', '2000s', '1990s', '1980s', '1970s', '1960s'];
+                          const oscarDecades = ['2020s', '2010s', '2000s', '1990s', '1980s', '1970s', '1960s'];
+                          const podcastMap = {
+                            rewatchables: 'The Rewatchables',
+                            blankslate: 'Blank Check',
+                            seventymm: '70mm',
+                            escapehatch: 'Escape Hatch',
+                          };
+                          if (!selectedCategory) return "Here's your Blindboxd";
+                          if (selectedCategory.type === 'genre') return `Here's your ${selectedCategory.value} Blindboxd`;
+                          if (selectedCategory.type === 'decade') return `Here's your ${selectedCategory.value} Blindboxd`;
+                          if (selectedCategory.type === 'oscar') return `Here's your Oscar Winners: ${selectedCategory.value} Blindboxd`;
+                          if (selectedCategory.type === 'podcast') {
+                            const label = podcastMap[selectedCategory.value] || selectedCategory.value;
+                            return `Here's your ${label} Blindboxd`;
+                          }
+                          if (selectedCategory.type === 'greatest') return "Here's your Greatest of All Time Blindboxd";
+                          return "Here's your Blindboxd";
+                        })()}
                       </h2>
                       <ResultsGrid
                         key={selectedCategory?.type + '-' + selectedCategory?.value + '-' + Object.values(rankings).join('-')}
