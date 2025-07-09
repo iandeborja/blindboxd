@@ -51,8 +51,7 @@ function App() {
         });
         // Set skips left based on difficulty
         if (difficulty === 'film_buff') setSkipsLeft(5);
-        else if (difficulty === 'film_lover') setSkipsLeft(Infinity);
-        else setSkipsLeft(0);
+        else if (difficulty === 'film_lover') setSkipsLeft(20);
         setSkippedIndices([]);
         setExtraMovies([]);
       })
@@ -92,8 +91,7 @@ function App() {
           });
           // Set skips left based on difficulty
           if (diff === 'film_buff') setSkipsLeft(5);
-          else if (diff === 'film_lover') setSkipsLeft(Infinity);
-          else setSkipsLeft(0);
+          else if (diff === 'film_lover') setSkipsLeft(20);
           setSkippedIndices([]);
           setExtraMovies([]);
         })
@@ -247,7 +245,7 @@ function App() {
                         <label style={{ display: 'block', marginBottom: 8, cursor: 'pointer' }}>
                           <input type="radio" name="modal-difficulty" value="cinephile" checked={difficulty === 'cinephile'} onChange={() => setDifficulty('cinephile')} />
                           <span style={{ fontWeight: 600, marginLeft: 6 }}>Cinephile</span>
-                          <span style={{ color: '#888', fontSize: 13, marginLeft: 6 }}>(no skips)</span>
+                          <span style={{ color: '#888', fontSize: 13, marginLeft: 6 }}>(No skips)</span>
                         </label>
                         <label style={{ display: 'block', marginBottom: 8, cursor: 'pointer' }}>
                           <input type="radio" name="modal-difficulty" value="film_buff" checked={difficulty === 'film_buff'} onChange={() => setDifficulty('film_buff')} />
@@ -257,7 +255,7 @@ function App() {
                         <label style={{ display: 'block', marginBottom: 8, cursor: 'pointer' }}>
                           <input type="radio" name="modal-difficulty" value="film_lover" checked={difficulty === 'film_lover'} onChange={() => setDifficulty('film_lover')} />
                           <span style={{ fontWeight: 600, marginLeft: 6 }}>Film Lover</span>
-                          <span style={{ color: '#888', fontSize: 13, marginLeft: 6 }}>(unlimited skips)</span>
+                          <span style={{ color: '#888', fontSize: 13, marginLeft: 6 }}>(20 skips)</span>
                         </label>
                       </div>
                       <button
@@ -484,7 +482,7 @@ function App() {
                           onClick={handleSkip}
                           disabled={skipsLeft === 0}
                         >
-                          Skip {difficulty === 'film_buff' && <span style={{ fontWeight: 400, fontSize: 14 }}>({skipsLeft} left)</span>}
+                          Skip {(difficulty === 'film_buff' || difficulty === 'film_lover') && <span style={{ fontWeight: 400, fontSize: 14 }}>({skipsLeft} left)</span>}
                         </button>
                       )}
                     </div>
