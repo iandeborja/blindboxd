@@ -173,6 +173,9 @@ export default function ResultsGrid({ rankings, movies, selectedCategory, preloa
                 transition: 'background 0.2s',
               }}
               onClick={async () => {
+                if (window.plausible) {
+                  window.plausible('Result Shared');
+                }
                 if (!pngUrl) return;
                 try {
                   const response = await fetch(pngUrl);
