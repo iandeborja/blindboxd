@@ -189,6 +189,9 @@ function App() {
       });
     }
     if (window.plausible && pendingCategory) {
+      window.plausible('Subcategory Selected', {
+        props: { type: pendingCategory.type, value: pendingCategory.value }
+      });
       window.plausible('Category Played', {
         props: { category: pendingCategory.type, value: pendingCategory.value, difficulty: level }
       });
