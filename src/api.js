@@ -113,6 +113,42 @@ export async function fetchRandomMovies(category) {
       id: Number(m.tmdb_id),
       title: m.title,
     }));
+  } else if (category.type === 'podcast' && category.value === 'blankslate') {
+    // Load blankslate.json and pick 10 random movies
+    const blankslate = (await import('./blankslate.json')).default;
+    // Shuffle and pick 10
+    const shuffled = blankslate.sort(() => 0.5 - Math.random());
+    // Return as objects with id, title, and (if available) tmdb_id/poster_path
+    return shuffled.slice(0, 10).map((m, i) => ({
+      ...m,
+      id: m.tmdb_id ? Number(m.tmdb_id) : m.title + '-' + i,
+      title: m.title,
+      poster_path: m.poster_path || null,
+    }));
+  } else if (category.type === 'podcast' && category.value === 'seventymm') {
+    // Load 70mm.json and pick 10 random movies
+    const seventymm = (await import('./70mm.json')).default;
+    // Shuffle and pick 10
+    const shuffled = seventymm.sort(() => 0.5 - Math.random());
+    // Return as objects with id, title, and (if available) tmdb_id/poster_path
+    return shuffled.slice(0, 10).map((m, i) => ({
+      ...m,
+      id: m.tmdb_id ? Number(m.tmdb_id) : m.title + '-' + i,
+      title: m.title,
+      poster_path: m.poster_path || null,
+    }));
+  } else if (category.type === 'podcast' && category.value === 'escapehatch') {
+    // Load escapehatch.json and pick 10 random movies
+    const escapehatch = (await import('./escapehatch.json')).default;
+    // Shuffle and pick 10
+    const shuffled = escapehatch.sort(() => 0.5 - Math.random());
+    // Return as objects with id, title, and (if available) tmdb_id/poster_path
+    return shuffled.slice(0, 10).map((m, i) => ({
+      ...m,
+      id: m.tmdb_id ? Number(m.tmdb_id) : m.title + '-' + i,
+      title: m.title,
+      poster_path: m.poster_path || null,
+    }));
   }
 
   let apiResults = [];

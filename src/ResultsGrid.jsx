@@ -42,7 +42,7 @@ export default function ResultsGrid({ rankings, movies, selectedCategory, preloa
       );
       // Now draw the PNG
       const width = 700 * SCALE;
-      const height = 540 * SCALE;
+      const height = 560 * SCALE;
       const posterW = 120 * SCALE;
       const posterH = 180 * SCALE;
       const gap = 10 * SCALE;
@@ -126,6 +126,11 @@ export default function ResultsGrid({ rankings, movies, selectedCategory, preloa
         ctx.textAlign = 'center';
         ctx.fillText(i + 1, x + posterW / 2, y + posterH + 32 * SCALE);
       }
+      // Draw site URL at the bottom center
+      ctx.font = `bold ${14 * SCALE}px Inter, Arial, sans-serif`;
+      ctx.fillStyle = '#888';
+      ctx.textAlign = 'center';
+      ctx.fillText('BLINDBOXD.XYZ', width / 2, height - 18 * SCALE);
       setPngUrl(canvas.toDataURL('image/png'));
     }
     ensurePostersAndDraw();
@@ -151,8 +156,49 @@ export default function ResultsGrid({ rankings, movies, selectedCategory, preloa
               marginRight: 'auto',
             }}
           />
-          <div style={{ fontSize: 15, color: '#444', marginBottom: 8 }}>
-            Tap and hold to save or share
+          <div style={{ fontSize: 15, color: '#444', marginBottom: 8, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8 }}>
+            Tap and hold to save or
+            <button
+              style={{
+                fontSize: 13,
+                padding: '3px 10px',
+                borderRadius: 6,
+                border: '1px solid #bbb',
+                background: '#f8f8f8',
+                color: '#333',
+                fontWeight: 600,
+                cursor: 'pointer',
+                marginLeft: 4,
+                marginRight: 0,
+                transition: 'background 0.2s',
+              }}
+              onClick={async () => {
+                if (!pngUrl) return;
+                try {
+                  const response = await fetch(pngUrl);
+                  const blob = await response.blob();
+                  const clipboardItems = [
+                    new window.ClipboardItem({
+                      'image/png': blob,
+                      'text/plain': new Blob(['https://blindboxd.xyz'], { type: 'text/plain' }),
+                    }),
+                  ];
+                  await navigator.clipboard.write(clipboardItems);
+                  alert('Image and link copied! Paste in any app to share.');
+                } catch (err) {
+                  try {
+                    await navigator.clipboard.write([
+                      new window.ClipboardItem({ 'image/png': blob }),
+                    ]);
+                    alert('Image copied! Link: https://blindboxd.xyz');
+                  } catch (e) {
+                    alert('Could not copy image. Please long-press or right-click to save.');
+                  }
+                }
+              }}
+            >
+              SHARE
+            </button>
           </div>
         </>
       ) : (
