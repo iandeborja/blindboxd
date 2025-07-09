@@ -184,6 +184,7 @@ function App() {
     setShowDifficultyModal(false);
     setSelectedCategory(pendingCategory);
     if (window.plausible) {
+      window.plausible('Game Played');
       window.plausible('Difficulty Selected', {
         props: { difficulty: level }
       });
