@@ -420,7 +420,7 @@ function App() {
                     Make your BLINDBOXD {selectedCategory?.type === 'genre' ? selectedCategory.value : selectedCategory?.type === 'decade' ? selectedCategory.value : selectedCategory?.type === 'oscar' ? `Oscar Winners: ${selectedCategory.value}` : ''} Top 10.<br/>
                     <span style={{ fontWeight: 400, fontSize: 18 }}>&quot;You must choose... but choose wisely.&quot;</span>
                   </div>
-                  <div className="vote-flex">
+                  <div className="vote-flex" style={{ paddingBottom: 64 }}>
                     <div className="vote-poster-col">
                       <AnimatePresence mode="wait">
                         <motion.img
