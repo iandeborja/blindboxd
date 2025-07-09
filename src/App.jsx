@@ -279,23 +279,26 @@ function App() {
                 )}
               </motion.div>
             </AnimatePresence>
-            <footer style={{
-              width: '100%',
-              textAlign: 'center',
-              fontSize: 13,
-              color: '#888',
-              letterSpacing: 0.2,
-              fontFamily: 'Inter, Arial, sans-serif',
-              position: 'fixed',
-              left: 0,
-              bottom: 0,
-              zIndex: 100,
-              background: 'rgba(255,255,255,0.97)',
-              padding: '8px 0',
-              boxShadow: '0 -2px 8px rgba(0,0,0,0.04)',
-            }}>
-              Created by <a href="https://twitter.com/iandeborja_" target="_blank" rel="noopener noreferrer" style={{ color: '#888', textDecoration: 'underline', fontWeight: 500 }}>@iandeborja_</a>
-            </footer>
+            {/* Only show footer on home and results pages, not during ranking */}
+            {(!selectedCategory || (movies.length > 0 && Object.keys(rankings).length === movies.length)) && (
+              <footer style={{
+                width: '100%',
+                textAlign: 'center',
+                fontSize: 13,
+                color: '#888',
+                letterSpacing: 0.2,
+                fontFamily: 'Inter, Arial, sans-serif',
+                position: 'fixed',
+                left: 0,
+                bottom: 0,
+                zIndex: 100,
+                background: 'rgba(255,255,255,0.97)',
+                padding: '8px 0',
+                boxShadow: '0 -2px 8px rgba(0,0,0,0.04)',
+              }}>
+                Created by <a href="https://twitter.com/iandeborja_" target="_blank" rel="noopener noreferrer" style={{ color: '#888', textDecoration: 'underline', fontWeight: 500 }}>@iandeborja_</a>
+              </footer>
+            )}
           </div>
         }
       />
@@ -569,23 +572,26 @@ function App() {
                 <p>No movies found.</p>
               )}
             </AnimatePresence>
-            <footer style={{
-              width: '100%',
-              textAlign: 'center',
-              fontSize: 13,
-              color: '#888',
-              letterSpacing: 0.2,
-              fontFamily: 'Inter, Arial, sans-serif',
-              position: 'fixed',
-              left: 0,
-              bottom: 0,
-              zIndex: 100,
-              background: 'rgba(255,255,255,0.97)',
-              padding: '8px 0',
-              boxShadow: '0 -2px 8px rgba(0,0,0,0.04)',
-            }}>
-              Created by <a href="https://twitter.com/iandeborja_" target="_blank" rel="noopener noreferrer" style={{ color: '#888', textDecoration: 'underline', fontWeight: 500 }}>@iandeborja_</a>
-            </footer>
+            {/* Only show footer on home and results pages, not during ranking */}
+            {(!selectedCategory || (movies.length > 0 && Object.keys(rankings).length === movies.length)) && (
+              <footer style={{
+                width: '100%',
+                textAlign: 'center',
+                fontSize: 13,
+                color: '#888',
+                letterSpacing: 0.2,
+                fontFamily: 'Inter, Arial, sans-serif',
+                position: 'fixed',
+                left: 0,
+                bottom: 0,
+                zIndex: 100,
+                background: 'rgba(255,255,255,0.97)',
+                padding: '8px 0',
+                boxShadow: '0 -2px 8px rgba(0,0,0,0.04)',
+              }}>
+                Created by <a href="https://twitter.com/iandeborja_" target="_blank" rel="noopener noreferrer" style={{ color: '#888', textDecoration: 'underline', fontWeight: 500 }}>@iandeborja_</a>
+              </footer>
+            )}
           </div>
         }
       />
