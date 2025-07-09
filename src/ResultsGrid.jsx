@@ -66,19 +66,21 @@ export default function ResultsGrid({ rankings, movies, selectedCategory, preloa
       ctx.fillText('BLINDBOXD', width / 2, 44 * SCALE);
       ctx.font = descFont;
       ctx.fillStyle = '#666';
-      ctx.fillText(
-        selectedCategory?.type === 'greatest'
-          ? 'The Greatest Films of All Time'
-          : selectedCategory?.type === 'genre'
-          ? selectedCategory.value
-          : selectedCategory?.type === 'decade'
-          ? selectedCategory.value
-          : selectedCategory?.type === 'oscar'
-          ? `Oscar Winners: ${selectedCategory.value}`
-          : 'Movie Ranking',
-        width / 2,
-        70 * SCALE
-      );
+      let subtitle = 'Movie Ranking';
+      if (selectedCategory?.type === 'greatest') subtitle = 'The Greatest Films of All Time';
+      else if (selectedCategory?.type === 'genre') subtitle = selectedCategory.value;
+      else if (selectedCategory?.type === 'decade') subtitle = selectedCategory.value;
+      else if (selectedCategory?.type === 'oscar') subtitle = `Oscar Winners: ${selectedCategory.value}`;
+      else if (selectedCategory?.type === 'podcast') {
+        const podcastMap = {
+          rewatchables: 'The Rewatchables Podcast',
+          blankslate: 'Blank Check Podcast',
+          seventymm: '70mm Podcast',
+          escapehatch: 'Escape Hatch Podcast',
+        };
+        subtitle = podcastMap[selectedCategory.value] || `${selectedCategory.value} Podcast`;
+      }
+      ctx.fillText(subtitle, width / 2, 70 * SCALE);
       // Draw posters and numbers for all 10 slots
       for (let i = 0; i < 10; i++) {
         const movie = moviesWithPosters[i];
