@@ -93,7 +93,6 @@ export default function ResultsGrid({ rankings, movies, selectedCategory, preloa
         ctx.fillRect(x, y, posterW, posterH);
         // Poster (if available)
         if (movie && movie.poster_path) {
-          // Ensure poster_path is a full URL via the Vercel proxy
           let posterUrl = movie.poster_path;
           if (!posterUrl.startsWith('http')) {
             posterUrl = `/api/proxy?url=https://image.tmdb.org/t/p/w300${posterUrl}`;
@@ -104,7 +103,6 @@ export default function ResultsGrid({ rankings, movies, selectedCategory, preloa
           if (preloadedImg && preloadedImg.complete && preloadedImg.naturalWidth > 0) {
             ctx.drawImage(preloadedImg, x, y, posterW, posterH);
           } else {
-            console.log(`Drawing poster for slot ${i + 1}:`, posterUrl);
             await new Promise((resolve) => {
               const img = new window.Image();
               img.crossOrigin = 'anonymous';
@@ -113,26 +111,44 @@ export default function ResultsGrid({ rankings, movies, selectedCategory, preloa
                 resolve();
               };
               img.onerror = (e) => {
-                console.error(`Failed to load poster for slot ${i + 1}:`, posterUrl, e);
                 resolve();
               };
               img.src = posterUrl;
             });
           }
-        } else {
-          console.warn(`No poster_path for slot ${i + 1}`, movie);
         }
-        // Number (always)
-        ctx.font = numberFont;
-        ctx.fillStyle = '#222';
+        // Delivery order (for label)
+        let deliveryOrder = 0;
+        if (movie) {
+          deliveryOrder = movies.findIndex(m => (m.id || m.tmdb_id) === (movie.id || movie.tmdb_id) && m.title === movie.title);
+        }
+        // Final rank as black circle with white number
+        const rankCircleR = 24 * SCALE; // 20% smaller than 30
+        const rankCircleX = x + posterW / 2;
+        const rankCircleY = y + posterH + 16 * SCALE; // 20% smaller than 20
+        ctx.save();
+        ctx.beginPath();
+        ctx.arc(rankCircleX, rankCircleY, rankCircleR / 2, 0, 2 * Math.PI);
+        ctx.fillStyle = '#111';
+        ctx.fill();
+        ctx.font = `bold ${15 * SCALE}px 'Menlo', 'Consolas', 'Liberation Mono', 'monospace', Inter, Arial, sans-serif`;
+        ctx.fillStyle = '#fff';
         ctx.textAlign = 'center';
-        ctx.fillText(i + 1, x + posterW / 2, y + posterH + 32 * SCALE);
+        ctx.textBaseline = 'middle';
+        ctx.fillText(String(i + 1), rankCircleX, rankCircleY + 1.2 * SCALE);
+        ctx.restore();
+        // Draw delivery order below in smaller grey font
+        ctx.font = `${10 * SCALE}px Inter, Arial, sans-serif`;
+        ctx.fillStyle = '#888';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'top';
+        ctx.fillText(`(Draw #${deliveryOrder + 1})`, x + posterW / 2, y + posterH + 32 * SCALE);
       }
       // Draw site URL at the bottom center
       ctx.font = `bold ${14 * SCALE}px Inter, Arial, sans-serif`;
       ctx.fillStyle = '#888';
       ctx.textAlign = 'center';
-      ctx.fillText('BLINDBOXD.XYZ', width / 2, height - 18 * SCALE);
+      ctx.fillText('BLINDBOXD.XYZ', width / 2, height - 22 * SCALE);
       setPngUrl(canvas.toDataURL('image/png'));
     }
     ensurePostersAndDraw();
